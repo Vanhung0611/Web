@@ -1,0 +1,26 @@
+:root{
+    --main-color: #E95221;
+    --text-color: #333;
+}
+
+*{
+    box-sizing: inherit;  /*Thẻ con kế thừa các thuộc tính của thẻ cha */
+}
+
+html{
+    font-size: 62.5%;    /*Hack để chuẩn hóa đơn vị một cách dễ dàng. Thông thường 1rem sẽ là 16px nhưng với đoạn này 1rem tương ứng 10px */
+    line-height: 1.6rem; /*Áp dụng chiều cao cho các text mặc định là 16px */
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}   
+
+.grid{
+    width: 1200px;
+    max-width: 100%;
+    margin: 0 auto;
+}
+
+.grid_row{
+    display: flex;
+    flex-wrap: wrap;
+}
