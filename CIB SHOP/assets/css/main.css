@@ -50,3 +50,35 @@ a:hover{
     justify-content: space-between ;
     width: 3rem;
 }
+
+.footer2{
+  padding-top: 0.2rem;
+    font-size: 1.4rem;
+    text-align: center;
+    color: white;
+    background-color: var(--main-color) ;
+}
+
+.icon-bar-right {
+    position:fixed;
+    bottom: 0;
+    right: 0;
+  }
+.icon-bar-left a {
+    text-align: right;
+    display:list-item;
+    transition: all 0.4s ease;
+    font-size: 2rem;
+}
+
+.icon-bar-left {
+  position:fixed;
+  bottom: 0;
+  left: 0;
+}
+.icon-bar-right a {
+  text-align: left;
+  display:list-item;
+  transition: all 0.4s ease;
+  font-size: 0;
+}
