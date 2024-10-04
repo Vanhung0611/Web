@@ -263,7 +263,7 @@
 .slide{
     width: 1300px;
     max-width: 100vw;
-    height: 700px;
+    height: 500px;
     margin: auto;
     position: relative;
 }
@@ -359,7 +359,6 @@
 .footer_list_link{
     color: #F1FFFF;
     text-decoration: none;
-    hover
 }
 .footer_item_list{
     color: #F1FFFF;
