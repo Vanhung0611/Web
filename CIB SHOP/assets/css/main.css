@@ -324,6 +324,76 @@
 }
 
 
+/* PHẦN CONTAINER */
+    /* phần services */
+.container{
+}
+
+.section_services{
+    display: flex;
+    justify-content: space-between;
+    margin: 30px 0 30px 0;
+}
+
+.section_services-item{
+    display: flex;
+    height: 60px;
+    text-align: center;
+    min-width: 27rem;
+    border-radius: 6px;
+    box-shadow: 1px 1px 1px 1px #dbdbdb;
+    align-items: center;
+    justify-content: center;
+}
+
+.services-item-text{
+    margin: 0px 10px 0px 10px;
+    line-height: 20px;
+}
+
+.services-item-icon{
+    color: var(--main-color);
+    font-size: 3rem;
+}
+
+.text_ser{
+    font-size: 14px;
+    color: var(--main-color);
+    text-align: center;
+}
+
+    /*Phần title*/
+.container_title{
+
+}
+.container_title-text{
+    font-size: 22px;
+    color: var(--main-color);
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.container_title-line{
+    width: 11%;
+    height: 4px;
+    background-color: #E5E9ED;
+    margin: 20px 0 20px 44.5%;
+    position: relative;
+    border-radius: 3px;
+}
+.container_title-line::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 4px;
+    width: 33.3%;
+    left: 33.3%;
+    border-radius: 3px;
+}
+
+
+
+
 
 /* PHẦN FOOTER */
 .footer1{
