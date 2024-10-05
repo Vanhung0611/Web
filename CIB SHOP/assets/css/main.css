@@ -340,8 +340,8 @@
     height: 60px;
     text-align: center;
     min-width: 27rem;
-    border-radius: 6px;
-    box-shadow: 1px 1px 1px 1px #dbdbdb;
+    border-radius: 10px;
+    box-shadow: 1px 1px 2px 1px #dbdbdb;
     align-items: center;
     justify-content: center;
 }
@@ -453,7 +453,6 @@
 }
 
 .new-content-item{
-    width: 20rem;
 }
 
 
