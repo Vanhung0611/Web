@@ -421,8 +421,8 @@
     padding: 18px 0 18px 0;
 }
 
-.product-new{
-
+.product-new-box{
+    border-top: 1px solid var(--border-color);
 }
 
 .product-new-title {
@@ -433,14 +433,27 @@
 .new-title-link{
     width: 16.67%;
     height: 46px;
-    border-left: 1px solid #222222;
+    border-left: 1px solid var(--border-color);
     text-decoration: none;
     color: var(--text-color);
     font-size: 22px;
     font-weight: bold;
-    background-color: var(--main-color);
     text-align: center;
     line-height: 46px;
+}
+.new-title-link:last-child{
+    border-right: 1px solid var(--border-color);
+}
+
+.product-new-content{
+    background-color: #FCAF17;
+    display: flex;
+    justify-content: space-evenly;
+    padding: 20px 0 20px 0;
+}
+
+.new-content-item{
+    width: 20rem;
 }
 
 
