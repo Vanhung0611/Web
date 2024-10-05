@@ -444,7 +444,10 @@
 .new-title-link:last-child{
     border-right: 1px solid var(--border-color);
 }
-
+.background{
+    background-color: var(--main-color);
+    color: #fff;
+}
 .product-new-content{
 
     background-color: #FCAF17;
@@ -454,7 +457,9 @@
 }
 
 .new-content-item{
-
+    max-width: 18.5%;
+    background-color: #fff;
+    position: relative;
 }
 
 .new-content-item-link{
@@ -462,8 +467,23 @@
 }
 
 .new-content-item-text{
+    color: var(--text-color);
+    font-size: 15px;
+    line-height: 22px;
+    padding: 0px 10px 0 10px;
+    margin-bottom: 32px;
+}
+.new-content-item-text:hover{
+    color: var(--main-color);
 }
 
+.item-cost{
+    font-size: 16px;
+    color: red;
+    position: absolute;
+    top: 93%;
+    left: 5%;
+}
 
 /* PHẦN FOOTER */
 .footer1{
