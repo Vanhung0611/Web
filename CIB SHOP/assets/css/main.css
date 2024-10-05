@@ -399,14 +399,21 @@
 .footer1{
     display: flex;
     border: 0rem solid;
-    height: 30rem;
+    height: 40rem;
     background-color: #222222;
     flex-direction: row;
-   
+    padding: 30px 0 30px 0;
 }
-.footer1 div{
-    width: 25%;
+
+.footer_column{
+    width: 30rem;
 }
+
+.footer1-item{
+    display: flex;
+    
+}
+
 .footer_title{
     color: #F1FFFF;
 }
@@ -436,16 +443,30 @@
 .footer_list{
     padding-left: 1rem;
 }
-a:hover{
-    color: #E95221;
-}
+
 .footer_icon{
     color: #F1FFFF;
+    font-size: 14px;
 }
 .footer_icon_main{
     display: flex;
-    justify-content: space-between ;
-    width: 3rem;
+}
+
+.footer_icon_main-a
+{
+    width: 30px; 
+    height: 30px; 
+    margin-right: 15px;
+    border: 1px solid #ffffff; 
+    border-radius: 50%;
+    text-align: center;
+    line-height: 30px;
+}
+.footer_icon_main-a:hover .footer_icon  {
+    color: var(--main-color);
+}
+.footer_icon_main-a:hover{
+    border: 1px solid var(--main-color); 
 }
 
 .footer2{
