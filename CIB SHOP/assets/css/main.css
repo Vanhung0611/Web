@@ -446,6 +446,7 @@
 }
 
 .product-new-content{
+
     background-color: #FCAF17;
     display: flex;
     justify-content: space-evenly;
@@ -453,6 +454,14 @@
 }
 
 .new-content-item{
+
+}
+
+.new-content-item-link{
+    text-decoration: none;
+}
+
+.new-content-item-text{
 }
 
 
