@@ -42,6 +42,9 @@
     text-decoration: none;
     font-weight: 700;
 }
+.hotline-number:hover{
+    color: #000;
+}
 
 .item_store_system{
     display: flex;
@@ -49,6 +52,9 @@
 
 .item_store{
     font-size: 1.3rem;
+}
+.item_store:hover{
+    color: var(--main-color);
 }
 
 .item_search{
@@ -248,6 +254,7 @@
     font-weight: 400;
     font-size: 1.4rem;
     color: #ffffff;
+    position: relative;
 }
 .home_tittle:hover{
     cursor: pointer;
@@ -258,6 +265,44 @@
     position: relative;
     bottom: 0.15rem;
 }
+
+.instruct_list{
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 24rem;
+    top: 179%;
+    right: -11.5rem;
+    list-style: none;
+    border: 1px solid #c8c8c8;
+    padding: 10px 8px;
+    margin: 0;
+    box-shadow: 1px 2px 2px #777777;
+    z-index: 1;
+    display: none;
+}
+.instruct_list::before{
+    content: "";
+    position: absolute;
+    width: 60%;
+    height: 15px;
+    background-color: transparent;
+    top: -11%;
+
+}
+.instruct_list-text{
+    padding: 7px 0;
+    font-size: 1.4rem;
+    color: var(--main-color);
+    border-bottom: 1px solid var(--border-color);
+    font-weight: 500;
+}
+.instruct_list-text:last-child{
+    border: none;
+}
+.home_tittle-instruct:hover .instruct_list{
+    display: block;
+}
+
 
     /*slide */
 .slide{
@@ -406,16 +451,42 @@
 }
 
 .container_products{
+    display: flex;
+    flex-wrap: wrap;
     justify-content: space-between;
 }
 .container_product-item{
-    padding: 6px;
-    width: 18%;
+    width: 23.5%;
+    overflow: hidden;  /*Làm cho ảnh không vượt quá kích thướt cha nó*/
+    margin: 1% 0;
+    position:relative;
+}
+.wear{
+    position: absolute;
+    width: 220px;
+    height: 80px;
+    background-color: rgba(233, 82, 17, 0.8);
+    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
+    clip-path: polygon(0 50%, 100% 20%, 100% 70%, 0 100%);
+    top: 32%;
+    left: 14%;
+    padding: 41px 0 10px 0;
+}
+.wear-text{
+    color: #fff;
+    font-size: 20px;
+    text-align: center;
+    transform: rotate(-6deg);
 }
 
 .product-item-picture{
+    width: 100%;
+    transform: scale(1.2); /* zoom */
+    transition: transform 0.2s;
 }
-
+.product-item-picture:hover{
+    transform: scale(1.05);
+}
     /* Phần new product*/
 .container_product-new{
     padding: 18px 0 18px 0;
