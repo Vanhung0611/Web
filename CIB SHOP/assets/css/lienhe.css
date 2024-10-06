@@ -24,6 +24,9 @@
     color: var(--main-color);
 }
 /*container*/
+.container{
+    display: flex;
+}
 .container1{
     padding-left: 3%;
 }
@@ -80,4 +83,24 @@
 }
 .check:hover{
     background-color: #FCAF17;
+}
+.container2_title{
+    font-weight: bold;
+    font-size: 14px;
+    text-decoration: none;
+    color: #333E44;
+}
+.container2_title:hover{
+    color: var(--main-color);
+}
+._{
+    font-size: 14px;
+}
+.container2_text{
+    font-size: 14px;
+    text-decoration: none;
+    color: #333E44;
+}
+.container2_text:hover{
+    color: var(--main-color);
 }
