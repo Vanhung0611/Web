@@ -2,16 +2,17 @@
     background-color: #F5F5F5;
     height: 5rem;
     display: flex;
-    vertical-align: middle;
 }
 .list{
     text-decoration: none;
     list-style: none;
+    padding: 0%;
 }
 .title_main{
     font-size: 14px;
     text-decoration: none;
     color: #333E44;
+    line-height: 5rem;
 }
 .title_main:hover{
     color: var(--main-color);
@@ -28,6 +29,7 @@
     display: flex;
 }
 .container1{
+    width: 42%;
 }
 .container1_title{
     font-weight: bold;
@@ -49,25 +51,26 @@
 }
 .ten{
     height: 3.5rem;
-    width: 25rem;
+    width: 24rem;
     border: 1px solid;
     border-radius: 4px;
 }
 .mail{
     height: 3.5rem;
-    width: 25rem;
+    width: 24rem;
     border: 1px solid;
     border-radius: 4px;
+    margin-left: 1%;
 }
 .phone{
     height: 3.5rem;
-    width: 50.3rem;
+    width: 49rem;
     border: 1px solid;
     border-radius: 4px;
 }
 .text{
     height: 12rem;
-    width: 50.3rem;
+    width: 49rem;
     vertical-align:top;
     border: 1px solid;
     border-radius: 4px;
@@ -82,6 +85,10 @@
 }
 .check:hover{
     background-color: #FCAF17;
+}
+/*container2*/
+.container2{
+    width: 42%;
 }
 .container2_title{
     font-weight: bold;
@@ -102,4 +109,7 @@
 }
 .container2_text:hover{
     color: var(--main-color);
+}
+.image{
+    width: 10%;
 }
