@@ -359,7 +359,7 @@
 .footer_list_link{
     color: #F1FFFF;
     text-decoration: none;
-    hover
+    hover;
 }
 .footer_item_list{
     color: #F1FFFF;
