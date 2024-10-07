@@ -6,6 +6,7 @@
 .list{
     text-decoration: none;
     list-style: none;
+    line-height: 5rem;
     padding: 0%;
 }
 .title_main{

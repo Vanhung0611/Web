@@ -1,244 +1,4 @@
-/*Phần HEADER */
-    /*navbar*/
-.header{
-    height: 12.5rem;
-}
-
-.header_navbar{
-    height: 5rem;
-    display: flex;
-    justify-content: space-between;
-    margin: 1.4rem 0;
-}
-
-.navbar_item{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.navbar_item_border{
-    width: 75%;
-    border-bottom: 2px solid rgb(237, 237, 237);
-}
-
-.item_logo{
-    max-width: 5.6rem;
-}
-
-.item_hotline{
-    display: flex;
-    font-size: 1.3rem;
-    
-}
-
-.hotline-text{
-    margin-right: 1rem;
-}
-
-.hotline-number{
-    font-size: 1.6rem;
-    color: red;
-    text-decoration: none;
-    font-weight: 700;
-}
-.hotline-number:hover{
-    color: #000;
-}
-
-.item_store_system{
-    display: flex;
-}
-
-.item_store{
-    font-size: 1.3rem;
-}
-.item_store:hover{
-    color: var(--main-color);
-}
-
-.item_search{
-    font-size: 1.2rem;
-    width: 34rem;
-    line-height: 3rem;
-    outline: none;
-    border: none;
-    background-color: rgb(243, 243, 243);
-    border-radius: 5px;
-    padding-left: 2rem;
-}
-
-.item_icon_search{
-    position: relative;
-    left: 34rem;
-    top: 0.2rem;
-}
-.item_choose{
-    display: flex;
-    font-size: 1.2rem;
-    align-items: center;
-    text-align: center;
-    justify-content: space-between;
-    width: 18.5rem;
-}
-
-.choose_lookup{
-    position: relative;
-    font-size: 1rem;
-}
-.lookup_check{
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 20rem;
-    top: 84%;
-    right: -7.5rem;
-    border-radius: 2px;
-    list-style: none;
-    border: 1px solid #d6d6d6;
-    padding: 0;
-    margin: 0;
-    border-radius: 4px;
-    box-shadow: 1px 4px 2px #e3e3e3;
-    z-index: 1;
-    display: none;
-}
-.lookup_check::before{
-    content: "";
-    position: absolute;
-    top: -30%;
-    right: 42.5%;
-    border-width: 1rem;
-    border-style: solid;
-    border-color: transparent transparent var(--main-color) transparent;
-}
-.choose_lookup:hover{
-    cursor: pointer;
-}
-.choose_lookup:hover .lookup_check{
-    display: block;
-    animation: fadeIn linear .2s;
-}
-
-.check_text{
-    padding: 8px 0;
-    font-size: 1.4rem;
-}
-.check_text:hover{
-    cursor: pointer;
-    background-color: var(--main-color);
-    color: #fff;
-    animation: fadeIn linear .2s;   
-}
-
-.choose_account{
-    position: relative;
-    font-size: 1rem;
-}
-.choose_account:hover{
-    cursor: pointer;
-}
-.account_list{
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 14rem;
-    top: 84%;
-    right: -4.4rem;
-    border-radius: 2px;
-    list-style: none;
-    border: 1px solid #d6d6d6;
-    padding: 0;
-    margin: 0;
-    border-radius: 4px;
-    box-shadow: 1px 4px 2px #e3e3e3;
-    z-index: 1;
-    display: none;
-}
-.account_item{
-    padding: 8px 0;
-    font-size: 1.4rem;
-}
-.account_list::before{
-    content: "";
-    position: absolute;
-    top: -28%;
-    right: 42.5%;
-    border-width: 1rem;
-    border-style: solid;
-    border-color: transparent transparent var(--main-color) transparent;
-}
-.account_item:hover{
-    cursor: pointer;
-    background-color: var(--main-color);
-    color: #fff;
-    animation: fadeIn linear .2s;   
-}
-.choose_account:hover .account_list{
-    display: block;
-    animation: fadeIn linear .2s;
-}
-.account_item_icon{
-    font-size: 1.8rem;
-    margin-right: 0.7rem;
-}
-
-
-.choose_cart{
-    font-size: 1rem;
-    position: relative;
-}
-.choose_cart:hover{ cursor: pointer;}
-.header_icon{
-    color: var(--main-color);
-    font-size: 1.4rem;
-    margin-right: 1rem;
-}
-.choose_icon{
-    color: var(--main-color);
-    font-size: 1.6rem;
-    border: 1px solid #bbbbbb;
-    border-radius: 50%;
-    padding: 0.9rem; 
-    margin-bottom: 0.5rem;
-}
-.cart_noti{
-    position: absolute;
-    background-color: #ffffff;
-    min-width: 14rem;
-    top: 107%;
-    right: 0;
-    border-radius: 2px;
-    list-style: none;
-    border: 1px solid #d6d6d6;
-    padding: 0;
-    margin: 0;
-    border-radius: 4px;
-    box-shadow: 1px 4px 2px #e3e3e3;
-    z-index: 1;
-    display: none;
-}
-.cart_picture{
-    width: 33.5rem;
-}
-.cart_text{
-    margin-top: 0;
-    font-size: 1.4rem;
-}
-.choose_cart:hover .cart_noti{
-    display: block;
-}   
-.cart_noti::before{
-    content: "";
-    position: absolute;
-    top: -15%;
-    right: -0.5%;
-    width: 5rem;
-    height: 2rem;
-    background-color: transparent;
-    
-}
-
-
-
+/*Phần Home */
     /*home*/
 .home{
     width: 100%;
@@ -254,17 +14,45 @@
     font-weight: 400;
     font-size: 1.4rem;
     color: #ffffff;
-    position: relative;
-}
-.home_tittle:hover{
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .home_icon{
     font-size: 0.9rem;
-    position: relative;
     bottom: 0.15rem;
+    color: rgba(255, 255, 255, 0.8);
+    transition: 0.3s;
 }
+
+.home_product{
+}
+.home_product-box{
+    position: absolute;
+    width: 100%;
+    height: 420px;
+    background-color: #fff;
+    z-index: 1;
+    top: 123px;
+    left: 0px;
+    display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
+}
+.home_product-box-title{
+    width: 25%;
+    text-decoration: none;
+    list-style: none;
+    padding: 20px;
+}
+.home_product-box-title-text{
+    color: var(--text-color);
+    font-size: 14px;
+    margin: 10px 0;
+}
+.text-colormain{
+    color: var(--main-color);
+}
+
 
 .instruct_list{
     position: absolute;
@@ -301,6 +89,10 @@
 }
 .home_tittle-instruct:hover .instruct_list{
     display: block;
+}
+.Reverser_otation:hover .home_icon{  /*Reverser_otation là class dành riêng cho xoay icon dành riêng cho class home_icon */
+    transform: rotate(-180deg);
+    color: #000;
 }
 
 
@@ -369,10 +161,64 @@
 }
 
 
+
+/* PHẦN FOOTER */
+.footer1{
+    display: flex;
+    border: 0rem solid;
+    height: 30rem;
+    background-color: #222222;
+    flex-direction: row;
+   
+}
+.footer1 div{
+    width: 25%;
+}
+.footer_title{
+    color: #F1FFFF;
+}
+.footer_text_main{
+    color:#E95221;
+    text-decoration: none;
+}
+.footer_text_main_bold{
+    color:#E95221;
+    font-weight: bold;
+    text-decoration: none;
+}
+.footer_text_italic{
+    font-style: italic;
+    color: #F1FFFF;
+}
+.footer_text{
+    color: #F1FFFF;
+}
+.footer_list_link{
+    color: #F1FFFF;
+    text-decoration: none;
+}
+.footer_list_link:hover{
+    color: var(--main-color);
+}
+.footer_item_list{
+    color: #F1FFFF;
+}
+.footer_list{
+    padding-left: 1rem;
+}
+a:hover{
+    color: #E95221;
+}
+.footer_icon{
+    color: #F1FFFF;
+}
+.footer_icon_main{
+    display: flex;
+    justify-content: space-between ;
+    width: 3rem;
+}
 /* PHẦN CONTAINER */
     /* phần services */
-.container{
-}
 
 .section_services{
     display: flex;
@@ -466,7 +312,6 @@
     width: 220px;
     height: 80px;
     background-color: rgba(233, 82, 17, 0.8);
-    /* clip-path: polygon(0 0, 100% 0, 100% 80%, 0 100%); */
     clip-path: polygon(0 50%, 100% 20%, 100% 70%, 0 100%);
     top: 32%;
     left: 14%;
@@ -482,7 +327,7 @@
 .product-item-picture{
     width: 100%;
     transform: scale(1.2); /* zoom */
-    transition: transform 0.2s;
+    transition: transform 0.4s;
 }
 .product-item-picture:hover{
     transform: scale(1.05);
@@ -556,15 +401,6 @@
     left: 5%;
 }
 
-/* PHẦN FOOTER */
-.footer1{
-    display: flex;
-    border: 0rem solid;
-    height: 40rem;
-    background-color: #222222;
-    flex-direction: row;
-    padding: 30px 0 30px 0;
-}
 
 .footer_column{
     width: 30rem;
