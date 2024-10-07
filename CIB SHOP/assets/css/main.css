@@ -34,11 +34,11 @@
 .home_product::before{
     content: "";
     position: absolute;
-    background-color: #E952E6;
+    background-color: transparent;
     width: 96px;
     height: 29px;
-    top: 64px;
-    left: 0;
+    top: 15%;
+    left: 19%;
 }
 
 .home_product-box{
