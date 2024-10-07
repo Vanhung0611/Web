@@ -15,9 +15,7 @@
     font-size: 1.4rem;
     color: #ffffff;
     position: relative;
-}
-.home_tittle:hover{
-    cursor: pointer;
+    text-decoration: none;
 }
 
 .home_icon{
