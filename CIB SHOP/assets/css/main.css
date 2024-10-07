@@ -35,6 +35,8 @@
     top: 123px;
     left: 0px;
     display: flex;
+    flex-wrap: wrap;
+    overflow: hidden;
 }
 .home_product-box-title{
     width: 25%;
