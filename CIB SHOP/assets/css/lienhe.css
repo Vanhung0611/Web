@@ -73,7 +73,6 @@
 .text{
     height: 12rem;
     width: 49rem;
-    vertical-align:top;
     border: 1px solid;
     border-radius: 4px;
 }
