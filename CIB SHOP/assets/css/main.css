@@ -24,10 +24,6 @@
     transition: 0.3s;
 }
 
-.product-block:hover .home_product-box{
-    display: block;
-    display: flex;
-}
 
 .home_product-box{
     position: absolute;
@@ -40,7 +36,7 @@
     display: flex;
     flex-wrap: wrap;
     overflow: hidden;
-    display: none;
+    /* display: none; */
 }
 
 .home_product-box-ul{
