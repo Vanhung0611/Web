@@ -24,7 +24,7 @@
     transition: 0.3s;
 }
 
-.home_product:hover .home_product-box{
+.product-block:hover .home_product-box{
     display: block;
     display: flex;
 }
