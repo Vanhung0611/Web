@@ -29,11 +29,17 @@ body {
     margin-top: 3rem;
     background-color: rgb(241, 244, 247);
     width: 28rem;
+    padding: 2rem;
 }
 
 .demand_scroll{
     height: 16rem;
     overflow: auto;
+}
+
+.text{
+    text-decoration: none;
+    color: black;
 }
 
 .text:hover{
