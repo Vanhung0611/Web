@@ -2,7 +2,7 @@
     background-color: #F5F5F5;
     height: 5rem;
     display: flex;
-<<<<<<< Updated upstream
+
 }
 .list{
     text-decoration: none;
@@ -114,7 +114,6 @@
 }
 .image{
     width: 10%;
-=======
 
 }
 .list{
@@ -130,5 +129,5 @@
 .title_link{
     color: var(--main-color);
     font-size: 14px;
->>>>>>> Stashed changes
+
 }
