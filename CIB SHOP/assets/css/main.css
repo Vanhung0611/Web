@@ -577,34 +577,43 @@
 
 .footer_title{
     color: #F1FFFF;
+    font-size: 16px;
 }
 .footer_text_main{
     color:#E95221;
     text-decoration: none;
+    font-size: 13px;
 }
 .footer_text_main_bold{
     color:#E95221;
     font-weight: bold;
     text-decoration: none;
+    font-size: 13px;
 }
 .footer_text_italic{
     font-style: italic;
     color: #F1FFFF;
+    font-size: 13px;
 }
 .footer_text{
     color: #F1FFFF;
+    font-size: 13px;
 }
 .footer_list_link{
     color: #F1FFFF;
     text-decoration: none;
+    font-size: 13px;
 }
 .footer_item_list{
     color: #F1FFFF;
+    font-size: 13px;
 }
 .footer_list{
     padding-left: 1rem;
 }
-
+.footer_list_link:hover{
+    color: var(--main-color);
+}
 .footer_icon{
     color: #F1FFFF;
     font-size: 14px;
