@@ -43,7 +43,7 @@
 
 .home_product-box{
     position: absolute;
-    width: 100%;
+    width: calc(100% - 10px);
     height: 420px;
     background-color: #fff;
     z-index: 1;
@@ -54,6 +54,23 @@
     overflow-y: auto;
     display: none;
 }
+
+/* Toàn bộ thanh cuộn */
+.home_product-box::-webkit-scrollbar {
+    width: 5px; /* Giảm độ rộng của thanh cuộn */
+}
+
+/* Nền của thanh cuộn */
+.home_product-box::-webkit-scrollbar-track {
+    background: #DDDDDD;
+}
+
+/* Thanh cuộn */
+.home_product-box::-webkit-scrollbar-thumb {
+    background: #9d9d9d;
+    border-radius: 8px;
+}
+
 
 .home_product-box-ul{
     width: 25%;
@@ -122,11 +139,12 @@
 
     /*slide */
 .slide{
-    width: 1300px;
+    width: 1520px;
     max-width: 100vw;
     height: 500px;
     margin: auto;
     position: relative;
+    overflow: hidden;
 }
 .list{
     position: absolute;
@@ -336,6 +354,7 @@
     top: 32%;
     left: 14%;
     padding: 41px 0 10px 0;
+    z-index: 3;
 }
 .wear-text{
     color: #fff;
@@ -343,15 +362,33 @@
     text-align: center;
     transform: rotate(-6deg);
 }
+.Appear{
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color-blur);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    display: none;
+}
 
 .product-item-picture{
     width: 100%;
     transform: scale(1.2); /* zoom */
     transition: transform 0.4s;
+    z-index: 3;
 }
 .product-item-picture:hover{
     transform: scale(1.05);
 }
+.product-item-picture:hover.Appear{
+    display: block;
+    z-index: 2;
+}
+
+
+
     /* Phần new product*/
 .container_product-new{
     padding: 18px 0 18px 0;
@@ -478,8 +515,8 @@
 
 .footer_icon_main-a
 {
-    width: 30px; 
-    height: 30px; 
+    min-width: 30px; 
+    min-height: 30px; 
     margin-right: 15px;
     border: 1px solid #ffffff; 
     border-radius: 50%;
