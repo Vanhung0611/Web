@@ -91,6 +91,10 @@
     font-size: 14px;
     margin: 8px 0;
 }
+.home_product-box-title-text:hover{
+    cursor: pointer;
+    color: var(--main-color);
+}
 .text-colormain{
     color: var(--main-color);
 }
