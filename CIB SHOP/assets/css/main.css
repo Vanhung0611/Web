@@ -206,6 +206,27 @@
     width: 30px;
 }
 
+.news{
+}
+.news_box{
+    display: flex;
+    justify-content: space-between;
+}
+.news_item{
+    width: 23.5%;
+    overflow: hidden;
+}
+.news_item-picture{
+    width: 100%;
+    transition: transform 0.3s;
+}
+.news_item-picture:hover{
+    transform: scale(1.1);
+}
+
+
+
+
 /* PHẦN FOOTER */
 .footer1{
     display: flex;
