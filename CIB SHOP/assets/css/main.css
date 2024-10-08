@@ -354,6 +354,7 @@
     top: 32%;
     left: 14%;
     padding: 41px 0 10px 0;
+    z-index: 3;
 }
 .wear-text{
     color: #fff;
@@ -361,15 +362,33 @@
     text-align: center;
     transform: rotate(-6deg);
 }
+.Appear{
+    width: 100px;
+    height: 100px;
+    background-color: var(--main-color-blur);
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    z-index: 0;
+    display: none;
+}
 
 .product-item-picture{
     width: 100%;
     transform: scale(1.2); /* zoom */
     transition: transform 0.4s;
+    z-index: 3;
 }
 .product-item-picture:hover{
     transform: scale(1.05);
 }
+.product-item-picture:hover.Appear{
+    display: block;
+    z-index: 2;
+}
+
+
+
     /* Phần new product*/
 .container_product-new{
     padding: 18px 0 18px 0;
