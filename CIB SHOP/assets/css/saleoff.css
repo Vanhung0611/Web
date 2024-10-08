@@ -120,3 +120,11 @@ color: black;
 h3{
     color: rgb(55, 53, 53);
 }
+
+
+.list_box{
+    font-size: 1.4rem;
+    border: 1px solid var(--main-color);
+    width: 1rem;
+    height: 1rem;
+}
