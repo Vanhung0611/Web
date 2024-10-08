@@ -103,11 +103,13 @@ body {
     width: 23rem;
     margin: 1rem;
     text-align: start;
+    position: relative;
 }
 
 .picture{
     height: 20rem;
     width: 22rem;
+    display: block;
 }
 
 .sale_price{
@@ -169,3 +171,13 @@ a{
     text-decoration: none;
 }
 
+.discount-label {
+    position:absolute;
+    top: 0px;
+    background-color: var(--main-color);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-radius: 10px;
+}
