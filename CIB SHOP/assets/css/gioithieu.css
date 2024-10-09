@@ -19,20 +19,17 @@ body {
 
 .container {
     display: flex;
-    flex-wrap: wrap;
-
+    flex-wrap: nowrap;
+    align-content: stretch;
+    margin-bottom: 3rem;
 }
 .column {
-    width: 29rem;
     margin-left:0.5rem;
-    
 }
 .right_column{
-
     font-size: 1.4rem;
     padding-left: 2rem;
     text-wrap: wrap;
-
 }
 
 .popup-column {
@@ -47,9 +44,7 @@ body {
 .box{
     display: flex;
     height: 11rem;
-    padding-left: 2rem;
     width: 29rem;
-    padding-right: 2rem;
     border-top: 1px solid rgb(233, 230, 230);
 }
 
@@ -100,15 +95,27 @@ h1{
 .text2{
     text-decoration: none;
     color: var(--main-color);
-    font-size: 1.4rem;
+    font-size: 1.6rem;
    
 }
 
-.text2:hover{
-    color: var(--main-color);
+.text_size{
+    font-size: 1.6rem;
+    line-height: 2.5rem;
 }
 
-.text_box{
-    min-width: 10rem;
-    align-items: stretch;
+.title{
+    text-align: center;
+}
+
+.stress{
+    font-weight: bold;
+    font-size: 1.8rem;
+}
+
+.promise{
+    font-weight: bold;
+    color: red;
+    font-size: 1.6rem;
+    text-align: center;
 }
