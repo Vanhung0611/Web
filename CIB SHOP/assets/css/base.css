@@ -32,3 +32,29 @@ html{
 .bold{
     font-weight: bold;
 }
+
+/*Thiết lập nút bấm chung */
+.btn{
+    display: flex;
+    justify-content: flex-end;
+    align-content: flex-start;
+    flex-wrap: nowrap;
+}
+.btn a{
+    text-decoration: none;
+}
+.btn-item{
+    font-size: 1.4rem;
+    border: 1px solid var(--main-color);
+    width: 3rem;
+    height: 3rem;
+    color: var(--main-color);
+    padding: 0.7rem;
+    border-radius: 5px;
+    margin: 0.3rem;
+    margin-bottom: 5rem;
+} 
+.btn-click{
+    background-color: var(--main-color);
+    color: #fff;
+}
