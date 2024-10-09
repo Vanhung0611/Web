@@ -21,7 +21,7 @@ body {
     display: flex;
     flex-wrap: nowrap;
     align-content: stretch;
-    margin-bottom: 3rem;
+    margin-bottom: 4rem;
 }
 .column {
     margin-left:0.5rem;
