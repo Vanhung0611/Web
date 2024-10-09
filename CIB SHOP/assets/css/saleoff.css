@@ -139,28 +139,6 @@ h3{
     color: rgb(55, 53, 53);
 }
 
-.list_box_line{
-    display: flex;
-    justify-content: flex-end;
-    align-content: flex-start;
-    flex-wrap: nowrap;
-    padding-right: 6rem;
-}
-
-.list_box{
-    font-size: 1.4rem;
-    border: 1px solid var(--main-color);
-    width: 3rem;
-    height: 3rem;
-    text-decoration: none;
-    color: var(--main-color);
-    padding: 0.7rem;
-    border-radius: 5px;
-    margin: 0.3rem;
-    margin-bottom: 5rem;
-    
-}
-
 .list_box:hover{
     background: var(--main-color);
     color: white;
