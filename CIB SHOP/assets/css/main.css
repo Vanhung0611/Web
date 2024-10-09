@@ -103,13 +103,13 @@
     position: absolute;
     background-color: #ffffff;
     min-width: 24rem;
-    top: 179%;
-    right: -11.5rem;
+    top: 169%;
+    right: -121%;
     list-style: none;
     border: 1px solid #c8c8c8;
     padding: 10px 8px;
     margin: 0;
-    box-shadow: 1px 2px 2px #777777;
+    box-shadow: 1px 2px 2px var(--box-Shadow);
     z-index: 1;
     display: none;
 }
@@ -132,8 +132,15 @@
 .instruct_list-text:last-child{
     border: none;
 }
+.home_tittle-instruct{
+    position: relative;
+}
 .home_tittle-instruct:hover .instruct_list{
     display: block;
+}
+.home_tittle-instruct:hover .instruct_list-text{
+    cursor: pointer;
+
 }
 .Reverser_otation:hover .home_icon{  /*Reverser_otation là class dành riêng cho xoay icon dành riêng cho class home_icon */
     transform: rotate(-180deg);
@@ -207,10 +214,13 @@
 }
 
 .news{
+    padding-bottom: 40px;
 }
 .news_box{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .news_item{
     width: 23.5%;
@@ -360,7 +370,7 @@
     text-align: center;
     min-width: 27rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px 1px #dbdbdb;
+    box-shadow: 1px 1px 2px 1px var(--box-Shadow);
     align-items: center;
     justify-content: center;
 }
