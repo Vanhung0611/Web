@@ -103,13 +103,13 @@
     position: absolute;
     background-color: #ffffff;
     min-width: 24rem;
-    top: 179%;
-    right: -11.5rem;
+    top: 169%;
+    right: -121%;
     list-style: none;
     border: 1px solid #c8c8c8;
     padding: 10px 8px;
     margin: 0;
-    box-shadow: 1px 2px 2px #777777;
+    box-shadow: 1px 2px 2px var(--box-Shadow);
     z-index: 1;
     display: none;
 }
@@ -132,8 +132,15 @@
 .instruct_list-text:last-child{
     border: none;
 }
+.home_tittle-instruct{
+    position: relative;
+}
 .home_tittle-instruct:hover .instruct_list{
     display: block;
+}
+.home_tittle-instruct:hover .instruct_list-text{
+    cursor: pointer;
+
 }
 .Reverser_otation:hover .home_icon{  /*Reverser_otation là class dành riêng cho xoay icon dành riêng cho class home_icon */
     transform: rotate(-180deg);
@@ -207,24 +214,102 @@
 }
 
 .news{
+    padding-bottom: 40px;
 }
 .news_box{
+    width: 100%;
     display: flex;
     justify-content: space-between;
+    flex-wrap: wrap;
 }
 .news_item{
     width: 23.5%;
-    overflow: hidden;
+    position: relative;
+    min-height: 315px;
 }
 .news_item-picture{
-    width: 100%;
-    transition: transform 0.3s;
+    overflow: hidden;
 }
-.news_item-picture:hover{
+.news_item-picture-item{
+    width: 100%;
+    transition: transform 0.6s;
+}
+.news_item-picture-item:hover{
     transform: scale(1.1);
 }
 
-
+.new_item-box{
+    width: 94%;
+    box-shadow: 0px 4px 13px var(--main-color-blur);
+    border-radius: 10px;
+    background-color: #fff;
+    z-index: 1;
+    position: absolute;
+    top: 46%;
+    left: 3%;
+    padding: 16px;
+}
+.new_item-box-title{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 2rem;
+    height: 4rem; /* Muốn chữ hiển thị chỉ 2 dòng, thì một dòng chiếm line-height là 1.8 thì 2 dòng là  3.6rem! */
+    overflow: hidden;  /*kết hợp với dòng trên */
+    display: block;     /*Kết hợp */
+    display: -webkit-box; /*Kết hợp */
+    -webkit-box-orient: vertical; /*Kết hợp */
+    -webkit-line-clamp: 2;  /*Két hợp*/
+}
+.new_item-box-title:hover{
+    color: var(--main-color);
+}
+.new_item-box-date{
+    margin-top: 6px;
+    display: flex;
+    justify-content: center;
+    position: relative;
+}
+.new_item-box-date::after{
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: var(--main-color);
+    top: 50%;
+    left: 0;
+    z-index: 0;
+}
+.new_item-box-date:hover{
+    cursor: grab;
+}
+.new_item-box-date span{
+    color: #fff;
+    background-color: var(--main-color);
+    border-radius: 20px;
+    font-size: 12px;
+    z-index: 1;
+    line-height: 16px;
+    padding: 4px;
+    font-weight: 100;
+}
+.new_item-box-text{
+    padding-top: 5px;
+    font-size: 14px;
+    font-weight: 100;
+    text-align: center;
+    line-height: 2rem;
+    height: 6.5rem;
+    overflow: hidden;  /*kết hợp với dòng trên */
+    display: block;     /*Kết hợp */
+    display: -webkit-box; /*Kết hợp */
+    -webkit-box-orient: vertical; /*Kết hợp */
+    -webkit-line-clamp: 3;  /*Két hợp*/
+}
+.new_item-box-text:hover{
+    cursor: grab;
+}
 
 
 /* PHẦN FOOTER */
@@ -295,7 +380,7 @@
     text-align: center;
     min-width: 27rem;
     border-radius: 10px;
-    box-shadow: 1px 1px 2px 1px #dbdbdb;
+    box-shadow: 1px 1px 2px 1px var(--box-Shadow);
     align-items: center;
     justify-content: center;
 }
