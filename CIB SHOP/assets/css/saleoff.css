@@ -24,6 +24,7 @@ body {
     width: 29rem;
     margin-left:0.5rem;
     padding: 2rem;
+    flex-wrap: wrap;
 }
 .popup-column {
     display: none;
@@ -60,6 +61,7 @@ body {
     background-color: rgb(241, 244, 247);
     width: 28rem;
     padding: 2rem;
+    border-radius: 5px;
 }
 
 .demand_scroll{
@@ -71,6 +73,8 @@ body {
     text-decoration: none;
     color: black;
 }
+
+
 
 .text:hover{
     color: var(--main-color);
