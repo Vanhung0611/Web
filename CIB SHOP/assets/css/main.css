@@ -250,6 +250,8 @@
     padding: 16px;
 }
 .new_item-box-title{
+    text-decoration: none;
+    color: var(--text-color);
     font-size: 15px;
     font-weight: 500;
     line-height: 2rem;
@@ -259,6 +261,9 @@
     display: -webkit-box; /*Kết hợp */
     -webkit-box-orient: vertical; /*Kết hợp */
     -webkit-line-clamp: 2;  /*Két hợp*/
+}
+.new_item-box-title:hover{
+    color: var(--main-color);
 }
 .new_item-box-date{
     margin-top: 6px;
@@ -276,6 +281,9 @@
     left: 0;
     z-index: 0;
 }
+.new_item-box-date:hover{
+    cursor: grab;
+}
 .new_item-box-date span{
     color: #fff;
     background-color: var(--main-color);
@@ -290,16 +298,18 @@
     padding-top: 5px;
     font-size: 14px;
     font-weight: 100;
+    text-align: center;
     line-height: 2rem;
-    height: 6rem;
+    height: 6.5rem;
     overflow: hidden;  /*kết hợp với dòng trên */
     display: block;     /*Kết hợp */
     display: -webkit-box; /*Kết hợp */
     -webkit-box-orient: vertical; /*Kết hợp */
     -webkit-line-clamp: 3;  /*Két hợp*/
 }
-
-
+.new_item-box-text:hover{
+    cursor: grab;
+}
 
 
 /* PHẦN FOOTER */
