@@ -252,35 +252,6 @@
     text-align: center;
 }
 
-    /*Phần title*/
-.container_title{
-
-}
-.container_title-text{
-    font-size: 24px;
-    color: var(--main-color);
-    margin: 20px 0 20px 0;
-    text-align: center;
-}
-
-.container_title-line{
-    width: 11%;
-    height: 4px;
-    background-color: #E5E9ED;
-    margin: 20px 0 20px 44.5%;
-    position: relative;
-    border-radius: 3px;
-}
-.container_title-line::after{
-    content: "";
-    position: absolute;
-    background-color: var(--main-color);
-    height: 4px;
-    width: 33.3%;
-    left: 33.3%;
-    border-radius: 3px;
-}
-
     /* Phần Sale off*/
 .container_SaleOff{
     padding: 18px 0 18px 0;
