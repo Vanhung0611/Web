@@ -101,24 +101,25 @@
 }
 .text{
     font-size: 15px;
-    font-weight: 100;
+    font-weight: 400;
     color: var(--text-color);
+    line-height: 2.5rem;
 }
 .image1{
-    width: 80%;
+    width: 95%;
 }
 .image2{
-    width: 80%;
+    width: 95%;
 }
 .image3{
-    margin-left: 5%;
-    margin-right: 5%;
-    width: 70%;
+    margin-left: 10%;
+    margin-right: 10%;
+    width: 80%;
 }
 /* bảng 1*/
 .table1 {
     height: 40rem;
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin-left: 3%;
 }
@@ -135,7 +136,7 @@
 /* bảng 2 */
 .table2 {
     height: 30rem;
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin-left: 3%;
 }
@@ -152,7 +153,7 @@
 /* bảng 3 */
 .table3 {
     height: 40rem;
-    width: 80%;
+    width: 90%;
     border-collapse: collapse;
     margin-left: 3%;
 }
@@ -185,4 +186,9 @@
     text-decoration: none;
     color: var(--main-color);
     font-size: 16px;
+}
+.datetime_box{
+    font-size: 13px;
+    color: #B0B0B0;
+    font-style: italic;
 }
