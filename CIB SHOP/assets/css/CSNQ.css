@@ -1,0 +1,109 @@
+.container {
+    display: flex;
+    flex-wrap: nowrap;
+    align-content: stretch;
+    margin-bottom: 4rem;
+}
+.container2{
+    margin-left: 2%;
+}
+.column {
+    margin-left:0.5rem;
+}
+.right_column{
+    font-size: 1.4rem;
+    padding-left: 2rem;
+    text-wrap: wrap;
+}
+
+.popup-column {
+    display: none;
+}
+@media (min-width: 1000px) {
+    .popup-column {
+        display: block;
+    }
+}
+
+.box{
+    display: flex;
+    height: 11rem;
+    width: 29rem;
+    border-top: 1px solid rgb(233, 230, 230);
+}
+
+.mini_box{
+    font-size: 1.4rem;
+    padding: 0.5rem;
+}
+
+.mini_container{
+    border: 1px solid rgb(233, 230, 230);
+    border-radius: 10px;
+    width: 29rem;
+}
+.picture{
+    height: 8.5rem;
+    width: 11rem;
+    padding-top: 1.5rem;
+}
+
+.textcl{
+    text-decoration: none;
+    color: black;
+}
+.textcl:hover{
+    color: var(--main-color);
+}
+.box_oversize{
+    margin-top: 3rem;
+    background-color: rgb(241, 244, 247);
+    width: 28rem;
+    padding: 2rem;
+    border-radius: 5px;
+}
+/* bảng 1*/
+.table1 {
+    width: 40%;
+    border-collapse: collapse;
+    margin-left: 3%;
+}
+.table1 th, .table1 td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.table1 th {
+    font-weight: bold;
+}
+/* bảng 2 */
+.table2 {
+    width: 40%;
+    border-collapse: collapse;
+    margin-left: 3%;
+}
+.table2 th, .table2 td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.table2 th {
+    font-weight: bold;
+}
+/* bảng 3 */
+.table3 {
+    width: 40%;
+    border-collapse: collapse;
+    margin-left: 3%;
+}
+.table3 th, .table3 td {
+    border: 1px solid #ddd;
+    padding: 12px;
+    text-align: left;
+}
+.table3 th {
+    font-weight: bold;
+}
+.table3 tr:last-child td {
+    font-weight: bold;
+}
