@@ -1,5 +1,5 @@
 .box-title{
-    font-size: 34px;
+    font-size: 40px;
     color: var(--text-color);
     font-weight: 500;
 }
@@ -8,7 +8,8 @@
 }
 .box-item{
     width: 20%;
-    
+    padding: 0 10px 40px 10px;
+    position: relative;
 
 }
 .box-item a{
@@ -19,12 +20,22 @@
     width: 100%;
 }
 .box-item-text{
+    font-weight: 400;
     font-size: 14px;
     color: var(--text-color);
+    padding: 10px 0;
+}
+.box-item-text:hover{
+    color: var(--main-color);
 }
 
 .box-item-cost{
     color: red;
     font-size: 16px;
     font-weight: 500;
+}
+.box-item-cost-remove{
+    text-decoration: line-through;
+    font-size: 12px;
+    color: #989898;
 }

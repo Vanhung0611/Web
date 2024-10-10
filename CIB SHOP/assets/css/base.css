@@ -4,7 +4,7 @@
     --text-color: #4a4a4a;
     --border-color: #dddddd;
     --box-Shadow: rgba(0, 0, 0, 0.1);
-
+    --cost-color: #E01020;
 }
 
 *{
@@ -34,6 +34,9 @@ html{
 }
 .underline{
     text-decoration: underline;
+}
+.remove{
+    text-decoration: line-through;
 }
 
 /*Thiết lập nút bấm chung */
@@ -118,4 +121,28 @@ html{
     width: 33.3%;
     left: 33.3%;
     border-radius: 3px;
+}
+
+/*Phần miếng dán đỏ đỏ góc trên */
+.discount-label {
+    min-width: 78px;
+    position:absolute;
+    top: 0px;
+    left: -5px;
+    background-color: var(--cost-color);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.discount-label::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 26px;
+    border-top: 6px solid var(--cost-color);
+    border-left: 6px solid transparent;
+    filter: brightness(60%);
 }
