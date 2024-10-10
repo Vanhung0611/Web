@@ -68,15 +68,16 @@
     font-size: 24px;
 }
 .clock{
-    font-size: 16px;
+    font-size: 15px;
 }
 .datetime{
-    font-size: 16px;
+    font-size: 15px;
     color: #B0B0B0;
 }
 .container_main_text{
-    font-size: 16px;
+    font-size: 15px;
     font-style: italic;
+    color: var(--text-color);
 }
 .main_text_hightlight{
     text-decoration: none;
@@ -85,11 +86,13 @@
 .container_text_title1{
     font-size: 16px;
     font-weight: 600;
+    color: var(--text-color);
 }
 .container_text_title2{
     font-weight: 600;
     font-size: 16px;
     font-style: italic;
+    color: var(--text-color);
 }
 .text_title{
     font-size: 16px;
@@ -97,24 +100,25 @@
     text-decoration: underline;
 }
 .text{
-    font-size: 16px;
+    font-size: 15px;
     font-weight: 100;
+    color: var(--text-color);
 }
 .image1{
-    width: 65%;
+    width: 80%;
 }
 .image2{
-    width: 65%;
+    width: 80%;
 }
 .image3{
     margin-left: 5%;
     margin-right: 5%;
-    width: 55%;
+    width: 70%;
 }
 /* bảng 1*/
 .table1 {
     height: 40rem;
-    width: 60%;
+    width: 80%;
     border-collapse: collapse;
     margin-left: 3%;
 }
@@ -122,6 +126,7 @@
     font-size: 16px;
     border: 1px solid #ddd;
     padding: 12px;
+    color: var(--text-color);
     text-align: left;
 }
 .table1 th {
@@ -130,7 +135,7 @@
 /* bảng 2 */
 .table2 {
     height: 30rem;
-    width: 60%;
+    width: 80%;
     border-collapse: collapse;
     margin-left: 3%;
 }
@@ -139,6 +144,7 @@
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
+    color: var(--text-color);
 }
 .table2 th {
     font-weight: bold;
@@ -146,7 +152,7 @@
 /* bảng 3 */
 .table3 {
     height: 40rem;
-    width: 60%;
+    width: 80%;
     border-collapse: collapse;
     margin-left: 3%;
 }
@@ -155,6 +161,7 @@
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
+    color: var(--text-color);
 }
 .table3 th {
     font-weight: bold;
