@@ -51,6 +51,7 @@
 .textcl{
     text-decoration: none;
     color: black;
+    font-size: 14px;
 }
 .textcl:hover{
     color: var(--main-color);
@@ -62,13 +63,63 @@
     padding: 2rem;
     border-radius: 5px;
 }
+.container_main{
+    font-weight: 600;
+    font-size: 24px;
+}
+.clock{
+    font-size: 16px;
+}
+.datetime{
+    font-size: 16px;
+    color: #B0B0B0;
+}
+.container_main_text{
+    font-size: 16px;
+    font-style: italic;
+}
+.main_text_hightlight{
+    text-decoration: none;
+    color: var(--main-color);
+}
+.container_text_title1{
+    font-size: 16px;
+    font-weight: 600;
+}
+.container_text_title2{
+    font-weight: 600;
+    font-size: 16px;
+    font-style: italic;
+}
+.text_title{
+    font-size: 16px;
+    font-weight: 600;
+    text-decoration: underline;
+}
+.text{
+    font-size: 16px;
+    font-weight: 100;
+}
+.image1{
+    width: 65%;
+}
+.image2{
+    width: 65%;
+}
+.image3{
+    margin-left: 5%;
+    margin-right: 5%;
+    width: 55%;
+}
 /* bảng 1*/
 .table1 {
-    width: 40%;
+    height: 40rem;
+    width: 60%;
     border-collapse: collapse;
     margin-left: 3%;
 }
 .table1 th, .table1 td {
+    font-size: 16px;
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
@@ -78,11 +129,13 @@
 }
 /* bảng 2 */
 .table2 {
-    width: 40%;
+    height: 30rem;
+    width: 60%;
     border-collapse: collapse;
     margin-left: 3%;
 }
 .table2 th, .table2 td {
+    font-size: 16px;
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
@@ -92,11 +145,13 @@
 }
 /* bảng 3 */
 .table3 {
-    width: 40%;
+    height: 40rem;
+    width: 60%;
     border-collapse: collapse;
     margin-left: 3%;
 }
 .table3 th, .table3 td {
+    font-size: 16px;
     border: 1px solid #ddd;
     padding: 12px;
     text-align: left;
@@ -106,4 +161,21 @@
 }
 .table3 tr:last-child td {
     font-weight: bold;
+}
+.text_title2{
+    font-size: 16px;
+    font-weight: 600;
+}
+.image4{
+    width: 90%;
+}
+.text_footer_CS{
+    line-height: 25px;
+    font-size: 16px;
+    font-weight: 600;
+}
+.footer_CS_highligh{
+    text-decoration: none;
+    color: var(--main-color);
+    font-size: 16px;
 }
