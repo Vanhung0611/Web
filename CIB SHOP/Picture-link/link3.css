@@ -1,0 +1,30 @@
+.box-title{
+    font-size: 34px;
+    color: var(--text-color);
+    font-weight: 500;
+}
+.box{
+
+}
+.box-item{
+    width: 20%;
+    
+
+}
+.box-item a{
+    text-decoration: none;
+}
+
+.box-item-picture{
+    width: 100%;
+}
+.box-item-text{
+    font-size: 14px;
+    color: var(--text-color);
+}
+
+.box-item-cost{
+    color: red;
+    font-size: 16px;
+    font-weight: 500;
+}

@@ -32,6 +32,9 @@ html{
 .bold{
     font-weight: bold;
 }
+.underline{
+    text-decoration: underline;
+}
 
 /*Thiết lập nút bấm chung */
 .btn{
