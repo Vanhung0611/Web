@@ -24,12 +24,14 @@
     font-weight: bold;
 }
 .ten{
+    font-size: 14px;
     height: 3.5rem;
     width: 24rem;
     border: 1px solid;
     border-radius: 4px;
 }
 .mail{
+    font-size: 14px;
     height: 3.5rem;
     width: 24rem;
     border: 1px solid;
@@ -37,12 +39,14 @@
     margin-left: 1%;
 }
 .phone{
+    font-size: 14px;
     height: 3.5rem;
     width: 49rem;
     border: 1px solid;
     border-radius: 4px;
 }
 .text{
+    font-size: 14px;
     height: 12rem;
     width: 49rem;
     border: 1px solid;
@@ -79,6 +83,7 @@
     font-size: 14px;
     text-decoration: none;
     color: #333E44;
+    line-height: 2.5rem;
 }
 .container2_text:hover{
     color: var(--main-color);
