@@ -1,3 +1,4 @@
+/* Phần slide */
 let list = document.querySelector('.slide .list');
 let items = document.querySelectorAll('.slide .list .item');
 let dots = document.querySelectorAll('.slide .dots li');
@@ -38,8 +39,38 @@ function reloadSlider()
 
 dots.forEach((li, key) =>
 {
-    li.addEventListener('click', function(){
+    li.addEventListener('click', function()
+    {
         active = key;
         reloadSlider();
     })
 })
+
+/* Phần new product */
+let box = document.querySelector('.container_product-new .product-new-content .product-new-content-box');
+let new_item = document.querySelectorAll('.container_product-new .product-new-content .product-new-content-box .new-content-item');
+let nextNew = document.getElementById('nextNew');
+let prevNew = document.getElementById('prevNew');
+let act = 0;
+
+nextNew.onclick = function() {
+    act += 1;
+    if (act >= new_item.length) {
+        act = 0; // Reset to first item if beyond last
+    }
+    reloadNew();
+};
+
+prevNew.onclick = function() {
+    act -= 1;
+    if (act < 0) {
+        act = new_item.length - 1; // Go to last item if beyond first
+    }
+    reloadNew();
+};
+
+function reloadNew() {
+    let check = new_item[act].offsetLeft;
+    box.style.left = -check + 'px';
+}
+

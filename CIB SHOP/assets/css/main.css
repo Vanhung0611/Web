@@ -20,6 +20,7 @@
 .list img{
     min-width: 100vw;
     height: 100%;
+    object-fit: cover;
 }
 
 .buttons{
@@ -34,8 +35,8 @@
     width: 50px;
     height: 50px;
     border-radius: 50%;
-    background-color: #fff5;
-    color: #fff;
+    background-color: rgba(228, 12, 12, 0.333);
+    color: #ffffff;
     border: none;
     font-weight: bold;
 }
@@ -62,6 +63,7 @@
 .dots li.active{
     width: 30px;
 }
+
 
 .news{
     padding-bottom: 40px;
@@ -299,12 +301,11 @@
 .Appear{
     width: 100%;
     height: 100%;
-    background-color: var(--main-color-blur);
     position: absolute;
+    background-color: rgba(255,255,255,0.5);
     top: 0px;
     left: 0px;
-    /* clip-path: polygon(0% 100%, 100% 100%, 100% 45%, 0% 56%); */
-    z-index: 7;
+    z-index: 2;
     display: none;
 }
 .Appear::before{
@@ -312,18 +313,18 @@
     position: absolute;
     width: 100%;
     height: 100%;
-    clip-path: polygon(0% 0%, 100% 0%, 100% 45%, 0% 56%);
-    background-color: rgba(255,255,255,0.7);
+    clip-path: polygon(0% 100%, 100% 100%, 100% 45%, 0% 56%);
+    background-color:  rgba(255, 77, 0, 0.7);
     top: 0;
     left: 0;
-    z-index: 7;
+    z-index: 2;
 }
 
 .product-item-picture{
     width: 100%;
     transform: scale(1.2); /* zoom */
-    transition: transform 0.4s;
-    z-index: 3;
+    transition: transform 0.6s;
+    z-index: 1;
 }
 .container_product-item:hover .product-item-picture {
     transform: scale(1.05);
@@ -365,17 +366,28 @@
     color: #fff;
 }
 .product-new-content{
-
     background-color: #FCAF17;
+    padding: 26px 18px 14px 18px;
+    position: relative;
+    overflow: hidden;
+}
+.product-new-content-box{
     display: flex;
-    justify-content: space-evenly;
-    padding: 20px 0 20px 0;
+    justify-content: space-between;
+    overflow: auto;
 }
 
 .new-content-item{
-    max-width: 18.5%;
+    max-width: 20%;
     background-color: #fff;
     position: relative;
+    margin: 0 8px 0 8px;
+}
+.new-content-item:first-child{
+    margin-left: 0;
+}
+.new-content-item:last-child{
+    margin-right: 0;
 }
 
 .new-content-item-link{
