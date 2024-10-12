@@ -125,7 +125,7 @@ html{
 
 /*Phần miếng dán đỏ đỏ góc trên */
 .discount-label {
-    min-width: 78px;
+    min-width: 85px;
     position:absolute;
     top: 0px;
     left: -5px;
