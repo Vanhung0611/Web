@@ -117,7 +117,7 @@ body {
 }
 
 .sale_price{
-    color: var(--main-color);
+    color: var(--cost-color);
     font-weight: bold;
 }
 .old_price{
@@ -127,7 +127,7 @@ body {
 }
 .d{
     text-decoration: underline;
-    color: var(--main-color);
+    color: var(--cost-color);
 }
 
 .link{
@@ -151,15 +151,4 @@ h3{
 a{
     text-align: left;
     text-decoration: none;
-}
-
-.discount-label {
-    position:absolute;
-    top: 0px;
-    background-color: var(--main-color);
-    color: white;
-    padding: 5px 10px;
-    font-size: 1.4rem;
-    font-weight: bold;
-    border-radius: 10px;
 }

@@ -1,31 +1,3 @@
-.title{
-    background-color: #F5F5F5;
-    height: 5rem;
-    display: flex;
-
-}
-.list{
-    text-decoration: none;
-    list-style: none;
-    line-height: 5rem;
-    padding: 0%;
-}
-.title_main{
-    font-size: 14px;
-    text-decoration: none;
-    color: #333E44;
-    line-height: 5rem;
-}
-.title_main:hover{
-    color: var(--main-color);
-}
-.title_1{
-    font-size: 14px;
-}
-.title_link{
-    font-size: 14px;
-    color: var(--main-color);
-}
 /*container*/
 .container{
     display: flex;
@@ -52,12 +24,14 @@
     font-weight: bold;
 }
 .ten{
+    font-size: 14px;
     height: 3.5rem;
     width: 24rem;
     border: 1px solid;
     border-radius: 4px;
 }
 .mail{
+    font-size: 14px;
     height: 3.5rem;
     width: 24rem;
     border: 1px solid;
@@ -65,12 +39,14 @@
     margin-left: 1%;
 }
 .phone{
+    font-size: 14px;
     height: 3.5rem;
     width: 49rem;
     border: 1px solid;
     border-radius: 4px;
 }
 .text{
+    font-size: 14px;
     height: 12rem;
     width: 49rem;
     border: 1px solid;
@@ -107,6 +83,7 @@
     font-size: 14px;
     text-decoration: none;
     color: #333E44;
+    line-height: 2.5rem;
 }
 .container2_text:hover{
     color: var(--main-color);

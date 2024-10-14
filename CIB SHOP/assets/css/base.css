@@ -4,7 +4,7 @@
     --text-color: #4a4a4a;
     --border-color: #dddddd;
     --box-Shadow: rgba(0, 0, 0, 0.1);
-
+    --cost-color: #E01020;
 }
 
 *{
@@ -32,6 +32,12 @@ html{
 .bold{
     font-weight: bold;
 }
+.underline{
+    text-decoration: underline;
+}
+.remove{
+    text-decoration: line-through;
+}
 
 /*Thiết lập nút bấm chung */
 .btn{
@@ -57,4 +63,86 @@ html{
 .btn-click{
     background-color: var(--main-color);
     color: #fff;
+}
+
+/*Phần tiêu đề trang chủ*/
+.title{
+    background-color: #F5F5F5;
+    height: 5rem;
+    display: flex;
+}
+.list{
+    text-decoration: none;
+    list-style: none;
+    line-height: 5rem;
+    padding: 0%;
+}
+.title_main{
+    font-size: 14px;
+    text-decoration: none;
+    color: #333E44;
+    line-height: 5rem;
+}
+.title_main:hover{
+    color: var(--main-color);
+}
+.title_1{
+    font-size: 14px;
+}
+.title_link{
+    font-size: 14px;
+    color: var(--main-color);
+}
+
+/* Phần title đỏ đỏ */
+.container_title{
+
+}
+.container_title-text{
+    font-size: 24px;
+    color: var(--main-color);
+    margin: 20px 0 20px 0;
+    text-align: center;
+}
+
+.container_title-line{
+    width: 11%;
+    height: 4px;
+    background-color: #E5E9ED;
+    margin: 20px 0 20px 44.5%;
+    position: relative;
+    border-radius: 3px;
+}
+.container_title-line::after{
+    content: "";
+    position: absolute;
+    background-color: var(--main-color);
+    height: 4px;
+    width: 33.3%;
+    left: 33.3%;
+    border-radius: 3px;
+}
+
+/*Phần miếng dán đỏ đỏ góc trên */
+.discount-label {
+    min-width: 85px;
+    position:absolute;
+    top: 0px;
+    left: -5px;
+    background-color: var(--cost-color);
+    color: white;
+    padding: 5px 10px;
+    font-size: 1.4rem;
+    font-weight: bold;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+}
+.discount-label::before{
+    content: "";
+    position: absolute;
+    left: 0px;
+    top: 26px;
+    border-top: 6px solid var(--cost-color);
+    border-left: 6px solid transparent;
+    filter: brightness(60%);
 }
