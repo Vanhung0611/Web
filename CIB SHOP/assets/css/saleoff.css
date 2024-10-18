@@ -35,8 +35,14 @@ body {
     }
 }
 
+.box2{
+    height : 22rem;
+    padding-left: 2rem;
+    width: 28rem;
+    padding-right: 2rem;
+}
 .box{
-    height: 22rem;
+    
     padding-left: 2rem;
     width: 28rem;
     padding-right: 2rem;
