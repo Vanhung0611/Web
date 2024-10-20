@@ -1,432 +1,676 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+     <!-- link lấy font chữ Roboto từ google-->
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="/CIB SHOP/assets/css/base.css">
     <link rel="stylesheet" href="/CIB SHOP/assets/css/gioithieu.css">
     <link rel="stylesheet" href="/CIB SHOP/assets/css/main_footer.css">
     <link rel="stylesheet" href="/CIB SHOP/assets/css/main_header.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+
     <link rel="shortcut icon" href="/CIB SHOP/assets/img/Logo Cầu Lông.png" type="image/x-icon">
     <title> GIỚI THIỆU | ShopCIB</title>
 </head>
+
 <body>
-    <header class="header">   <!-- Hoàn thành-->
+    <header class="header"> <!-- Hoàn thành-->
         <div class="grid">
             <div class="header_navbar">
-          <div class="navbar_item">
-                        <img class="item_logo" src="/CIB SHOP/assets/img/logo cầu lông.jpg" alt="LOGO">
-                </div>
-    
-                <div class="navbar_item navbar_item_border">
-                        <div class="item_hotline">  
-                            <i class="fa-solid fa-headphones header_icon"></i>  
-                            <div class="hotline-text">HOTLINE:</div>
-                            <a href="" class="hotline-number">0818214849 | 0797579132</a>
-                        </div>
-                        <div class="item_store_system">
-                            <i class="fa-solid fa-map-location-dot header_icon"></i>
-                            <div class="item_store">HỆ THỐNG CỬA HÀNG</div>
-                        </div>
-                        <div>
-                            <i class="fa-solid fa-magnifying-glass header_icon item_icon_search"></i>
-                            <input class="item_search" type="text" placeholder="Tìm sản phẩm...">
-                        </div>
-                </div>
-    
                 <div class="navbar_item">
-                        <div class="item_choose">
-                            <div class="choose_lookup">
-                                <i class="fa-solid fa-binoculars choose_icon"></i>
-                                <div>TRA CỨU
-                                    <ul class="lookup_check">
-                                        <li class="check_text">Kiểm tra đơn hàng</li>
-                                        <li class="check_text">Kiểm tra bảo hành</li>
-                                    </ul>
-                                </div>
-                            </div>
-                            <div class="choose_account">
-                                <i class="fa-solid fa-user choose_icon"></i>
-                                <div>TÀI KHOẢN
-                                    <ul class="account_list">
-                                        <li class="account_item"><span><i class="fa-solid fa-arrow-right-to-bracket account_item_icon"></i></span>Đăng nhập</li>
-                                        <li class="account_item"><span><i class="fa-solid fa-user-plus account_item_icon"></i></span>Đăng kí</li>
-                                    </ul>
-                                </div>
-                            </div>
-                                
-                            <div class="choose_cart">
-                                <i class="fa-solid fa-cart-arrow-down choose_icon"></i>
-                                <div>GIỎ HÀNG
-                                    <div class="cart_noti">
-                                        <img class="cart_picture" src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
-                                        <p class="cart_text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
-                                    </div>
-                                </div>
-                            </div>
-                       </div>
+                    <img class="item_logo" src="/CIB SHOP/assets/img/logo cầu lông.jpg" alt="LOGO">
                 </div>
-            </div> 
+
+                <div class="navbar_item navbar_item_border">
+                    <div class="item_hotline">
+                        <i class="fa-solid fa-headphones header_icon"></i>
+                        <div class="hotline-text">HOTLINE:</div>
+                        <a href="" class="hotline-number">0818214849 | 0797579132</a>
+                    </div>
+                    <div class="item_store_system">
+                        <i class="fa-solid fa-map-location-dot header_icon"></i>
+                        <div class="item_store">HỆ THỐNG CỬA HÀNG</div>
+                    </div>
+                    <div>
+                        <i class="fa-solid fa-magnifying-glass header_icon item_icon_search"></i>
+                        <input class="item_search" type="text" placeholder="Tìm sản phẩm...">
+                    </div>
+                </div>
+
+                <div class="navbar_item">
+                    <div class="item_choose">
+                        <div class="choose_lookup">
+                            <i class="fa-solid fa-trash choose_icon"></i>
+                            <div>TRA CỨU
+                                <ul class="lookup_check">
+                                    <li class="check_text">Kiểm tra đơn hàng</li>
+                                    <li class="check_text">Kiểm tra bảo hành</li>
+                                </ul>
+                            </div>
+                        </div>
+                        <div class="choose_account">
+                            <i class="fa-solid fa-user choose_icon"></i>
+                            <div>TÀI KHOẢN
+                                <ul class="account_list">
+                                    <li class="account_item"><span><i
+                                                class="fa-solid fa-arrow-right-to-bracket account_item_icon"></i></span>Đăng
+                                        nhập</li>
+                                    <li class="account_item"><span><i
+                                                class="fa-solid fa-user-plus account_item_icon"></i></span>Đăng kí</li>
+                                </ul>
+                            </div>
+                        </div>
+
+                        <div class="choose_cart">
+                            <i class="fa-solid fa-cart-arrow-down choose_icon"></i>
+                            <div>GIỎ HÀNG
+                                <div class="cart_noti">
+                                    <img class="cart_picture" src="/CIB SHOP/assets/img/no products.png"
+                                        alt="Ảnh không có sản phẩm">
+                                    <p class="cart_text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </div>
     </header>
     <div class="home">
         <a href="/CIB SHOP/index.html" class="home_tittle">TRANG CHỦ</a>
         <a href="/CIB SHOP/saleoff.html" class="home_tittle">SALE OFF</a>
-            <a href="/CIB SHOP/TinTuc.html" class="home_tittle">TIN TỨC</a>
-            <a href="/CIB SHOP/CSNQ.html" class="home_tittle">CHÍNH SÁCH NHƯỢNG QUYỀN</a>
-            <div class="home_tittle">
-                <div class="home_tittle-instruct Reverser_otation">
-                    HƯỚNG DẪN
-                    <i class="fa-solid fa-chevron-down home_icon"></i>
-                    <ul class="instruct_list">
-                        <li class="instruct_list-text">Hướng dẫn thanh toán</li>
-                        <li class="instruct_list-text">Hướng dẫn mua hàng</li>
-                        <li class="instruct_list-text">Hướng dẫn chọn vợt cầu lông</li>
-                        <li class="instruct_list-text">Công nghệ sản phẩm</li>
-                    </ul>
-                </div>
+        <a href="/CIB SHOP/TinTuc.html" class="home_tittle">TIN TỨC</a>
+        <a href="/CIB SHOP/CSNQ.html" class="home_tittle">CHÍNH SÁCH NHƯỢNG QUYỀN</a>
+        <div class="home_tittle">
+            <div class="home_tittle-instruct Reverser_otation">
+                HƯỚNG DẪN
+                <i class="fa-solid fa-chevron-down home_icon"></i>
+                <ul class="instruct_list">
+                    <li class="instruct_list-text">Hướng dẫn thanh toán</li>
+                    <li class="instruct_list-text">Hướng dẫn mua hàng</li>
+                    <li class="instruct_list-text">Hướng dẫn chọn vợt cầu lông</li>
+                    <li class="instruct_list-text">Công nghệ sản phẩm</li>
+                </ul>
             </div>
-            <a href="/CIB SHOP/gioithieu.html" class="home_tittle">GIỚI THIỆU</a>
-            <a href="/CIB SHOP/lienhe.html" class="home_tittle">LIÊN HỆ</a>
         </div>
+        <a href="/CIB SHOP/gioithieu.html" class="home_tittle">GIỚI THIỆU</a>
+        <a href="/CIB SHOP/lienhe.html" class="home_tittle">LIÊN HỆ</a>
+    </div>
 
     <div class="container grid">
 
-<div class="column popup-column">
-    
-    <div class="mini_container">
-        <h3 style="padding-left: 1rem;">CÓ THỂ BẠN SẼ THÍCH</h3>
-        <div class="box" >
-            <div  class="mini_box">
-                <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+        <div class="column popup-column">
+
+            <div class="mini_container">
+                <h3 style="padding-left: 1rem;">CÓ THỂ BẠN SẼ THÍCH</h3>
+                <div class="box">
+                    <div class="mini_box">
+                        <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+                    </div>
+
+                    <div class="mini_box">
+                        <a href="" class="text">
+                            <P>Hướng dẫn mua hàng</P>
+                            <div class="datetime">
+                                <span >08-05-2024 14:11</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="mini_box">
+                        <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+                    </div>
+
+                    <div class="mini_box">
+                        <a href="" class="text">
+                            <P>Hướng dẫn mua hàng-old</P>
+                            <div class="datetime">
+                                <span >08-05-2024 14:11</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="mini_box">
+                        <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+                    </div>
+
+                    <div class="mini_box">
+                        <a href="" class="text">
+                            <P>Các sản phẩm khuyến mại</P>
+                            <div class="datetime">
+                                <span >08-05-2024 14:11</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="mini_box">
+                        <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+                    </div>
+
+                    <div class="mini_box">
+                        <a href="" class="text">
+                            <P>Cách thức thanh toán khi mua...</P>
+                            <div class="datetime">
+                                <span >08-05-2024 14:11</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="box">
+                    <div class="mini_box">
+                        <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+                    </div>
+
+                    <div class="mini_box">
+                        <a href="" class="text">
+                            <P>Đặt hàng online</P>
+                            <div class="datetime">
+                                <span >08-05-2024 14:11</span>
+                            </div>
+                        </a>
+                    </div>
+                </div>
             </div>
 
-            <div class="mini_box">
-                <a href="" class="text"><P>HƯỚNG DẪN MUA HÀNG</P></a>
-               </div>
+            <div class="box_oversize">
+                <h3>DANH MỤC TIN TỨC</h3>
+                <a class="text mo" href="">
+                    <p>Thông tin cầu lông</p>
+                </a>
+                
+                <a class="text mo" href="">
+                    <p>Câu Lạc Bộ - Nhóm Cầu Lông</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Thầy Dạy Đánh Cầu Lông</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Tin tức VNB Sports</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Chính sách</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Tin Tennis</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Sân Tennis</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Kiến thức tennis</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Hiểu đúng về ghế massage</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Sống khoẻ cùng VNB Sports</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Sân pickleball</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Kiến thức pickleball</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Luật pickleball</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Kỹ thuật đánh trong pickleball</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Hướng dẫn</p>
+                </a>
+                <a class="text mo" href="">
+                    <p>Công nghệ</p>
+                </a>
+            </div>
+
+            <div class="box_oversize">
+                <h3>DANH MỤC</h3>
+                <a class="text mo" href="">
+                    <p> Vợt Cầu Lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> Giày Cầu Lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> Áo Cầu Lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> Váy cầu lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> Quần Cầu Lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> Túi Vợt Cầu Lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> Balo Cầu Lông </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+                <a class="text mo" href="">
+                    <p> </p>
+                </a>
+
+            </div>
+
         </div>
-        
-        <div class="box" >
-            <div  class="mini_box">
-                <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
+
+
+
+
+        <!-- cột phải -->
+        <div class="right_column">
+            <h1> GIỚI THIỆU</h1>
+            <div class="datetime">
+                <span ><a class="clock"><i class="fa-regular fa-clock"></i></a></span>
+                <span >08-05-2024 14:11</span>
+                <span ><a class="human">&ensp;<i class="fa-solid fa-user"></i></a></span>
+                <span >&nbsp;VNBSports</span>
+            </div><br>
+            <div class="text_size">
+                <div class="ita_line ">Bài viết được ShopVNB</a> - <a href="" class="text1">Hệ thống shop cầu lông</a>
+                    hàng đầu Việt Nam với hơn 5 shop Premium và 64 chi nhánh trên toàn quốc kiểm duyệt và chia sẻ.</div>
+                <br>
+                <div>Tháng 12/2011, Forum <a href="" class="text1">https://www.vnbadminton.com/</a> được thành lập, đây
+                    là website cung cấp những thông tin chuyên nghiệp về tin tức và diễn đàn cầu lông. Nhận thấy sự phát
+                    triển của cầu lông trong nước, bên cạnh đó là mong muốn phục vụ tốt hơn cho thành viên và những bạn
+                    yêu mến cầu lông. Tháng 12/2012, Ban Quản Trị Vnbadminton đã mạnh dạn xây dựng Shop cầu lông VNB (<a
+                        href="" class="text1">https://shopvnb.com/</a>) để có thể làm được vai trò này. Với kinh nghiệm
+                    nhiều năm hoạt động trong lĩnh vực cầu lông, đến với shopvnb bạn sẽ yên tâm về chất lượng sản phẩm,
+                    đội ngũ tư vấn sản phẩm chuyên nghiệp và giá cả hợp lý.</div><br>
+                <div>Bên cạnh một website chuyên nghiệp thì Shop VNB còn phát triển thêm 1 kênh fanpage <a href=""
+                        class="text1">https://www.facebook.com/caulongvnbadminton/</a> để cung cấp thông tin nhanh hơn
+                    cho thành viên yêu mến cầu lông. Chính sự chuyên nghiệp này đã được tạo được uy tín rất lớn trong
+                    cộng đồng yêu mến cầu lông trong và ngoài nước.</div><br>
+                <div>Hiện nay, Hệ thống cửa hàng cầu lông VNB đã có hơn 50 chi nhánh trải dài trên khắp mọi miền Đất
+                    nước. Với tiêu chí luôn đảm bảo cung cấp đầy đủ các mặt hàng chuyên dụng dành riêng cho bộ môn cầu
+                    lông như giày, vợt cầu lông, túi vợt, balo, quần áo, phụ kiện,... nổi trội với nhiều phân khúc giá
+                    trải dài từ thấp đến cao nên các lông thủ cần mua gì cứ đến ngay với ShopVNB, chắc chắn sẽ làm các
+                    bạn vô cùng hài lòng.</div><br>
+                <div>ShopVNB luôn là nơi cung cấp nhanh nhất các mặt hàng hot đến từ những thương hiệu top đầu thế giới
+                    như Yonex, Lining, Victor, Mizuno,... Không những vậy các sản phẩm đến từ các hãng tầm trung và giá
+                    rẻ như Adidas, Forza, Apacs, VNB, Kamito,... Shop cầu lông VNB cũng luôn cung cấp đầy đủ và mẫu mã
+                    rất đa dạng.</div><br>
+                <div>* Đặc biệt, ShopVNB là địa chỉ nổi tiếng căng vợt cầu lông chuẩn nhất ở Việt Nam. Tất cả các cửa
+                    hàng được trang bị máy đan vợt điện tử cao cấp cùng nhân viên ở shop luôn được trau dồi liên tục các
+                    kĩ thuật đan vợt hàng đầu trên thế giới.</div>
+                <h3 style="text-align: center;">TẦM NHÌN, SỨ MỆNH VÀ GIÁ TRỊ CỐT LÕI</h3>
+                <span class="stress">Tầm nhìn:</span><span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt
+                    Nam"</span><br>
+                <p>- Trở thành đơn vị dẫn đầu cả nước trong lĩnh vực thể thao, giúp nâng cao sức khỏe cộng đồng.</p>
+                <p>- Tự lực sản xuất các sản phẩm chất lượng cao, phù hợp với nhu cầu của người Việt.</p>
+                <p>- Xây dựng hệ thống cửa hàng rộng khắp 64 tỉnh thành.</p>
+                <p><span class="stress">SỨ MỆNH: </span><span> "VNB SPORTS cam kết mang đến những sản phẩm, dịch vụ chất
+                        lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
+                <p><span class="stress"> Đối với thị trường: </span><span> Trở thành Thương hiệu cầu lông của người
+                        Việt, cung cấp những sản phẩm cầu lông chất lượng tốt nhất, đáp ứng nhu cầu luyện tập cầu lông
+                        và chăm sóc sức khỏe của mọi người. </span></p>
+                <p><span class="stress"> Đối với đối tác: </span><span> Đề cao tinh thần hợp tác cùng phát triển; cô
+                        gắng trở thành “Người đồng hành số 1” của các đối tác. </span></p>
+                <p><span class="stress"> Đối với nhân viên: </span><span> Xây dựng môi trường làm việc chuyên nghiệp,
+                        năng động, sáng tạo và nhân văn; tạo điều kiện thu nhập cao và cơ hội phát triển công bằng cho
+                        tất cả nhân viên. </span><br></p>
+                <p><span class="stress"> Đối với xã hội: </span><span> Hài hòa lợi ích doanh nghiệp với lợi ích xã hội;
+                        đóng góp tích cực vào các hoạt động hướng về cộng đồng, thể hiện tinh thần trách nhiệm công dân
+                        và niềm tự hào dân tộc. </span><br></p>
+                <h3>GIÁ TRỊ CỐT LÕI: TRUNG - TÍN - TÂM - TRÍ -NHÂN</h3>
+                <p><span class="stress"> TRUNG: </span><span> Trung thực với Khách hàng - Đối tác - Nhân viên. Thực hiện
+                        đúng các chế độ ưu đãi, dịch vụ hậu mãi đã cam kết, đặt quyền lợi của người tiêu dùng lên trên
+                        hết, chân thành tiếp thu mọi ý kiến đóng góp. </span><br></p>
+                <p><span class="stress"> TÍN: </span><span> VNB SPORTS đặt chữ TÍN lên hàng đầu, lấy chữ TÍN làm trọng
+                        tâm đối với Khách hàng - Đối tác - Nhân viên. VNB SPORTS luôn nổ lực hết mình để đảm bảo đúng và
+                        cao hơn các cam kết của mình đối với khách hàng, đối tác; đặc biệt là cam kết về chất lượng- sản
+                        phẩm - dịch vụ. </span><br></p>
+                <p><span class="stress"> TÂM: </span><span> VNB SPORTS đặt chữ TÂM là một trong những nền tảng quan
+                        trọng của việc kinh doanh. Coi trọng khách hàng và luôn lấy khách hàng làm trung tâm, đặt lợi
+                        ích và mong muốn của khách hàng lên hàng đầu; nổ lực mang đến cho khách hàng những sản phẩm -
+                        dịch vụ tốt nhất; xem sự hài lòng của khách hàng là thước đo thành công. </span><br></p>
+                <p><span class="stress"> Trí: </span><span> VNB SPORTS luôn đề cao sự sáng tạo, là đòn bẩy phát triển,
+                        nhằm tạo ra giá trị khác biệt và bản sắc riêng của sản phẩm. Chúng tôi đề cao tinh thần dám
+                        nghĩ, dám làm, khuyến khích tìm tòi, ứng dụng tiến bộ khoa học, kỹ thuật và công nghệ mới vào
+                        quản lý, sản xuất; luôn chủ động cải tiến, nâng cao chất lượng sản phẩm- dịch vụ. </span><br>
+                </p>
+                <p><span class="stress"> NHÂN: </span><span> VNB SPORTS xây dựng các mối quan hệ với khách hàng, đối
+                        tác, đồng nghiệp và xã hội bằng sự thiện chí, tinh thần nhân văn. Chúng tôi luôn coi người lao
+                        động là tài sản quý giá nhất; xây dựng mội trường làm việc chuyên nghiệp, năng động, sáng tạo;
+                        tạo điều kiện thu nhập cao và cơ hội phát triển công bằng cho tất cả cán bộ nhân viên.
+                    </span><br></p>
+                <p><span class="stress"> Khẩu hiệu (slogan): </span><span> Together we can </span><br></p>
+                <h3>TRIẾT LÝ KINH DOANH</h3>
+                <p>VNB SPORTS mong muốn trở thành một công ty phân phối và sản xuất sản phẩm cầu lông chất lượng tốt
+                    nhất ở Việt Nam. Vì thế chúng tôi tâm niệm rằng chất lượng và sáng tạo là người bạn đồng hành của
+                    VNB SPORTS. Chúng tôi xem khách hàng là trung tâm và cam kết đáp ứng mọi nhu cầu của khách hàng.</p>
+                <h3>Chính sách chất lượng</h3>
+                <p> Luôn thỏa mãn và có trách nhiệm với khách hàng bằng cách không ngừng cải tiến, đa dạng hóa sản phẩm
+                    và dịch vụ, đảm bảo chất lượng với giá cả cạnh tranh, tôn trọng đạo đức kinh doanh và tuân theo pháp
+                    luật.</p>
             </div>
+            <p class="promise">* ShopVNB cam kết bán hàng chính hãng, không bán hàng kém chất lượng làm ảnh hưởng đến
+                thành viên.</p>
+            <h3>Hệ Thống Cửa Hàng Shop Cầu Lông VNB.</h3>
+            <h3>* Khu vực TPHCM</h3>
+            <p><a href="" class="text2"> VNB PREMIUM Quận 1 </a><span>-</span><a href="" class="text2"> 0931823614 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 20 Cao Bá Nhạ, Phường Nguyễn Cư Trinh, Quận 1, TPHCM </a>
+            </p>
 
-            <div class="mini_box">
-                <a href="" class="text"><P>Hướng dẫn mua hàng-old</P></a>
-               </div>
-        </div>
+            <p><a href="" class="text2"> VNB PREMIUM Quận 11 </a><span>-</span><a href="" class="text2"> 0828333323 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 209 Âu Cơ, Phường 5, quận 11, Tp.HCM </a></p>
 
-        <div class="box" >
-            <div  class="mini_box">
-                <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
-            </div>
+            <p><a href="" class="text2"> VNB PREMIUM Bình Thạnh </a><span>-</span><a href="" class="text2"> 0862527179
+                </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 284 Xô Viết Nghệ Tĩnh, P21, Quận Bình Thạnh, Tp.HCM </a>
+            </p>
 
-            <div class="mini_box">
-                <a href="" class="text"><P>Các sản phẩm khuyến mại</P></a>
-               </div>
-        </div>
+            <p><a href="" class="text2"> VNB PREMIUM TP Thủ Đức </a><span>-</span><a href="" class="text2"> 0767306363
+                </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 916 Kha Vạn Cân phường Trường Thọ TP Thủ Đức </a></p>
 
-        <div class="box" >
-            <div  class="mini_box">
-                <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
-            </div>
+            <p><a href="" class="text2"> VNB Quận 1 </a><span>-</span><a href="" class="text2"> 0798684568 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Số 6 Nguyễn Hữu Cầu Phường Tân Định Quận 1 </a></p>
 
-            <div class="mini_box">
-                <a href="" class="text"><P>Cách thức thanh toán khi mua...</P></a>
-               </div>
-        </div>
+            <p><a href="" class="text2"> VNB Quận 3 </a><span>-</span><a href="" class="text2"> 0936914920 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 218 Lý Thái Tổ Phường 1, Quận 3 </a></p>
 
-        <div class="box" >
-            <div  class="mini_box">
-                <a href=""><img class="picture" src="/CIB SHOP/assets/img/news4.png" alt=""></a>
-            </div>
+            <p><a href="" class="text2"> VNB Quận 4 </a><span>-</span><a href="" class="text2"> 070 770 7886 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Số 400 Đường Hoàng Diệu, Phường 2, Quận 4, Thành phố Hồ
+                    Chí Minh </a></p>
 
-            <div class="mini_box">
-                <a href="" class="text"><P>Đặt hàng online</P></a>
-               </div>
+            <p><a href="" class="text2"> VNB Quận 5 </a><span>-</span><a href="" class="text2"> 0903 178 483 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 19 Tân Hưng, Phường 12, Quận 5, TPHCM </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 6 </a><span>-</span><a href="" class="text2"> 0935267926 / ... </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 129 Kinh Dương Vương Phường 12 Quận 6 </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 7 </a><span>-</span><a href="" class="text2"> 0899793965 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 39 đường 65, Phường Tân Phong, Quận 7, TP. HCM </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 8 </a><span>-</span><a href="" class="text2"> 0925888895 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 888 Tạ Quang Bửu, Phường 5, Quận 8, TP. HCM </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 10 </a><span>-</span><a href="" class="text2"> 0932 610 008 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 198 Hòa Hưng, Phường 13, Quận 10, TP. HCM </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 11 </a><span>-</span><a href="" class="text2"> 0888554268 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 364 Lạc Long Quân, Phường 5, Quận 11, Hồ Chí minh </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 12 </a><span>-</span><a href="" class="text2"> 0816201094 | ... </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 171 Dương Thị Mười, P. Tân Chánh Hiệp, Quận 12 </a></p>
+
+            <p><a href="" class="text2"> VNB Quận 12 - CN2 </a><span>-</span><a href="" class="text2"> 0703 372 045 ...
+                </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 288 Nguyễn Văn Quá, Đông Hưng Thuận, Quận 12 </a></p>
+
+            <p><a href="" class="text2"> VNB Bình Thạnh </a><span>-</span><a href="" class="text2"> 0908 159 225 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 289 Nguyễn Văn Đậu, P.11, Q. Bình Thạnh, TPHCM </a></p>
+
+            <p><a href="" class="text2"> VNB TP Thủ Đức - CN1 </a><span>-</span><a href="" class="text2"> 0904 682 595
+                    ... </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 232 Quốc Lộ 13 Phường Hiệp Bình Chánh, Tp Thủ Đức, TPHCM
+                </a></p>
+
+
+            <h3>* Khu vực Hà Nội</h3>
+            <p><a href="" class="text2"> VNB Tây Hồ </a><span>-</span><a href="" class="text2"> 0967526025 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Sắp khai trương </a></p>
+
+            <p><a href="" class="text2"> VNB Ba Đình </a><span>-</span><a href="" class="text2"> 0703 372 045 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Số 33 Đốc Ngữ, Phường Liễu Giai, Quận Ba Đình, Hà Nội </a>
+            </p>
+
+            <p><a href="" class="text2"> VNB Đống Đa </a><span>-</span><a href="" class="text2"> 0904507752 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 350 Khâm Thiên, P. Thổ Quan, Đống Đa </a></p>
+
+            <p><a href="" class="text2"> VNB Hai Bà Trưng </a><span>-</span><a href="" class="text2"> 0969657994 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Số 15 Ngõ 200 Trần Đại Nghĩa, Phường Đồng Tâm, Quận Hai Bà
+                    Trưng, Hà Nội </a></p>
+
+            <p><a href="" class="text2"> VNB Nam Từ Liêm </a><span>-</span><a href="" class="text2"> 0981234593 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 20 Trung Văn - Phường Trung Văn - Quận Nam Từ Liêm - Hà
+                    Nội </a></p>
+
+            <p><a href="" class="text2"> VNB Bắc Từ Liêm </a><span>-</span><a href="" class="text2"> 096 631 34 58 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Kiot tổng kho 101 tổng cục hậu cần, số 101 đường cầu diễn,
+                    Quận Bắc Từ Liêm, TP Hà Nội </a></p>
+
+            <p><a href="" class="text2"> VNB Cầu Giấy </a><span>-</span><a href="" class="text2"> 037 5207267 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 33 Trần Quốc Vượng, Dịch Vọng Hậu, Cầu Giấy, Hà Nội </a>
+            </p>
+
+            <p><a href="" class="text2"> VNB Hà Đông </a><span>-</span><a href="" class="text2"> 0981143228 | ... </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 138 Nguyễn Viết Xuân, Phường Quang Trung, Quận Hà Đông, Hà
+                    Nội </a></p>
+
+            <h3>* Khu vực Đà Nẵng</h3>
+            <p><a href="" class="text2"> VNB Hải Châu Đà Nẵng </a><span>-</span><a href="" class="text2"> 0865.437.438
+                </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 170 Triệu Nữ Vương, Nam Dương, Hải Châu, Đà Nẵng </a></p>
+
+            <p><a href="" class="text2"> VNB Thanh Khê Đà Nẵng </a><span>-</span><a href="" class="text2"> 0949 148 879
+                </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 910 Trần Cao Vân, P. Thanh Khê Tây, Q.Thanh Khê, TP. Đà
+                    Nẵng </a></p>
+
+            <h3>* Khu vực An Giang</h3>
+            <p><a href="" class="text2"> VNB Long Xuyên </a><span>-</span><a href="" class="text2"> 0928999902 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 1408 Trần Hưng Đạo, P. Mỹ Xuyên, TP. Long Xuyên, An Giang
+                </a></p>
+
+            <h3>* Khu vực Bà Rịa - Vũng Tàu</h3>
+            <p><a href="" class="text2"> VNB Vũng Tàu </a><span>-</span><a href="" class="text2"> 0788 6788 72 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> Số12 - Đường 30/4 - Phường 9 -TP Vũng Tàu (Gần Trường THPT
+                    Trần Nguyên Hãn) </a></p>
+
+            <p><a href="" class="text2"> VNB Bà Rịa </a><span>-</span><a href="" class="text2"> 0707 450 678 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 403 đường 27/4, phường Phước Hưng, TP Bà Rịa, Bà Rịa -
+                    Vũng Tàu </a></p>
+
+            <p><a href="" class="text2"> VNB TX Phú Mỹ </a><span>-</span><a href="" class="text2"> 0707177199 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 79 Trần Hưng Đạo ,Phường Phú Mỹ , TX Phú Mỹ ,Tỉnh BR-VT
+                </a></p>
+
+            <h3>* Khu vực Bắc Giang</h3>
+            <p><a href="" class="text2"> VNB TP Bắc Giang </a><span>-</span><a href="" class="text2"> 0902374555 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 247 Hoàng Văn Thụ Phường Xương Giang Thành phố Bắc Giang
+                </a></p>
+
+            <h3>* Khu vực Bình Định</h3>
+            <p><a href="" class="text2"> VNB Quy Nhơn </a><span>-</span><a href="" class="text2"> 0926889977 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 81 Trần Phú, TP. Quy Nhơn, Bình Định </a></p>
+
+            <h3>* Khu vực Bình Dương</h3>
+            <p><a href="" class="text2"> VNB Thủ Dầu Một </a><span>-</span><a href="" class="text2"> 0886.774.776 </a>
+            </p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 16 Trần Văn Ơn, Phường Phú Hòa,TP.TDM-Bình Dương. </a></p>
+
+            <p><a href="" class="text2"> VNB Thuận An </a><span>-</span><a href="" class="text2"> 0944222446 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 119 Nguyễn Văn Tiết, Phường Lái Thiêu, Thành Phố Thuận An,
+                    Tỉnh Bình Dương </a></p>
+
+            <p><a href="" class="text2"> VNB Dĩ An </a><span>-</span><a href="" class="text2"> 0909 318 373 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 431 Trần Hưng Đạo, P. Dĩ An, Dĩ An, Bình Dương </a></p>
+
+            <p><a href="" class="text2"> VNB TP Bến Cát </a><span>-</span><a href="" class="text2"> 0929245959 </a></p>
+            <p><span>Địa chỉ:</span><a href="" class="text2"> 512 Quốc Lộ 13, Phường Mỹ Phước, Tp. Bến Cát, Tỉnh Bình
+                    Dương </a></p>
+
+
+
+
+
+
+
+
+
+
+
+
+            <p class="promise">Các bạn còn chờ gì nữa mà không liên lạc với chúng tôi để tìm được cho mình sản phẩm cầu
+                lông ưng ý!</p>
+
         </div>
     </div>
 
-<div class="box_oversize">
-    <h3>DANH MỤC TIN TỨC</h3>
-    <a class="text mo" href=""><p >Thông tin cầu lông</p></a>
-    <a class="text mo" href=""><p >Câu Lạc Bộ - Nhóm Cầu Lông</p></a>
-    <a class="text mo" href=""><p >Thầy Dạy Đánh Cầu Lông</p></a>
-    <a class="text mo" href=""><p >Tin tức VNB Sports</p></a>
-    <a class="text mo" href=""><p >Chính sách</p></a>
-    <a class="text mo" href=""><p >Tin Tennis</p></a>
-    <a class="text mo" href=""><p >Sân Tennis</p></a>
-    <a class="text mo" href=""><p >Kiến thức tennis</p></a>
-    <a class="text mo" href=""><p >Hiểu đúng về ghế massage</p></a>
-    <a class="text mo" href=""><p >Sống khoẻ cùng VNB Sports</p></a>
-    <a class="text mo" href=""><p >Sân pickleball</p></a>
-    <a class="text mo" href=""><p >Kiến thức pickleball</p></a>
-    <a class="text mo" href=""><p >Luật pickleball</p></a>
-    <a class="text mo" href=""><p >Kỹ thuật đánh trong pickleball</p></a>
-    <a class="text mo" href=""><p >Hướng dẫn</p></a>
-    <a class="text mo" href=""><p >Công nghệ</p></a>
-</div>
-
-<div class="box_oversize">
-    <h3>DANH MỤC</h3>
-    <a class="text mo" href=""><p > Vợt Cầu Lông  </p></a>
-    <a class="text mo" href=""><p > Giày Cầu Lông  </p></a>
-    <a class="text mo" href=""><p >  Áo Cầu Lông </p></a>
-    <a class="text mo" href=""><p > Váy cầu lông      </p></a>
-    <a class="text mo" href=""><p >  Quần Cầu Lông </p></a>
-    <a class="text mo" href=""><p >  Túi Vợt Cầu Lông </p></a>
-    <a class="text mo" href=""><p >  Balo Cầu Lông </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-    <a class="text mo" href=""><p >   </p></a>
-
-</div>
-
-</div>
-
-
-
-
-    <!-- cột phải -->
-<div class="right_column">
-<h1 >    GIỚI THIỆU</h1>
-<div class="text_size">
-<div class="ita_line ">Bài viết được    ShopVNB</a> - <a href="" class="text1">Hệ thống shop cầu lông</a> hàng đầu Việt Nam với hơn 5 shop Premium và 64 chi nhánh trên toàn quốc kiểm duyệt và chia sẻ.</div><br>
-<div >Tháng 12/2011, Forum <a href="" class="text1">https://www.vnbadminton.com/</a> được thành lập, đây là website cung cấp những thông tin chuyên nghiệp về tin tức và diễn đàn cầu lông. Nhận thấy sự phát triển của cầu lông trong nước, bên cạnh đó là mong muốn phục vụ tốt hơn cho thành viên và những bạn yêu mến cầu lông. Tháng 12/2012, Ban Quản Trị Vnbadminton đã mạnh dạn xây dựng Shop cầu lông VNB (<a href="" class="text1">https://shopvnb.com/</a>) để có thể làm được vai trò này. Với kinh nghiệm nhiều năm hoạt động trong lĩnh vực cầu lông, đến với shopvnb bạn sẽ yên tâm về chất lượng sản phẩm, đội ngũ tư vấn sản phẩm chuyên nghiệp và giá cả hợp lý.</div><br>
-<div>Bên cạnh một website chuyên nghiệp thì Shop VNB còn phát triển thêm 1 kênh fanpage <a href="" class="text1">https://www.facebook.com/caulongvnbadminton/</a> để cung cấp thông tin nhanh hơn cho thành viên yêu mến cầu lông. Chính sự chuyên nghiệp này đã được tạo được uy tín rất lớn trong cộng đồng yêu mến cầu lông trong và ngoài nước.</div><br>
-<div>Hiện nay, Hệ thống cửa hàng cầu lông VNB đã có hơn 50 chi nhánh trải dài trên khắp mọi miền Đất nước. Với tiêu chí luôn đảm bảo cung cấp đầy đủ các mặt hàng chuyên dụng dành riêng cho bộ môn cầu lông như giày, vợt cầu lông, túi vợt, balo, quần áo, phụ kiện,... nổi trội với nhiều phân khúc giá trải dài từ thấp đến cao nên các lông thủ cần mua gì cứ đến ngay với ShopVNB, chắc chắn sẽ làm các bạn vô cùng hài lòng.</div><br>
-<div>ShopVNB luôn là nơi cung cấp nhanh nhất các mặt hàng hot đến từ những thương hiệu top đầu thế giới như Yonex, Lining, Victor, Mizuno,... Không những vậy các sản phẩm đến từ các hãng tầm trung và giá rẻ như Adidas, Forza, Apacs, VNB, Kamito,... Shop cầu lông VNB cũng luôn cung cấp đầy đủ và mẫu mã rất đa dạng.</div><br>
-<div>* Đặc biệt, ShopVNB là địa chỉ nổi tiếng căng vợt cầu lông chuẩn nhất ở Việt Nam. Tất cả các cửa hàng được trang bị máy đan vợt điện tử cao cấp cùng nhân viên ở shop luôn được trau dồi liên tục các kĩ thuật đan vợt hàng đầu trên thế giới.</div>
-<h3 class="title">TẦM NHÌN, SỨ MỆNH VÀ GIÁ TRỊ CỐT LÕI</h3>
-<span class="stress">Tầm nhìn:</span><span> "Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</span><br>
-<p>- Trở thành đơn vị dẫn đầu cả nước trong lĩnh vực thể thao, giúp nâng cao sức khỏe cộng đồng.</p>
-<p>- Tự lực sản xuất các sản phẩm chất lượng cao, phù hợp với nhu cầu của người Việt.</p>
-<p>- Xây dựng hệ thống cửa hàng rộng khắp 64 tỉnh thành.</p>
-<p><span class="stress">SỨ MỆNH: </span><span> "VNB SPORTS cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</span></p>
-<p><span class="stress">  Đối với thị trường: </span><span>   Trở thành Thương hiệu cầu lông của người Việt, cung cấp những sản phẩm cầu lông chất lượng tốt nhất, đáp ứng nhu cầu luyện tập cầu lông và chăm sóc sức khỏe của mọi người. </span></p>
-<p><span class="stress"> Đối với đối tác:   </span><span> Đề cao tinh thần hợp tác cùng phát triển; cô gắng trở thành “Người đồng hành số 1” của các đối tác.   </span></p>
-<p><span class="stress">  Đối với nhân viên: </span><span>  Xây dựng môi trường làm việc chuyên nghiệp, năng động, sáng tạo và nhân văn; tạo điều kiện thu nhập cao và cơ hội phát triển công bằng cho tất cả nhân viên.  </span><br></p>
-<p><span class="stress">  Đối với xã hội: </span><span>  Hài hòa lợi ích doanh nghiệp với lợi ích xã hội; đóng góp tích cực vào các hoạt động hướng về cộng đồng, thể hiện tinh thần trách nhiệm công dân và niềm tự hào dân tộc.  </span><br></p>
-<h3>GIÁ TRỊ CỐT LÕI: TRUNG - TÍN - TÂM - TRÍ -NHÂN</h3>
-<p><span class="stress">  TRUNG: </span><span>  Trung thực với Khách hàng - Đối tác - Nhân viên. Thực hiện đúng các chế độ ưu đãi, dịch vụ hậu mãi đã cam kết, đặt quyền lợi của người tiêu dùng lên trên hết, chân thành tiếp thu mọi ý kiến đóng góp.  </span><br></p>
-<p><span class="stress">  TÍN: </span><span>  VNB SPORTS đặt chữ TÍN lên hàng đầu, lấy chữ TÍN làm trọng tâm đối với Khách hàng - Đối tác - Nhân viên. VNB SPORTS luôn nổ lực hết mình để đảm bảo đúng và cao hơn các cam kết của mình đối với khách hàng, đối tác; đặc biệt là cam kết về chất lượng- sản phẩm - dịch vụ.  </span><br></p>
-<p><span class="stress">  TÂM:  </span><span>  VNB SPORTS đặt chữ TÂM là một trong những nền tảng quan trọng của việc kinh doanh. Coi trọng khách hàng và luôn lấy khách hàng làm trung tâm, đặt lợi ích và mong muốn của khách hàng lên hàng đầu; nổ lực mang đến cho khách hàng những sản phẩm - dịch vụ tốt nhất; xem sự hài lòng của khách hàng là thước đo thành công.  </span><br></p>
-<p><span class="stress">  Trí: </span><span>  VNB SPORTS luôn đề cao sự sáng tạo, là đòn bẩy phát triển, nhằm tạo ra giá trị khác biệt và bản sắc riêng của sản phẩm. Chúng tôi đề cao tinh thần dám nghĩ, dám làm, khuyến khích tìm tòi, ứng dụng tiến bộ khoa học, kỹ thuật và công nghệ mới vào quản lý, sản xuất; luôn chủ động cải tiến, nâng cao chất lượng sản phẩm- dịch vụ.  </span><br></p>
-<p><span class="stress">  NHÂN: </span><span>   VNB SPORTS xây dựng các mối quan hệ với khách hàng, đối tác, đồng nghiệp và xã hội bằng sự thiện chí, tinh thần nhân văn. Chúng tôi luôn coi người lao động là tài sản quý giá nhất; xây dựng mội trường làm việc chuyên nghiệp, năng động, sáng tạo; tạo điều kiện thu nhập cao và cơ hội phát triển công bằng cho tất cả cán bộ nhân viên.  </span><br></p>
-<p><span class="stress"> Khẩu hiệu (slogan):   </span><span> Together we can   </span><br></p>
-<h3>TRIẾT LÝ KINH DOANH</h3>
-<p>VNB SPORTS mong muốn trở thành một công ty phân phối và sản xuất sản phẩm cầu lông chất lượng tốt nhất ở Việt Nam. Vì thế chúng tôi tâm niệm rằng chất lượng và sáng tạo là người bạn đồng hành của VNB SPORTS. Chúng tôi xem khách hàng là trung tâm và cam kết đáp ứng mọi nhu cầu của khách hàng.</p>
-<h3>Chính sách chất lượng</h3>
-<p> Luôn thỏa mãn và có trách nhiệm với khách hàng bằng cách không ngừng cải tiến, đa dạng hóa sản phẩm và dịch vụ, đảm bảo chất lượng với giá cả cạnh tranh, tôn trọng đạo đức kinh doanh và tuân theo pháp luật.</p>
-</div>
-<p class="promise">* ShopVNB cam kết bán hàng chính hãng, không bán hàng kém chất lượng làm ảnh hưởng đến thành viên.</p>
-<h3>Hệ Thống Cửa Hàng Shop Cầu Lông VNB.</h3>
-<h3>* Khu vực TPHCM</h3>
-<p><a href="" class="text2">    VNB PREMIUM Quận 1  </a><span>-</span><a href="" class="text2">    0931823614  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       20 Cao Bá Nhạ, Phường Nguyễn Cư Trinh, Quận 1, TPHCM        </a></p>
-
-<p><a href="" class="text2">  VNB PREMIUM Quận 11    </a><span>-</span><a href="" class="text2">  0828333323   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">         209 Âu Cơ, Phường 5, quận 11, Tp.HCM      </a></p>
-
-<p><a href="" class="text2">  VNB PREMIUM Bình Thạnh    </a><span>-</span><a href="" class="text2">   0862527179   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">      284 Xô Viết Nghệ Tĩnh, P21, Quận Bình Thạnh, Tp.HCM         </a></p>
-
-<p><a href="" class="text2">    VNB PREMIUM TP Thủ Đức  </a><span>-</span><a href="" class="text2">    0767306363  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       916 Kha Vạn Cân phường Trường Thọ TP Thủ Đức        </a></p>
-
-<p><a href="" class="text2">   VNB Quận 1    </a><span>-</span><a href="" class="text2">   0798684568     </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       Số 6 Nguyễn Hữu Cầu Phường Tân Định Quận 1        </a></p>
-
-<p><a href="" class="text2">    VNB Quận 3   </a><span>-</span><a href="" class="text2">   0936914920  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">          218 Lý Thái Tổ Phường 1, Quận 3       </a></p>
-
-<p><a href="" class="text2">   VNB Quận 4    </a><span>-</span><a href="" class="text2">   070 770 7886  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        Số 400 Đường Hoàng Diệu, Phường 2, Quận 4, Thành phố Hồ Chí Minh       </a></p>
-
-<p><a href="" class="text2">   VNB Quận 5   </a><span>-</span><a href="" class="text2">  0903 178 483      </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       19 Tân Hưng, Phường 12, Quận 5, TPHCM        </a></p>
-
-<p><a href="" class="text2">   VNB Quận 6    </a><span>-</span><a href="" class="text2">   0935267926 / ...   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        129 Kinh Dương Vương Phường 12 Quận 6       </a></p>
-
-<p><a href="" class="text2">     VNB Quận 7 </a><span>-</span><a href="" class="text2">  0899793965   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">      39 đường 65, Phường Tân Phong, Quận 7, TP. HCM         </a></p>
-
-<p><a href="" class="text2">   VNB Quận 8    </a><span>-</span><a href="" class="text2">  0925888895   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       888 Tạ Quang Bửu, Phường 5, Quận 8, TP. HCM        </a></p>
-
-<p><a href="" class="text2">    VNB Quận 10   </a><span>-</span><a href="" class="text2">   0932 610 008  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">          198 Hòa Hưng, Phường 13, Quận 10, TP. HCM     </a></p>
-
-<p><a href="" class="text2">   VNB Quận 11   </a><span>-</span><a href="" class="text2">   0888554268  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        364 Lạc Long Quân, Phường 5, Quận 11, Hồ Chí minh       </a></p>
-
-<p><a href="" class="text2">  VNB Quận 12     </a><span>-</span><a href="" class="text2">  0816201094 | ...  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        171 Dương Thị Mười, P. Tân Chánh Hiệp, Quận 12       </a></p>
-
-<p><a href="" class="text2">  VNB Quận 12 - CN2     </a><span>-</span><a href="" class="text2">  0703 372 045 ...   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       288 Nguyễn Văn Quá, Đông Hưng Thuận, Quận 12        </a></p>
-
-<p><a href="" class="text2">    VNB Bình Thạnh  </a><span>-</span><a href="" class="text2">   0908 159 225  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        289 Nguyễn Văn Đậu, P.11, Q. Bình Thạnh, TPHCM       </a></p>
-
-<p><a href="" class="text2">   VNB TP Thủ Đức - CN1    </a><span>-</span><a href="" class="text2">   0904 682 595 ...  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        232 Quốc Lộ 13 Phường Hiệp Bình Chánh, Tp Thủ Đức, TPHCM       </a></p>
-
-
-<h3>* Khu vực Hà Nội</h3>
-<p><a href="" class="text2">   VNB Tây Hồ   </a><span>-</span><a href="" class="text2">  0967526025   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        Sắp khai trương       </a></p>
-
-<p><a href="" class="text2">    VNB Ba Đình  </a><span>-</span><a href="" class="text2">  0703 372 045   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">      Số 33 Đốc Ngữ, Phường Liễu Giai, Quận Ba Đình, Hà Nội         </a></p>
-
-<p><a href="" class="text2">   VNB Đống Đa  </a><span>-</span><a href="" class="text2">   0904507752  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        350 Khâm Thiên, P. Thổ Quan, Đống Đa       </a></p>
-
-<p><a href="" class="text2">  VNB Hai Bà Trưng    </a><span>-</span><a href="" class="text2">   0969657994  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">     Số 15 Ngõ 200 Trần Đại Nghĩa, Phường Đồng Tâm, Quận Hai Bà Trưng, Hà Nội            </a></p>
-
-<p><a href="" class="text2">   VNB Nam Từ Liêm    </a><span>-</span><a href="" class="text2">   0981234593  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        20 Trung Văn - Phường Trung Văn - Quận Nam Từ Liêm - Hà Nội       </a></p>
-
-<p><a href="" class="text2">   VNB Bắc Từ Liêm   </a><span>-</span><a href="" class="text2">    096 631 34 58 </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">      Kiot tổng kho 101 tổng cục hậu cần, số 101 đường cầu diễn, Quận Bắc Từ Liêm, TP Hà Nội         </a></p>
-
-<p><a href="" class="text2">    VNB Cầu Giấy  </a><span>-</span><a href="" class="text2">   037 5207267   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">     33 Trần Quốc Vượng, Dịch Vọng Hậu, Cầu Giấy, Hà Nội          </a></p>
-
-<p><a href="" class="text2">  VNB Hà Đông       </a><span>-</span><a href="" class="text2">   0981143228 | ...  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">      138 Nguyễn Viết Xuân, Phường Quang Trung, Quận Hà Đông, Hà Nội          </a></p>
-
-<h3>* Khu vực Đà Nẵng</h3>
-<p><a href="" class="text2">   VNB Hải Châu Đà Nẵng   </a><span>-</span><a href="" class="text2">   0865.437.438   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">         170 Triệu Nữ Vương, Nam Dương, Hải Châu, Đà Nẵng      </a></p>
-
-<p><a href="" class="text2">  VNB Thanh Khê Đà Nẵng    </a><span>-</span><a href="" class="text2">  0949 148 879   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">         910 Trần Cao Vân, P. Thanh Khê Tây, Q.Thanh Khê, TP. Đà Nẵng      </a></p>
-
-<h3>* Khu vực An Giang</h3>
-<p><a href="" class="text2">    VNB Long Xuyên  </a><span>-</span><a href="" class="text2">  0928999902   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">     1408 Trần Hưng Đạo, P. Mỹ Xuyên, TP. Long Xuyên, An Giang           </a></p>
-
-<h3>* Khu vực Bà Rịa - Vũng Tàu</h3>
-<p><a href="" class="text2">  VNB Vũng Tàu    </a><span>-</span><a href="" class="text2">   0788 6788 72   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       Số12 - Đường 30/4 - Phường 9 -TP Vũng Tàu (Gần Trường THPT Trần Nguyên Hãn)        </a></p>
-
-<p><a href="" class="text2">    VNB Bà Rịa  </a><span>-</span><a href="" class="text2">   0707 450 678  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       403 đường 27/4, phường Phước Hưng, TP Bà Rịa, Bà Rịa - Vũng Tàu        </a></p>
-
-<p><a href="" class="text2">    VNB TX Phú Mỹ   </a><span>-</span><a href="" class="text2">    0707177199  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">      79 Trần Hưng Đạo ,Phường Phú Mỹ , TX Phú Mỹ ,Tỉnh BR-VT         </a></p>
-
-<h3>* Khu vực Bắc Giang</h3>
-<p><a href="" class="text2">    VNB TP Bắc Giang  </a><span>-</span><a href="" class="text2">  0902374555    </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       247 Hoàng Văn Thụ Phường Xương Giang Thành phố Bắc Giang        </a></p>
-
-<h3>* Khu vực Bình Định</h3>
-<p><a href="" class="text2">   VNB Quy Nhơn   </a><span>-</span><a href="" class="text2">    0926889977   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">     81 Trần Phú, TP. Quy Nhơn, Bình Định          </a></p>
-
-<h3>* Khu vực Bình Dương</h3>
-<p><a href="" class="text2">   VNB Thủ Dầu Một   </a><span>-</span><a href="" class="text2">  0886.774.776     </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        16 Trần Văn Ơn, Phường Phú Hòa,TP.TDM-Bình Dương.       </a></p>
-
-<p><a href="" class="text2">    VNB Thuận An   </a><span>-</span><a href="" class="text2">   0944222446  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">       119 Nguyễn Văn Tiết, Phường Lái Thiêu, Thành Phố Thuận An, Tỉnh Bình Dương        </a></p>
-
-<p><a href="" class="text2">  VNB Dĩ An    </a><span>-</span><a href="" class="text2">  0909 318 373   </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        431 Trần Hưng Đạo, P. Dĩ An, Dĩ An, Bình Dương       </a></p>
-
-<p><a href="" class="text2">   VNB TP Bến Cát   </a><span>-</span><a href="" class="text2">   0929245959  </a></p>
-<p><span>Địa chỉ:</span><a href="" class="text2">        512 Quốc Lộ 13, Phường Mỹ Phước, Tp. Bến Cát, Tỉnh Bình Dương       </a></p>
-
-
-
-
-
-
-
-
-
-
-
-
-<p class="promise">Các bạn còn chờ gì nữa mà không liên lạc với chúng tôi để tìm được cho mình sản phẩm cầu lông ưng ý!</p>
-
-</div>
-    </div>
-    
 
     <div class="footer1">
         <div class="grid">
             <div class="footer1-item">
                 <div class="footer_column">
                     <h3 class="footer_title">THÔNG TIN CHUNG</h3>
-                    <p class="footer_text"><span class="footer_text_main">VNB Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
-                    <p class="footer_text_italic"><span class="footer_text_main">Với sứ mệnh:</span>"VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</p>
-                    <p class="footer_text_italic"><span class="footer_text_main">Tầm nhìn:</span>"Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+                    <p class="footer_text"><span class="footer_text_main">VNB Sports</span> là hệ thống cửa hàng cầu
+                        lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ
+                        phong trào tới chuyên nghiệp</p>
+                    <p class="footer_text_italic"><span class="footer_text_main">Với sứ mệnh:</span>"VNB cam kết mang
+                        đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức
+                        khỏe của chính mình."</p>
+                    <p class="footer_text_italic"><span class="footer_text_main">Tầm nhìn:</span>"Trở thành nhà phân
+                        phối và sản xuất thể thao lớn nhất Việt Nam"</p>
                 </div>
                 <div class="footer_column">
                     <h3 class="footer_title">THÔNG TIN LIÊN HỆ</h3>
                     <p class="footer_text">Hệ thống cửa hàng:
-                    <span><a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main">5 shop Premium và 63 cửa hàng</a></span>
-                    <span class="footer_text">trên toàn quốc</span></p>
-                    <a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main_bold">Xem tất cả các cửa hàng VNB</a>
+                        <span><a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main">5 shop Premium và
+                                63 cửa hàng</a></span>
+                        <span class="footer_text">trên toàn quốc</span>
+                    </p>
+                    <a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main_bold">Xem tất cả các cửa
+                        hàng VNB</a>
                     <p class="footer_text">Hotline: <a href="#" class="footer_text_main">0977508430 | 0792677415</a></p>
                     <p class="footer_text">Email: <a href="#" class="footer_text_main">info@shopvnb.com</a></p>
-                    <p class="footer_text">Hợp tác kinh doanh: <a href="#" class="footer_text_main">0947342259 (Ms. Thảo)</a></p>
+                    <p class="footer_text">Hợp tác kinh doanh: <a href="#" class="footer_text_main">0947342259 (Ms.
+                            Thảo)</a></p>
                     <p class="footer_text">Hotline bán sỉ: <a href="#" class="footer_text_main">0911 105 211</a></p>
-                    <p class="footer_text">Nhượng quyền thương hiệu: <a href="#" class="footer_text_main">0334.741.141 (Mr. Hậu)</a></p>
-                    <p class="footer_text">Than phiền dịch vụ: <a href="#" class="footer_text_main">0334.741.141 (Mr. Hậu)</a></p>
+                    <p class="footer_text">Nhượng quyền thương hiệu: <a href="#" class="footer_text_main">0334.741.141
+                            (Mr. Hậu)</a></p>
+                    <p class="footer_text">Than phiền dịch vụ: <a href="#" class="footer_text_main">0334.741.141 (Mr.
+                            Hậu)</a></p>
                     <div class="footer_icon_main">
                         <a href="" class="footer_icon_main-a"><i class="fa-brands fa-facebook-f footer_icon"></i></a>
                         <a href="" class="footer_icon_main-a"><i class="fa-brands fa-youtube footer_icon"></i></a>
                     </div>
-                    
+
                 </div>
                 <div class="footer_column">
                     <h3 class="footer_title">CHÍNH SÁCH</h3>
                     <ul class="footer_list">
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách đổi trả, hoàn tiền</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách đổi trả, hoàn
+                                tiền</a></li>
                         <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo hành</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách xử lý khiếu nại</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách xử lý khiếu nại</a>
+                        </li>
                         <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách vận chuyển</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo mật thông tin</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">chính sách nhượng quyền</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo mật thông
+                                tin</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">chính sách nhượng quyền</a>
+                        </li>
                     </ul>
                 </div>
                 <div class="footer_column">
                     <h3 class="footer_title">HƯỚNG DẪN</h3>
                     <ul class="footer_list">
                         <li class="footer_item_list"><a href="#" class="footer_list_link">Điều khoản sử dụng</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Tìm hiểu công việc tập huấn tennis trước khi tổ chức giải đấu</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Bảng size Lining - Cách chọn size quần áo lining, giày cầu lông Lining</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách tập tennis cho người mới chơi</a></li>
-                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Tìm hiểu công việc tập huấn
+                                tennis trước khi tổ chức giải đấu</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Bảng size Lining - Cách chọn
+                                size quần áo lining, giày cầu lông Lining</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách tập tennis cho
+                                người mới chơi</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách chọn vợt cầu
+                                lông cho người mới chơi</a></li>
                         <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn thanh toán</a></li>
                         <li class="footer_item_list"><a href="#" class="footer_list_link">Kiếm tra bả hành</a></li>
                         <li class="footer_item_list"><a href="#" class="footer_list_link">Kiếm tra đơn hàng</a></li>
@@ -441,15 +685,22 @@
         <p><i class="fa-solid fa-copyright"></i>CÔNG TY TNHH VNB SPORTS</p>
         <p>GPDK số 0314496879 do Sở KH vs ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
         <p>GĐ/Sở hữu website: Phan Lê Chi</p>
-       <a href="http://online.gov.vn/Home/WebDetails/61951"><img style="width: 22rem; height: 8rem;" src="/CIB SHOP/assets/img/logo_bo_cong_thuong.png"></a>
-        </div>
-        <div align="right" class="icon-bar-right">
-          <a href="#" style="border: node; width: 4rem; border-radius: 0.7rem;"><img style="width: 4.2rem; height: 4rem;" src="/CIB SHOP/assets/img/up arrow.png"> </a>
-          <a href="https://shopvnb.com/"  style="border: node; width: 5rem; height: 5rem; background-color: aliceblue; border-radius: 0.7rem;"><img style="width: 5rem; height: 5rem;" src="assets/img/zalo-tach-nen.png"></a>
-          <a href="https://shopvnb.com/" ><img style="width: 20rem; height: 4.6rem;" src="/CIB SHOP/assets/img/hethongcuahang.png"></a>
-        </div>
-      <div class="icon-bar-left">
-        <a href="#" style="border: node; width: 4rem;"><img style="width: 20rem; height: 5.2rem;" src="/CIB SHOP/assets/img/xemgiohang.png"> </a>
-      </div>
+        <a href="http://online.gov.vn/Home/WebDetails/61951"><img style="width: 22rem; height: 8rem;"
+                src="/CIB SHOP/assets/img/logo_bo_cong_thuong.png"></a>
+    </div>
+    <div align="right" class="icon-bar-right">
+        <a href="#" style="border: node; width: 4rem; border-radius: 0.7rem;"><img style="width: 4.2rem; height: 4rem;"
+                src="/CIB SHOP/assets/img/up arrow.png"> </a>
+        <a href="https://shopvnb.com/"
+            style="border: node; width: 5rem; height: 5rem; background-color: aliceblue; border-radius: 0.7rem;"><img
+                style="width: 5rem; height: 5rem;" src="assets/img/zalo-tach-nen.png"></a>
+        <a href="https://shopvnb.com/"><img style="width: 20rem; height: 4.6rem;"
+                src="/CIB SHOP/assets/img/hethongcuahang.png"></a>
+    </div>
+    <div class="icon-bar-left">
+        <a href="#" style="border: node; width: 4rem;"><img style="width: 20rem; height: 5.2rem;"
+                src="/CIB SHOP/assets/img/xemgiohang.png"> </a>
+    </div>
 </body>
+
 </html>

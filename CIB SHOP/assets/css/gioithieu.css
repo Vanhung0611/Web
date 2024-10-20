@@ -82,6 +82,7 @@ body {
     width: 28rem;
     padding: 2rem;
     border-radius: 5px;
+    overflow-x: hidden;
 }
 
 h1{
@@ -113,9 +114,6 @@ h1{
     color: var(--text-color);
 }
 
-.title{
-    text-align: center;
-}
 
 .stress{
     font-weight: bold;
@@ -130,5 +128,12 @@ h1{
     text-align: center;
 }
 h3{
+
     color: #333E44;
+}
+
+.datetime{
+    font-size: 15px;
+    color: #B0B0B0;
+    font-style: italic;
 }

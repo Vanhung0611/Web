@@ -262,7 +262,7 @@
 }
     
 .home_product{
-        /* position: relative; */
+        border: 0px;
 }
 .home_product:hover .home_product-box{
         display: block;
