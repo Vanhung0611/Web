@@ -1,0 +1,75 @@
+.container{
+    background-color: rgba(192, 192, 192, 0.1);
+    padding: 20px 0 100px 0;
+
+}
+.sign_in_border{
+    width: 370px;
+    height: 340px;
+    margin: auto;
+    background-color: #FFFFFF;
+}
+.sign_in_title{
+    background-color: #FFFFFF;
+    color: var(--main-color);
+    text-align: center;
+    font-size: 24px;
+    font-weight: 500;
+    padding-top: 3rem;
+}
+.account_name{
+    border: 1px solid #E1E1E1;
+    width: 350px;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    padding-left: 5%;
+    border-radius: 2px;
+}
+.account_pass{
+    border: 1px solid #E1E1E1;
+    width: 350px;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    font-size: 14px;
+    padding-left: 5%;
+    border-radius: 2px;
+}
+.Confirm{
+    width: 350px;
+    height: 45px;
+    margin-left: 10px;
+    margin-bottom: 12px;
+    font-size: 12px;
+    font-weight: 100;
+    color: #FFFFFF;
+    background-color: var(--main-color);
+    border: none;
+    border-radius: 3px; 
+}
+.Confirm:hover{
+    background-color:#FFFFFF;
+    color: var(--main-color);
+    border: 1px solid var(--main-color); 
+}
+.border_footer{
+    padding-left: 45%;
+}
+.forget{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.again{
+    text-decoration: none;
+    color: var(--text-color);
+    font-size: 14px;
+}
+.forget:hover{
+    color: var(--main-color);
+}
+.again:hover{
+    color: var(--main-color);
+}
