@@ -68,6 +68,7 @@ body {
 .text{
     text-decoration: none;
     color: black;
+    cursor: pointer;
 }
 
 
