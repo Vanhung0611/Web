@@ -176,3 +176,15 @@ a{
     text-decoration: none;
     font-size: 1.7rem;
 }
+
+
+table {
+    border-collapse: collapse;
+    width: 100%;
+}
+td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+    text-align: center;
+  }
