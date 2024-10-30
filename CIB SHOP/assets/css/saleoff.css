@@ -187,4 +187,10 @@ td, th {
     text-align: left;
     padding: 8px;
     text-align: center;
-  }
+}
+
+.stress{
+    font-weight: bold;
+    font-size: 1.8rem;
+    color: #333E44;
+}
