@@ -441,24 +441,68 @@
             <div class="sign_up_text_1"><span class="sign_up_title_text">Đã có tài khoản, đăng nhập<a href="#" class=sign_up_title_hl> tại đây</a></span></div><br>
             <form class="account">
                 <div>
-                    <input class="account_name" type="text" placeholder="Nhập tên của bạn (*)" required>
+                    <input id="account_name1" class="account_name" type="text" placeholder="Nhập tên của bạn (*)" required>
                 </div>
                 <div>
-                    <input class="account_email" type="email" placeholder="Nhập email của bạn (*)" required>
+                    <input id="account_email1"  class="account_email" type="email" placeholder="Nhập email của bạn (*)" required>
                 </div>
                 <div>
-                    <input class="account_phone" type="number" placeholder="Số điện thoại" required>
+                    <input id="account_phone1" class="account_phone" type="number" placeholder="Số điện thoại" required>
                 </div>
                 <div>
-                    <input class="account_password" type="password" placeholder="Mật khẩu" required>
+                    <input id="account_password1" class="account_password" type="password" placeholder="Mật khẩu" required>
                 </div>
                 <div>
-                    <input class="account_password_re" type="password" placeholder=" Nhập lại mật khẩu" required>
+                    <input id="account_password_re1" class="account_password_re" type="password" placeholder=" Nhập lại mật khẩu" required>
                 </div>
             </form>
-            <button class="Confirm">ĐĂNG KÝ</button>
+            <button class="Confirm" onclick="validateForm()">ĐĂNG KÝ</button>
         </div>
     </div>
+    <script>
+        function validateForm() {
+            var name = document.getElementById("account_name1").value;
+            var email = document.getElementById("account_email1").value;
+            var phone = document.getElementById("account_phone1").value;
+            var password = document.getElementById("account_password1").value;
+            var passwordRe = document.getElementById("account_password_re1").value;
+            var testPhone = /^0\d{9}$/;
+            var testEmail=/^[a-zA-Z0-9._%+-]+@gmail\.com$/;
+            var testPassword=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
+            // kiểm tra ô trống thông tin
+            if (!name) {
+                alert("Vui lòng nhập họ tên!");
+            }
+            else if(!email){
+                alert("Vui lòng nhập email!");
+            }
+            else if(!phone){
+                alert("Vui lòng nhập số điện thoại !");
+            }
+            else if(!password){
+                alert("Vui lòng nhập mật khẩu mà bạn chọn để đăng ký tài khoản!");
+            }
+            else if(!passwordRe){
+                alert("Vui lòng xác nhận lại mật khẩu!");
+            }
+            // kiểm tra số điện thoại đúng định dạng
+            if (!testPhone.test(phone)) {
+                alert("Số điện thoại không hợp lệ! Số điện thoại phải có 10 chữ số và bắt đầu bằng số 0.");
+            }
+            // kiểm tra email đúng định dạng
+            if(!testEmail.test(email)){
+                alert("Email phải có dạng asd@gmail.com.Mời nhập lại!");
+            }
+            // ràng buộc mật khẩu, mật khẩu tối thiểu có 6 kí tự, ít nhất 1 chữ in hoa, 1 chữ cái thường và 1 số
+            if(!testPassword.test(password)){
+                alert("Mật khẩu sai định dạng, mời nhập lại(Mật khẩu phải có tối thiểu 6 kí tự, ít nhất một chữ in hoa, một chữ thường và một số!)");
+            }
+            // Kiểm tra mật khẩu nhập lại
+            if (password !== passwordRe) {
+                alert("Mật khẩu không khớp. Vui lòng nhập lại.");
+            }
+        }
+    </script>
     <div class="footer1">
         <div class="grid">
             <div class="footer1-item">
