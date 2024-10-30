@@ -440,16 +440,31 @@
             <div class="container_title-line" style="width: 40%; margin: 20px 0 20px 30%;" ></div>
             <form class="account">
                 <div>
-                    <input class="account_name" type="text" placeholder="Email/Số ĐT">
+                    <input class="account_name" id="account_name1" type="text" placeholder="Email/Số ĐT">
                 </div>
                 <div>
-                    <input class="account_pass" type="password" placeholder="Mật Khẩu">
+                    <input class="account_pass" id="account_pass1" type="password" placeholder="Mật Khẩu">
                 </div>
             </form>
-            <button class="Confirm">ĐĂNG NHẬP</button>
+            <button class="Confirm" onclick="validateForm()">ĐĂNG NHẬP</button>
             <p class="border_footer"><span><a href="#" class="forget">Quên mật khẩu</a></span>&ensp;<span><a href="#" class="again">Đăng ký tại đây</a></span></p>
         </div>
     </div><br>
+    <script>
+        function validateForm(){
+            var account =document.getElementById("account_name1").value;
+            var pass =document.getElementById("account_pass1").value;
+            if(!account){
+                alert("Vui lòng nhập tên đăng nhập");
+                return false;
+            }
+            else if (!pass){
+                alert("Vui lòng nhập mật khẩu đăng nhập");
+                return false;
+            }
+            window.location.href = '/CIB SHOP/sign_in_error.html';
+        }
+    </script>
     <div class="footer1">
         <div class="grid">
             <div class="footer1-item">

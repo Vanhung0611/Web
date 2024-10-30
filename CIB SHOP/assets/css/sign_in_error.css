@@ -1,0 +1,28 @@
+.container{
+    height: 500px;
+}
+.thong_bao{
+    margin-left: 100px;
+    padding: 20px;
+}
+.main_noti{
+    font-size: 24px;
+    margin-bottom: 10px;
+}
+.noti{
+    font-size: 16px;
+    color: #333;
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+.back{
+    width: 290px;
+    background-color: #333;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 3px;
+    cursor: pointer;
+    margin-left: 15px;
+}
