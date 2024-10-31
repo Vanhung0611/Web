@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <!-- reset các thẻ-->
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+     <!-- link lấy font chữ Roboto từ google-->
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+     <link rel="stylesheet" href="/CIB SHOP/assets/css/zalo.css">
+     <link rel="stylesheet" href="/CIB SHOP/assets/css/base.css">
+    <title>CIB shop trên zalo</title>
+</head>
+<body>
+   
+        <header class="header">
+            <div class="zalo_img"><img src="/CIB SHOP/assets/img/zalo-logo.png" alt=""></div>
+            <div class="language">
+                <span style="color: var(--text-color); font-size: 14px;">Ngôn ngữ: </span>
+                <select id="lg">
+                    <option value="vn">Tiếng Việt</option> 
+                    <option value="el">English</option>
+                </select>
+            </div>  
+        </header>
+        <div class="Container">
+            <div class="Title" style="display: block; background-color: #fff;" >
+                <div class="info">
+                    <div class="logo"><img src="/CIB SHOP/assets/img/Logo Cầu Lông.png" alt=""></div>
+                    <div class="info_text">
+                        <p style="font-size: 24px; font-weight: 500;">CIB Sport <i class="fa-solid fa-circle-check" style="color: #E4BC0C"></i></p>
+                        <p style="font-size: 16px; color: var(--text-color);">Mua sắm & Bán lẻ</p>
+                        <button onclick="show()" class="btn_zalo"><p style="font-size: 16px; color: #fff"><i class="fa-regular fa-comment-dots" style="margin-right:10px;"></i>Nhắn tin</p></button>
+                    </div>
+                </div>
+                <h1 style="padding: 20px 0px; font-weight: 500;">Thông tin chi tiết</h1>
+                <div class="home_link"><i class="fa-solid fa-house" style="margin-right: 16px"></i> <a href="/CIB SHOP/index.html">https://CIB-SHOP.com</a></div>
+                <div style="font-size: 14px; color: var(--text-color); margin-top: 20px;">Hệ Thống Cửa Hàng Shop Cầu Lông VNB</div>  
+            </div>
+             
+            <div class="QR_img"><img src="/CIB SHOP/assets/img/QR-MinhVuong.jpg" alt=""><p class="QR_text">Mã QR liên hệ với bộ phận quản lí (Mr. Vương)</p></div>
+            <div class="QR_img"><img src="/CIB SHOP/assets/img/QR-HoangMinh.jpg" alt=""><p class="QR_text">Mã QR liên hệ với bộ phận điều phối sản phẩm (Mr. Minh)</p></div>
+            <div class="QR_img"><img src="/CIB SHOP/assets/img/QR-VanHung.jpg" alt=""><p class="QR_text">Mã QR liên hệ với bộ phận đền bù thiệt hại (Mr. Hưng)</p></div>
+        </div>
+
+    
+    <footer class="Footer">© Copyright 2021 Zalo Group. All right Reserved.</footer>
+    <script>
+        function show()
+        {
+            confirm("https://zalo.me muốn mở ứng dụng này.");
+        }
+    </script>
+</body>
+</html>
