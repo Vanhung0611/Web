@@ -1,0 +1,718 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+     <!-- link lấy font chữ Roboto từ google-->
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/base.css">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/saleoff.css">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/main_footer.css">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/main_header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="/CIB SHOP/assets/img/Logo Cầu Lông.png" type="image/x-icon">
+    <title>Thanh lý các sản phẩm cầu lông</title>
+</head>
+<body>
+    <header class="header">   <!-- Hoàn thành-->
+        <div class="grid">
+            <div class="header_navbar">
+          <div class="navbar_item">
+                        <img class="item_logo" src="/CIB SHOP/assets/img/logo cầu lông.jpg" alt="LOGO">
+                </div>
+    
+                <div class="navbar_item navbar_item_border">
+                        <div class="item_hotline">  
+                            <i class="fa-solid fa-headphones header_icon"></i>  
+                            <div class="hotline-text">HOTLINE:</div>
+                            <a href="" class="hotline-number">0818214849 | 0797579132</a>
+                        </div>
+                        <div class="item_store_system">
+                            <i class="fa-solid fa-map-location-dot header_icon"></i>
+                            <div class="item_store">HỆ THỐNG CỬA HÀNG</div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass header_icon item_icon_search"></i>
+                            <input class="item_search" type="text" placeholder="Tìm sản phẩm...">
+                        </div>
+                </div>
+    
+                <div class="navbar_item">
+                        <div class="item_choose">
+                            <div class="choose_lookup">
+                                <i class="fa-solid fa-binoculars choose_icon"></i>
+                                <div>TRA CỨU
+                                    <ul class="lookup_check">
+                                        <li class="check_text">Kiểm tra đơn hàng</li>
+                                        <li class="check_text">Kiểm tra bảo hành</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="choose_account">
+                                <i class="fa-solid fa-user choose_icon"></i>
+                                <div>TÀI KHOẢN
+                                    <ul class="account_list">
+                                        <li class="account_item"><span><i class="fa-solid fa-arrow-right-to-bracket account_item_icon"></i></span><a href="/CIB SHOP/sign_in.html" style="color: black; text-decoration: none;" >Đăng nhập</a></li>
+                                        <li class="account_item"><span><i class="fa-solid fa-user-plus account_item_icon"></i></span><a href="/CIB SHOP/sign_up.html" style="color: black; text-decoration: none;" >Đăng ký</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                                
+                            <div class="choose_cart">
+                                <i class="fa-solid fa-cart-arrow-down choose_icon"></i>
+                                <div>GIỎ HÀNG
+                                    <div class="cart_noti">
+                                        <img class="cart_picture" src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
+                                        <p class="cart_text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <div class="home">
+        <a href="/CIB SHOP/index.html" class="home_tittle">TRANG CHỦ</a>
+        <a href="/CIB SHOP/saleoff.html" class="home_tittle">SALE OFF</a>
+            <a href="/CIB SHOP/TinTuc.html" class="home_tittle">TIN TỨC</a>
+            <a href="/CIB SHOP/CSNQ.html" class="home_tittle">CHÍNH SÁCH NHƯỢNG QUYỀN</a>
+            <div class="home_tittle">
+                <div class="home_tittle-instruct Reverser_otation">
+                    HƯỚNG DẪN
+                    <i class="fa-solid fa-chevron-down home_icon"></i>
+                    <ul class="instruct_list">
+                        <li class="instruct_list-text">Hướng dẫn thanh toán</li>
+                        <li class="instruct_list-text">Hướng dẫn mua hàng</li>
+                        <li class="instruct_list-text">Hướng dẫn chọn vợt cầu lông</li>
+                        <li class="instruct_list-text">Công nghệ sản phẩm</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/CIB SHOP/gioithieu.html" class="home_tittle">GIỚI THIỆU</a>
+            <a href="/CIB SHOP/lienhe.html" class="home_tittle">LIÊN HỆ</a>
+        </div>
+
+
+    <div class="container grid">
+        <div class="column popup-column ">
+            <div class="mini_container">
+                <div class="box" >
+                    <h2>CHỌN MỨC GIÁ</h2>
+        <input type="checkbox"><label class="text"> Giá dưới 500.000đ</label><br><br>
+      <input type="checkbox"><label class="text"> 500.000đ - 1 triệu</label><br><br>
+      <input type="checkbox"><label class="text"> 1 - 2 triệu</label><br><br>
+      <input type="checkbox"><label class="text"> 2 - 3 triệu</label><br><br>
+      <input type="checkbox"><label class="text"> Giá trên 3 triệu</label><br><br>
+                </div >
+            <div class="box ">
+                <h2>THƯƠNG HIỆU</h2>  
+                <div class="demand_scroll"> 
+  <input type="checkbox" ><label  class="text"> VNB  </label><br><br>
+  <input type="checkbox" ><label  class="text">  Yonex </label><br><br>
+  <input type="checkbox" ><label  class="text">  Lining </label><br><br>
+  <input type="checkbox" ><label  class="text">  Victor </label><br><br>
+  <input type="checkbox" ><label  class="text">  Forza </label><br><br>
+  <input type="checkbox" ><label  class="text"> Protech  </label><br><br>
+  <input type="checkbox" ><label  class="text">  Kumpoo </label><br><br>
+  <input type="checkbox" ><label  class="text">  Kawasaki </label><br><br>
+  <input type="checkbox" ><label  class="text">  Apacs </label><br><br>
+  <input type="checkbox" ><label  class="text"> Adonex</label><br><br>
+  <input type="checkbox" ><label  class="text"> Babolat  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Pebble Beach  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Proace  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Adidas  </label><br><br>
+  <input type="checkbox" ><label  class="text">VS</label><br><br>
+  <input type="checkbox" ><label  class="text"> DonexPro  </label><br><br>
+  <input type="checkbox" ><label  class="text">  Hãng khác </label><br><br>
+  <input type="checkbox" ><label  class="text"> Joto  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Iron Man      </label><br><br>
+  <input type="checkbox" ><label  class="text">  Ashaway </label><br><br>
+  <input type="checkbox" ><label  class="text">  Mizuno </label><br><br>
+  <input type="checkbox" ><label  class="text"> Sunbatta </label><br><br>
+  <input type="checkbox" ><label  class="text"> FlyPower  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Paramount  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Tenway  </label><br><br>
+  <input type="checkbox" ><label  class="text">  FYKYMI </label><br><br>
+  <input type="checkbox" ><label  class="text">  FUKYMI </label><br><br>
+  <input type="checkbox" ><label  class="text">  Fleet </label><br><br>
+  <input type="checkbox" ><label  class="text">  Maxta </label><br><br>
+  <input type="checkbox" ><label  class="text">  Felet </label><br><br>
+  <input type="checkbox" ><label  class="text">  Yuko </label><br><br>
+  <input type="checkbox" ><label  class="text">  Kolt</label><br><br>
+            </div>
+            </div>
+            <div class="box">
+            <h2>CHI NHÁNH</h2>
+            <div class="demand_scroll">
+            <input type="checkbox" ><label class="text"> VNB PREMIUM Quận 1</label><br><br>
+           <input type="checkbox"><label class="text"> VNB PREMIUM Quận 11</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB PREMIUM Bình Thạnh</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB PREMIUM TP Thủ Đức</label><br><br>
+           <input type="checkbox"><label class="text"> VNB PREMIUM Ninh Kiều Cần Thơ</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 1</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 3</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Quận 4</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 5</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Quận 6</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Quận 7</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 8</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 10</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 11</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Quận 12</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 12 - CN2</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Bình Thạnh</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB TP Thủ Đức - CN1</label><br><br>
+           <input type="checkbox"><label class="text"> VNB TP Thủ Đức - CN2</label><br><br>
+           <input type="checkbox"><label class="text"> VNB TP Thủ Đức - CN3  </label><br><br>
+           <input type="checkbox"><label class="text"> VNB TP Thủ Đức - CN4</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Gò Vấp</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Phú Nhuận</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Tân Bình</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Tân Phú</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Bình Tân</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Củ Chi</label><br><br>
+           <input type="checkbox"><label class="text">VNB Tây Hồ</label><br><br>
+        </div>
+            </div>
+            <div class="box" >
+                <h2>CHIỀU DÀI VỢT</h2>
+    <input type="checkbox"><label class="text"> 665 mm</label><br><br>
+  <input type="checkbox"><label class="text"> 670 mm</label><br><br>
+  <input type="checkbox"><label class="text"> 675 mm</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>CHIỀU DÀI CÁN VỢT</h2>
+    <input type="checkbox"><label class="text">200 mm </label><br><br>
+  <input type="checkbox"><label class="text">205 mm </label><br><br>
+  <input type="checkbox"><label class="text"> 210 mm</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>SWINGWEIGHT</h2>
+    <input type="checkbox"><label class="text">Dưới 82 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text"> 82-84 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text"> 84-86 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text">86-88 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text"> Trên 88 kg/cm2</label><br><br>
+            </div >
+            <div class="box ">
+                <h2>TRỌNG LƯỢNG</h2>  
+                <div class="demand_scroll"> 
+  <input type="checkbox" ><label  class="text">3U: 85 - 89g</label><br><br>
+  <input type="checkbox"><label  class="text">4U: 80 - 84g  </label><br><br>
+  <input type="checkbox" ><label  class="text"> 4U: 80 - 84g</label><br><br>
+  <input type="checkbox" ><label class="text"> 5U: 75 - 79g</label><br><br>
+  <input type="checkbox"><label class="text">F: 70 - 74g</label><br><br>
+  <input type="checkbox"><label class="text"> 2F: 65 - 69g</label><br><br>
+            </div>
+            </div>
+            <div class="box" >
+                <h2>ĐIỂM CÂN BẰNG</h2>
+    <input type="checkbox"><label class="text"> Nhẹ Đầu</label><br><br>
+  <input type="checkbox"><label class="text"> Cân Bằng</label><br><br>
+  <input type="checkbox"><label class="text"> Hơi Nặng Đầu</label><br><br>
+  <input type="checkbox"><label class="text"> Nặng Đầu</label><br><br>
+  <input type="checkbox"><label class="text"> Siêu Nặng Đầu</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>ĐỘ CỨNG ĐŨA</h2>
+    <input type="checkbox"><label class="text"> Dẻo </label><br><br>
+  <input type="checkbox"><label class="text"> Trung Bình</label><br><br>
+  <input type="checkbox"><label class="text">Cứng</label><br><br>
+  <input type="checkbox"><label class="text"> Siêu Cứng</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>PHONG CÁCH CHƠI</h2>
+    <input type="checkbox"><label class="text"> Tấn Công</label><br><br>
+  <input type="checkbox"><label class="text"> Công Thủ Toàn Diện</label><br><br>
+  <input type="checkbox"><label class="text"> Phản Tạt, Phòng Thủ</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>NỘI DUNG CHƠI</h2>
+    <input type="checkbox"><label class="text">Đánh Đơn</label><br><br>
+  <input type="checkbox"><label class="text"> Đánh Đôi</label><br><br>
+  <input type="checkbox"><label class="text"> Cả Đơn và Đôi</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>TRÌNH ĐỘ CHƠI</h2>
+    <input type="checkbox"><label class="text"> Mới Chơi</label><br><br>
+  <input type="checkbox"><label class="text"> Trung Bình</label><br><br>
+  <input type="checkbox"><label class="text"> Khá Tốt</label><br><br>
+            </div >
+            </div>
+            <div class="box_oversize">
+                <h2>DANH MỤC SẢN PHẨM</h2>
+                <p style="color: var(--main-color);">Tất cả danh mục</p>
+                <a href="#" class="text">Vợt cầu lông Yonex</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Victor</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Lining</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Mizuno</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Apacs</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông VNB</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Proace</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Forza</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông FlyPower</a><br><br>   
+                <a href="#" class="text">Vợt Cầu Lông Tenway</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Pro Kennex</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Babolat</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Kawasaki</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Protech   </a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Adonex</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Adidas</a><br><br>
+                <a href="#" class="text">Vợt cầu lông PJB (Hàn Quốc)</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Ashaway</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Paramount</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông FUKYMI</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Fleet</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Maxta</a><br><br>
+                <a href="#" class="text">Vợt Cầu lông Lotus</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Sunbatta</a><br><br>
+                <a href="#" class="text">    Vợt Cầu Lông VS   </a><br><br>
+                <a href="#" class="text">   Vợt Phôi Cầu Lông    </a><br><br>
+                <a href="#" class="text">      Vợt Cầu Lông Giá Rẻ </a><br><br>
+                <a href="#" class="text">    Combo vợt cầu lông   </a><br><br>
+                <a href="#" class="text">    Vợt Cầu Lông Kamito   </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông Kumpoo    </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông The 3rd Game    </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông Kolt    </a><br><br>
+                <a href="#" class="text"> Vợt cầu lông Felet      </a><br><br>
+                <a href="#" class="text">    Vợt cầu lông Vicleo   </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông Taro    </a><br><br>
+                <a href="#" class="text">    Vợt cầu lông Ixe   </a><br><br>
+            </div>
+        </div>
+
+
+
+        <div class="column ">
+            <div class="title_theme"><h2>VỢT CẦU LÔNG</h2></div>
+            
+            <div class="large_container">
+
+
+                <!-- line1 -->
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk1.webp">
+                        <a class="link" href=""><p>Ống cầu lông Kamito K10</p></a><br>
+                        <span class="sale_price">275.000  <span class="d">đ</span> </span>
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk2.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn ngắn - Đen chính hãng</p>
+                            </a>
+                        <span class="sale_price">35.000 <span class="d">đ</span> </span>
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk3.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn ngắn - Trắng chính hãng</p>
+                            </a>
+                        <span class="sale_price">35.000 <span class="d">đ</span> </span>
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk4.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn ngắn - Xanh biển chính hãng</p>
+                            </a>
+                        <span class="sale_price">35.000 <span class="d">đ</span> </span>
+                        
+                    </div>
+
+                </div>
+
+
+                    <!-- line2 -->
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk5.webp">
+                        <a class="link" href=""><p>Dầu lạnh Ligpro (30ml)</p><br>
+                       
+                        <span class="sale_price">54.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk6.webp">
+                        <a class="link" href="">
+                            <p>Bình xịt nóng Ligpro (160ml)</p>
+                            </a><br>
+                        <span class="sale_price">97.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk7.webp">
+                        <a class="link" href="">
+                            <p>Bình xịt lạnh Ligpro (160ml)</p>
+                            </a><br>
+                        <span class="sale_price">97.000  <span class="d">đ</span> 
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk8.webp">
+                        <a class="link" href="">
+                            <p>Quấn cán vải Xsmash X-001</p>
+                             </a> <br>
+                        <span class="sale_price">540.000   <span class="d">đ</span> 
+                        
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- line3 -->
+
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk9.webp">
+                        <a class="link" href=""><p>Băng bảo vệ cổ chân Yasu 7131</p>
+                        </a> <br>
+                        <span class="sale_price">80.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk10.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn ngắn - Xanh dương chính hãng</p>
+                            </a>
+                        <span class="sale_price">35.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk11.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn dài - Xanh dương chính hãng</p>
+                            </a>
+                        <span class="sale_price">35.000 <span class="d">đ</span> 
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk12.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn dài - Xanh biển chính hãng</p>
+                           </a>
+                        <span class="sale_price">35.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- line4 -->
+
+
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk13.webp">
+                        <a class="link" href=""><p>Vớ cầu lông Taro trơn dài - Đen chính hãng</p>
+                        </a>
+                        <span class="sale_price">35.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk14.webp">
+                        <a class="link" href="">
+                            <p>Vớ cầu lông Taro trơn dài - Trắng chính hãng</p>
+                            </a>
+                        <span class="sale_price">35.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk15.webp">
+                        <a class="link" href="">
+                            <p>Vớ Cầu Lông Kumpoo KSO 407 Nâu Chính Hãng</p>
+                            </a>
+                        <span class="sale_price">80.000  <span class="d">đ</span> 
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk16.webp">
+                        <a class="link" href="">
+                            <p>Vớ Cầu Lông Kumpoo KSO 403 Xám Chính Hãng</p>
+                            </a>
+                        <span class="sale_price">70.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                </div>
+
+
+
+
+                <!-- line5 -->
+
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk17.webp">
+                        <a class="link" href=""><p>Túi đựng giày Kumpoo K421</p>
+                        </a> <br>
+                        <span class="sale_price">330.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk18.webp">
+                        <a class="link" href="">
+                            <p>Vớ Cầu Lông Kumpoo KSO 403 Xanh Chính Hãng</p>
+                           </a>
+                        <span class="sale_price">70.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk19.webp">
+                        <a class="link" href="">
+                            <p>Vớ Cầu Lông Lining AWST074-3 Chính Hãng</p>
+                            </a>
+                        <span class="sale_price">135.000  <span class="d">đ</span> 
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <img class="picture" src="/CIB SHOP/assets/img/pk20.webp">
+                        <a class="link" href="">
+                            <p>Dây nhảy Freeway</p>
+                            </a><br>
+                        <span class="sale_price">135.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                </div>
+
+                </div>
+                <div class="btn grid" style="margin-left: 70rem;">
+                    <a href="" ><p class="btn-item btn-click">1</p></a>
+                    <a href="" ><p class="btn-item">2</p></a>
+                    <a href="" ><p class="btn-item">3</p></a>
+                    <a href="" ><p class="btn-item">4</p></a>
+                    <a href="" ><p class="btn-item">5</p></a>
+                    <a href="" ><p class="btn-item">6</p></a>
+                    <a href="" ><p class="btn-item">7</p></a>
+                    <a href="" ><p class="btn-item">8</p></a>
+                    <a href="" ><p class="btn-item">9</p></a>
+                    <a href="" ><p class="btn-item">10</p></a>
+                    <a href="" ><p class="btn-item">>></p></a>
+                </div>
+                
+                <div class="right_column"><div >Vợt cầu lông là sản phẩn cần thiết nhất để đánh cầu, và sự đa đạng, phong phú và độ tùy biến của vợt đánh cầu lông là khá lớn nên bạn cần cân nhắc kỹ lưỡng trước khi quyết định chọn mua vợt.</div>
+            <p>Hơn hết, địa chỉ bán vợt cầu lông ở TPHCM uy tín và toàn quốc là điều đặc biệt lưu ý khi hàng giả, hàng nhái đang tràn ngập thị trường, đơn cử như vợt Yonex, vợt Proace, vợt Fleet. Vậy, mua shop vợt nào và đâu là shop bán vợt tại TPHCM và nơi báo giá vợt cầu lông đáng tin cậy nhất?</p>
+            <h3>ShopVNB - Cửa hàng, shop, nơi mua bán vợt cầu lông (badminton shop) uy tín giá rẻ ở TPHCM, Hà Nội</h3>
+            <p>Tại Việt Nam, shop bán vợt cầu lông (badminton shop) được xem là rộng nhất chính là ShopVNB.com. Đây là hệ thống shop bán vợt cầu lông uy tín có số lượng cực lớn với hơn 60 chi nhánh trên cả nước.</p>
+            <p>Những dòng vợt đánh cầu lông chính hãng giá rẻ được bán tại shopVNB, shop bán dụng cụ cầu lông ở TPHCM, Hà Nội như vợt Yonex cao cấp với chất lượng vượt trội, vợt Victor có độ hoàn mỹ cực cao hay vợt Lining, vợt Apacs giá rẻ, Proace, Fleet...ngoài ra còn là nơi bán vợt cầu lông cũ uy tín, giá rẻ toàn quốc.</p>
+            <h3>ShopVNB - Nơi báo giá vợt cầu lông Yonex, Victor, Lining, Proace chính xác nhất</h3>
+            <p>Nếu bạn là người mới chơi, đang thắc mắc về giá vợt cầu lông hiện có trên thị trường như giá vợt Yonex, bảng giá vợt Victor, giá vợt Lining hay Proace, Apacs, Shop vợt cầu lông VNB sẽ là nơi báo giá vợt chính xác nhất cho bạn.</p>
+            <p>Ngoài các dòng vợt nổi tiếng trên thị trường, cửa hàng bán vợt ShopVNB (badminton shop) còn cung cấp các loại giá vợt cầu lông cũ, vợt chuẩn bị ra mắt tại fanpage cầu lông hoặc chat trực tiếp trên website shopvnb.com.</p>
+            <h3>Vợt cầu lông bao nhiêu tiền ?</h3>
+            <p>Giá vợt cầu lông bao nhiêu tiền, nên mua vợt cầu lông bao nhiêu tiền cho người mới bắt đầu tập chơi, người chơi lâu năm là một trong những bâng khuâng của nhiều người. Cùng shopVNB phân tích kỹ hơn về vấn đề này nhé! </p>
+            <p>Vợt cầu lông cho những bạn nhỏ vui chơi ở sân nhà hay công viên thường là những vợt nhựa, vợt nhôm sẽ có mức giá từ 50.000đ đến 200.000đ.</p>
+            <p>Vợt cầu lông chính hãng làm từ carbon nhẹ, dùng trong tập luyện và thi đấu có giá bán từ 500.000 – 700.000đ. Những cây vợt này thường từ những hãng vợt cầu lông giá rẻ như: Apacs, Proace, VNB..</p>
+            <p>Vợt cầu lông đạt tiêu chuẩn tập luyện và thi đấu thường có giá trên thị trường từ 1 – 3 triệu đồng, các vợt cao cấp hơn có thể lên tới hơn 3 triệu đồng. Những cây vợt này thường sẽ đến từ những thương hiệu vợt cầu lông xịn, vợt cầu lông cao như như Yonex, Lining, Victor..</p>
+                <h3>Mua vợt cầu lông chính hãng ở đâu TPHCM, Hà Nội và toàn quốc?</h3>
+                <p>Mua vợt cầu lông chính hãng ở đâu là câu hỏi của rất nhiều người, đặc biệt là những bạn mới cần tư vấn về cách mua vợt đánh cầu lông. Nhằm tránh mua phải hàng giả, nhái, kém chất lượng, bạn cần tìm đến những nơi bán vợt uy tín tại TPHCM. Nếu bạn đang gặp vấn đề trên, có thể đến ngay các chi nhánh của ShopVNB để được được tư vấn và mua cho mình dòng vợt chơi cầu lông phù hợp nhất.</p>
+                <p>Đây là địa chỉ bán vợt carbon chuyên dụng, giày cầu lông, quần áo và phụ kiện cầu lông... với mẫu mã đa dạng bậc nhất cùng chất lượng cực kỳ đảm bảo và chế độ hậu mãi vượt trội chắc chắn sẽ giúp mua vợt thích hợp nhất với mình. Ngoài ra, cửa hàng bán vợt cầu lông uy tín ShopVNB cũng là một trong những nơi bán vợt cầu lông giá rẻ phù hợp với mọi đối tượng.</p>
+                <p>ShopVNB là nơi gần như được tin tưởng tuyệt đối nhất để bạn mua vợt Yonex chính hãng, vợt Victor, Lining hoặc các dòng vợt hiện có trên thị trường. Ngoài ra, tại đây thường xuyên có những chương trình vợt cầu lông khuyến mãi, vợt giá rẻ hay vợt đánh cầu cũ được ký gởi để bạn chọn mua thuận tiện.</p>
+                <p>Đến với cửa hàng bán vợt uy tín ShopVNB, bạn sẽ nhận được những dịch vụ đi kèm tốt nhất. Những sản phẩm tại Shop cầu lông VNB luôn được bảo hành chĩnh hãng với tiêu chí nhanh, gọn, lẹ cho khách hàng. Ngoài ra, bạn sẽ tuyệt đối yên tâm về các sản phẩm cũng như được tư vấn tận tình, chi tiết nhất. Nếu không có thời gian đến trực tiếp để mua hàng, bạn có thể lên website shopvnb.com để lựa chọn và nhận được nhiều tư vấn cần thiết hơn nữa.</p>
+                <h3>Tìm hiểu về vợt cầu lông</h3>
+                <p>Nguồn gốc của vợt cầu lông có từ giữa thế kỷ 18 tại thuộc địa cũ của Anh có tên là British India, do một sỹ quan quan quân đội Anh sáng tạo ra. Môn chơi này trởi nên phổ biến tại đơn vị đồn trú của quân Anh ở thị trấn Poona (nay là Pune). Cầu lông được một sĩ quan về hưu đem về Anh nơi mà nó được phát triển và xây dựng luật chơi. Đây là tiền đề cho sự phát triển của bộ môn cầu lông cho tới ngày hôm nay.</p>
+                <p>Trong những năm trở lại đây, phong trào chơi cầu lông ngày càng phát triển ở các địa phương, và cũng có một số trường học đưa vào bộ môn giảng dạy bắt buộc cho các bạn học sinh, sinh viên. Nắm bắt được xu thế đó, các hãng vợt cầu lông hiện nay không ngừng phát triển và mở rộng thị phần của mình. Các hãng vợt thường xuyên ra mắt nhiều sản phẩm chất lượng hơn, hiện đại hơn để đáp ứng yêu cầu ngày càng cao của người chơi. Hãy cùng ShopVNB điểm qua một số hãng vợt cầu lông nổi tiếng đang có mặt tại thị trường Việt Nam nhé!</p>
+                <h3>Vợt cầu lông Yonex</h3>
+                <p>Nhắc đến vợt cầu lông thì không thể không nhắc đến hãng vợt cầu lông nổi tiếng nhất hiện này là Yonex. Hãng cầu lông lớn nhất thế giới về số lượng vợt bán ra và được rất nhiều tên tuổi vận động viên lớn sử dụng. Bên cạnh đó, Yonex cũng là nhà tài trợ lớn cho các giải đấu trên toàn thế giới là đối tác quan trọng của liên đoàn cầu lông thế giới.</p>
+                <p>Hãng  <a href="" class="text2">vợt cầu lông Yonex</a> luôn là hãng đi tiên phong trong những phát minh và áp dụng về công nghệ mới lên những sản phẩm vợt cầu lông. Ngoài ra, còn đi đầu trong thiết kế với những sản phẩm có màu sắc nổi bật, khung vợt có cấu trúc đặc biệt phù hợp với nhiều lối chơi và từng đối tượng khác nhau.</p>
+                <p>Những sản phẩm mà hãng vợt cầu lông Yonex cho ra thị trường đều là các sản phẩm chất lượng, mang tính ổn định và hiệu năng đáng kinh ngạc. Là hãng vợt cầu lông dẫn đầu về công nghệ sản xuất, cho nên các sản phẩm đều được trang bị các công nghệ hiện đại nhất, mới nhất. </p>
+                <p>Hầu hết các vận động viên thuộc top đầu của bảng xếp hạng cầu lông thế giới đều sử dụng vợt cầu lông mang thương hiệu Yonex. Một số sản phẩm mới nhất của hãng vợt cầu lông nổi tiếng Yonex mới cho ra thị trường như: Vợt Cầu Lông cao cấp Yonex Astrox 77 pro, Vợt Cầu Lông Yonex Arcsaber 11 Pro, vợt cầu lông astrox 99,...điều cho những đánh giá, phản hồi rất tích cực từ người chơi.</p>
+                <h3>Vợt cầu lông Victor</h3>
+                <p>Trước đây vợt cầu lông Victor được xem là thế lực lớn trong các hãng vợt cầu lông trên thế giới thì giờ đây số lượng người chơi sử dụng sản phẩm của Victor cũng có phần thiên giảm. Nguyên nhân là do trong vài năm nay trở lại đây thì hãng Victor lại tung ra thị trường khá ít  mẫu vợt cầu lông mới so với những tên tuổi còn lại như Yonex hay Lining. </p>
+                <p>Giống như Yonex, sản phẩm <a href="" class="text2">vợt cầu lông Victor</a> cũng được nhiều tay vợt nổi tiếng sử dụng như: Gao Ning, Yang Wei, và Zhang Ji Wen. </p>
+                <p>Phần lớn các sản phẩm mà Victor cho ra thị trường đều hướng tới người sử dụng có sức mạnh, hỗ trợ các cú đập cầu và phản công chớp nhoáng. Một số cây vợt làm bằng graphit cacbon, là một cây vợt cầu lông bền, hiệu năng cao, dành cho cả những người chơi lâu năm cũng như là người mới tập chơi.</p>
+                <h3>Vợt cầu lông Li-Ning</h3>
+                <p>Hãng vợt cầu lông nổi tiếng này chuyên sản xuất các dụng cụ thể thao, đồ tập thể thao lớn của Trung Quốc và sản phẩm vợt cầu lông là 1 trong những dòng sản phẩm trọng điểm của hãng vợt cầu lông Lining trong vài năm trở lại đây.</p>
+                <p>Tuy là một thương hiệu đến từ Trung Quốc nhưng không vì thế thương hiệu vợt cầu lông Lining không được chào đón ở Việt Nam. Lining càng ngày càng chiếm được nhiều thiện cảm của người dùng và đang ngày càng phát triển. Dần nắm vị thế số 2 thế giới trong mảng vợt cầu lông, vượt qua victor và tham vọng vượt qua cả Yonex.</p>
+                <p><a href="" class="text2">Vợt cầu lông Lining</a> đang được các nước sử dụng rất nhiều, đặc biệt ở các quốc gia của Châu Á. Vợt Lining mang lại trải nghiệm khá tốt, đặc biệt là những người chơi mới gia nhập bộ môn cầu lông này.</p>
+                <p>Các sản phẩm vợt cầu lông Lining nổi trội với mẫu mã đa dạng được chia thành nhiều dòng vợt khác nhau phù hợp với từng lối chơi như aeronaut, calibar, tectonic... Điểm nội trội hãng vợt cầu lông nổi tiếng này còn rất chú trọng vào thiết kế màu sắc và ngoại hình cho từng sản phẩm vợt cầu lông.</p>
+            <p>Vợt cầu lông Lining trên thị trường đang được rất nhiều người chơi ưa chuộng, đặt biệt sẽ có nhiều phân khúc vợt cầu lông từ 1 triệu đến 2 triệu. Phải kể đến một số sản phẩm như: Vợt Cầu Lông Lining Aeronaut 6000, Aeronaut 6000 speed, Aeronaut 6000C, Vợt Cầu Lông Lining Aeronaut 4000c, Vợt Cầu Lông Lining Calibar 300C Chính Hãng..</p>
+            <h3>Vợt cầu lông Mizuno</h3>
+            <p>Hãng vợt cầu lông Mizuno cũng là 1 thương hiệu nổi tiếng xuất xứ từ Nhật Bản, hiện cũng là 1 trong những thương hiệu được ưa chuộng trên thị trường Việt Nam. </p>
+            <p>Những sản phẩm vợt cầu lông Mizuno được chú trọng vào chất liệu cao cấp và hình dạng khung vợt độc lạ nhưng vẫn công năng và cho tính khí động học cao. Hiện nay trên thị trường Việt Nam, Mizuno đã có chỗ đứng vững chắc bởi những cây vợt cầu lông Mizuno nổi bật với thiết kế cao cấp từ chất liệu tới mức độ hoàn thiện của sản phẩm.</p>
+            <p>Một số sản phẩm <a href="" class="text2">vợt cầu lông mizuno</a> được ưa chuộng phải kể đến như: Vợt cầu lông Mizuno Speedflex 9.1, Vợt cầu lông Mizuno Fortius 50 Spirit, Vợt cầu lông Mizuno Fortius 30 Controll...</p>
+            <h3>Vợt cầu lông Proace</h3>
+            <p>Ngoài những tên tuổi nổi tiếng và đang rất được ưa chuộng mà ShopVNB kể trên; với những mẫu vợt vô cùng đắt đó thì cũng có rất nhiều hãng vợt giá rẻ để đáp ứng nhu cầu cho người chơi phong trào, học sinh, sinh viên. Trong đó phải kể đến hãng vợt cầu lông proace.</p>
+            <p><a href="" class="text2">Vợt cầu lông Proace</a> là thương hiệu vợt cầu lông của Anh được thành lập vào năm 1978. Hãng luôn cố gắng nỗ lực cung cấp các thiết bị hỗ trợ tốt nhất cho bộ môn thể thao cầu lông. Với mong muốn mang đến các sản phẩm vợt cầu lông rẻ và chất lượng. Tính đến nay vợt cầu lông Proace đã nhận được rất nhiều lời khen về sản phẩm chất lượng.</p>
+            <p>Mặc dù không cho ra mắt nhiều cây vợt số 1 thế giới như hãng Yonex, lining nhưng Proace cũng đã cho ra đời nhiều sản phẩm vợt cầu lông nổi tiếng như Proace S.D.S, abs 1000, Proace Stroke 318....</p>
+            <p> Vợt cầu lông Proace đề cao chất lượng sản phẩm, chính vì vậy mà bạn có thể thấy có những cây vợt Proace có thể truyền từ đời này sang đời khác mà vẫn có thể sử dụng tốt. Một trong những đặc điểm duy nhất mà cho tới thời điểm hiện tại cá nhân VNB thấy chỉ có Proace làm được điều này.</p>
+            <h3>Vợt cầu lông giá rẻ Apacs</h3>
+            <p>Hãng vợt cầu lông giá rẻ tiếp theo mà hãng giới thiệu là thương hiệu vợt cầu lông Apacs. Một thương hiệu khá tốt và cũng đang được rất nhiều người chơi lựa chọn và tin dùng. Apacs  có một đặc điểm nổi bật là các cây vợt của họ luôn có sự bền bỉ, khung vợt cứng chịu được mức căng cao, mẫu mã đa dạng đi cùng với giá thành hợp lý.</p>
+            <p>Một số sản phẩm <a href="" class="text2"> vợt cầu lông Apacs</a>nổi bật có thể kể đến như: Apacs Z-Ziggler, Apacs Virtus 99…Hãng vợt cầu lông giá rẻ này có nhiều dòng vợt khác nhau trong đó nổi bật là dòng Tantrum series với lối đánh thiên công, dòng vợt Ziggler phù hợp với điều cầu và phản tạt, dòng Lethal Light là dòng thân nhẹ, cho khả năng thủ cầu tốc độ và chuẩn xác.</p>
+            <p>Nếu các bạn tìm kiếm một cầu vợt cầu lông giá rẻ cho người mới chơi và có chất lượng tốt, mức căng cao; mẫu mã đa dạng thì hãng vợt cầu lông Apacs đáng để bạn cân nhắc.</p>
+            <h3>Vợt cầu lông VNB</h3>
+            <p> Một thương hiệu vợt trong nước và đang được rất nhiều người chơi lựa chọn một cây vợt cầu lông chính hãng giá rẻ. Vợt cầu lông mang thương hiệu VNB đã, đang và sẽ làm mưa làm gió trên thị trường. Các sản phẩm vợt VNB đều được các khách hàng tin dùng và đánh giá rất cao về chất lượng. Tuy là một thương hiệu vợt trong nước nhưng VNB không làm anh em thất vọng về hiệu năng trên từng cây vợt. VNB luôn cải tiến và mang đến cho các khách hàng những sản phẩm tối ưu nhất với mức giá phải chăng nhất.</p>
+            <p>Một trong những sản phẩm <a href="" class="text2"> vợt cầu lông VNB </a>được ưa chuộng là VNB V200 ( v200 xanh, v200 đỏ và v200i màu hồng cho nữ), VNB V88, VBB TC88. Tấc cả những sản phẩm vợt cầu lông VNB luôn đáp ứng tiêu chí rẻ, bền, đẹp đáp ứng nhu cầu của người mới chơi và học sinh, sinh viên.</p>
+            <p>Ngoài những hãng vợt cầu lông nổi tiếng Shop VNB vừa nêu trên thì cũng có nhiều thương hiệu khác như Kumpoo, Kawasaki, VS thuộc phân khúc vợt cầu lông giá rẻ, vợt cầu lông cho học sinh, sinh viên. Cũng là những thương hiệu đáng tin cậy cho sự lựa chọn của bạn.</p>
+            <h3>Top bộ vợt cầu lông giá rẻ chất lượng tốt nhất hiện nay</h3>
+            <p>Bộ vợt cầu lông giá rẻ thường là những bộ vợt phù hợp những bộ vợt giành cho các bạn nhỏ đánh giải trí, vui chơi ở sân nhà hoặc công viên thường có mức giá tầm 100.000đ đến 400.000 đ.</p>
+            <h3>Bộ vợt Cầu Lông Kamito Vragon Kid KMBR21004 Vàng Hồng Chính Hãng với mức giá chỉ 200.000 đ</h3>
+            <p>Bộ Vợt cầu lông Kamito Vragon Kid KMBR21004 vàng hồng chính hãng là bộ vợt cầu lông giá rẻ thuộc dòng vợt ngắn căng lưới sẵn dành riêng cho trẻ em, thiếu niên và những bạn nhỏ lần đầu tiên tiếp xúc với cầu lông. Vợt cầu lông Kamito Vragon Kid KMBR21004 có thân ngắn dễ sử dụng cùng với đó là kết cấu bền vững giúp các em nhỏ thỏa sức vui chơi và luyện tập.</p>
+            <h3>Bộ Vợt Cầu Lông Kamito Vragon KMBR21005 Xanh Chuối Chính Hãng với giá 220.000 đ</h3>
+            <p>Bộ Vợt cầu lông Kamito Vragon KMBR21005 xanh chuối là một trong những sản phẩm vợt cầu lông rẻ nhất trên thị trường hướng đến đối tượng là những bạn mới bắt đầu tập chơi cầu lông, Được sản xuất trên dây chuyền công nghệ tiên tiến và sở hữu thiết kế màu sắc bắt mắt cùng mức giá rẻ.</p>
+            <h3>Bộ Vợt Cầu Lông Vicleo Power 880 Chính Hãng với giá 390.000 đ</h3>
+            <p>Bộ Vợt cầu lông Vicleo Power 880 chính hãng là sản phẩm được sản xuất bởi Vicleo, là một trong những hãng vợt cầu lông có giá rẻ nhất thị trường. Thiết kế chủ đạo màu đen phối trắng làm thể hiện sự bắt mắt, hiện đại cho cây vợt. Được làm từ vật liệu chính là carbon siêu nhẹ dể dàng sử dụng đối với mọi người chơi.</p>
+            <h3>Bảng giá vợt cầu lông 2024</h3>
+            <p>ShopVNB gửi đến các bạn bảng giá vợt cầu lông (giá tiền vợt cầu lông) mới nhất hiện nay.</p>
+            <table>
+                <tr>
+                  <th>Vợt cầu lông</th>
+                  <th>Giá</th>
+                </tr>
+                <tr>
+                  <td cls> <a href="" class="text2">Vợt Cầu Lông Yonex Arcsaber 7 Pro Chính Hãng </a>  </td>
+                  <td>3.559.000 ₫</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="text2">Vợt Cầu Lông Yonex Astrox 77 Pro Chính Hãng</a></td>
+                  <td>3.720.000 ₫</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="text2">Vợt Cầu Lông Lining Aeronaut 9000C Chính Hãng</a></td>
+                  <td>4.200.000 ₫</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="text2">Vợt Cầu Lông Lining Aeronaut 6000C Chính Hãng</a></td>
+                  <td>2.060.000 ₫</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="text2">Vợt Cầu Lông Lining Aeronaut 4000 Chính Hãng</a></td>
+                  <td>2.060.000 ₫</td>
+                </tr>
+                <tr>
+                  <td><a href="" class="text2">Vợt Cầu Lông Apacs Virtus 90 Chính Hãng</a></td>
+                  <td>820.000 ₫ </td>
+                </tr>
+                <tr>
+                    <td><a href="" class="text2">Vợt Cầu Lông VNB V200 Xanh Chính Hãng</a></td>
+                    <td>529.000 ₫</td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="text2">Vợt Cầu Lông VNB V88 Cam Chính Hãng</a></td>
+                    <td>638.000 ₫</td>
+                  </tr>
+                  <tr>
+                    <td><a href="" class="text2">Vợt Cầu Lông Proace Sweet Spot 1000 III Chính Hãng</a></td>
+                    <td>1.680.000 ₫ </td>
+                  </tr>
+              </table>
+              <p><span class="stress"> Click xem: </span><span> <a href="" class="text2">ShopVNB</a> - Hệ thống shop cầu lông hàng đầu Việt Nam với <a href="" class="text2"> 5 shop Premium và 64 chi nhánh </a> trên toàn quốc chuyên <a href="" class="text2"> bán vợt cầu lông chính hãng</a> 2024 và là nơi <a href="" class="text2">mua vợt cầu lông giá rẻ</a> nhất năm 2024.</span></p>
+        
+        
+        
+        
+        
+        
+        
+        
+        </div>
+
+            </div><!-- large_container -->
+            
+            
+
+        </div>
+    </div>
+        
+        
+       
+
+
+
+    <div class="footer1">
+        <div class="grid">
+            <div class="footer1-item">
+                <div class="footer_column">
+                    <h3 class="footer_title">THÔNG TIN CHUNG</h3>
+                    <p class="footer_text"><span class="footer_text_main">VNB Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+                    <p class="footer_text_italic"><span class="footer_text_main">Với sứ mệnh:</span>"VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</p>
+                    <p class="footer_text_italic"><span class="footer_text_main">Tầm nhìn:</span>"Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+                </div>
+                <div class="footer_column">
+                    <h3 class="footer_title">THÔNG TIN LIÊN HỆ</h3>
+                    <p class="footer_text">Hệ thống cửa hàng:
+                    <span><a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main">5 shop Premium và 63 cửa hàng</a></span>
+                    <span class="footer_text">trên toàn quốc</span></p>
+                    <a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main_bold">Xem tất cả các cửa hàng VNB</a>
+                    <p class="footer_text">Hotline: <a href="#" class="footer_text_main">0977508430 | 0792677415</a></p>
+                    <p class="footer_text">Email: <a href="#" class="footer_text_main">info@shopvnb.com</a></p>
+                    <p class="footer_text">Hợp tác kinh doanh: <a href="#" class="footer_text_main">0947342259 (Ms. Thảo)</a></p>
+                    <p class="footer_text">Hotline bán sỉ: <a href="#" class="footer_text_main">0911 105 211</a></p>
+                    <p class="footer_text">Nhượng quyền thương hiệu: <a href="#" class="footer_text_main">0334.741.141 (Mr. Hậu)</a></p>
+                    <p class="footer_text">Than phiền dịch vụ: <a href="#" class="footer_text_main">0334.741.141 (Mr. Hậu)</a></p>
+                    <div class="footer_icon_main">
+                        <a href="" class="footer_icon_main-a"><i class="fa-brands fa-facebook-f footer_icon"></i></a>
+                        <a href="" class="footer_icon_main-a"><i class="fa-brands fa-youtube footer_icon"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="footer_column">
+                    <h3 class="footer_title">CHÍNH SÁCH</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách đổi trả, hoàn tiền</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo hành</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách xử lý khiếu nại</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách vận chuyển</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo mật thông tin</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">chính sách nhượng quyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h3 class="footer_title">HƯỚNG DẪN</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Điều khoản sử dụng</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Tìm hiểu công việc tập huấn tennis trước khi tổ chức giải đấu</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Bảng size Lining - Cách chọn size quần áo lining, giày cầu lông Lining</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách tập tennis cho người mới chơi</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn thanh toán</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Kiếm tra bả hành</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Kiếm tra đơn hàng</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">HƯỚNG DẪN MUA HÀNG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <p><i class="fa-solid fa-copyright"></i>CÔNG TY TNHH VNB SPORTS</p>
+        <p>GPDK số 0314496879 do Sở KH vs ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+        <p>GĐ/Sở hữu website: Phan Lê Chi</p>
+       <a href="http://online.gov.vn/Home/WebDetails/61951"><img style="width: 22rem; height: 8rem;" src="/CIB SHOP/assets/img/logo_bo_cong_thuong.png"></a>
+        </div>
+        <div align="right" class="icon-bar-right">
+          <a href="#" style="border: node; width: 4rem; border-radius: 0.7rem;"><img style="width: 4.2rem; height: 4rem;" src="/CIB SHOP/assets/img/up arrow.png"> </a>
+          <a href="/CIB SHOP/zalo.html"  style="border: node; width: 5rem; height: 5rem; background-color: aliceblue; border-radius: 0.7rem;"><img style="width: 5rem; height: 5rem;" src="assets/img/zalo-tach-nen.png"></a>
+          <a href="https://shopvnb.com/" ><img style="width: 20rem; height: 4.6rem;" src="/CIB SHOP/assets/img/hethongcuahang.png"></a>
+        </div>
+      <div class="icon-bar-left">
+        <a href="#" style="border: node; width: 4rem;"><img style="width: 20rem; height: 5.2rem;" src="/CIB SHOP/assets/img/xemgiohang.png"> </a>
+      </div>
+</body>
+</html>
