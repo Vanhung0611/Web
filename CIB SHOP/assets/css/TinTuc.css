@@ -61,6 +61,18 @@
     min-height: 315px;
     margin: 14px 0;
 }
+
+@media (max-width: 1000px) {
+    .news_item{
+        width: 49%;
+    }
+}
+@media (max-width: 670px) {
+    .news_item{
+        width: 98%;
+    }
+}
+
 .news_item-picture{
     overflow: hidden;
 }
