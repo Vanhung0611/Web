@@ -288,7 +288,7 @@
         width: calc(100% - 10px);
         height: 420px;
         background-color: #fff;
-        z-index: 1;
+        z-index: 3;
         top: 123px;
         left: 0px;
         display: flex;
