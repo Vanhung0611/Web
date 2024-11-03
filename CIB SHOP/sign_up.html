@@ -472,35 +472,45 @@
             // kiểm tra ô trống thông tin
             if (!name) {
                 alert("Vui lòng nhập họ tên!");
+                return;
             }
             else if(!email){
                 alert("Vui lòng nhập email!");
+                return;
             }
             else if(!phone){
                 alert("Vui lòng nhập số điện thoại !");
+                return;
             }
             else if(!password){
                 alert("Vui lòng nhập mật khẩu mà bạn chọn để đăng ký tài khoản!");
+                return;
             }
             else if(!passwordRe){
                 alert("Vui lòng xác nhận lại mật khẩu!");
+                return;
             }
             // kiểm tra số điện thoại đúng định dạng
             if (!testPhone.test(phone)) {
                 alert("Số điện thoại không hợp lệ! Số điện thoại phải có 10 chữ số và bắt đầu bằng số 0.");
+                return;
             }
             // kiểm tra email đúng định dạng
             if(!testEmail.test(email)){
                 alert("Email phải có dạng asd@gmail.com.Mời nhập lại!");
+                return;
             }
             // ràng buộc mật khẩu, mật khẩu tối thiểu có 6 kí tự, ít nhất 1 chữ in hoa, 1 chữ cái thường và 1 số
             if(!testPassword.test(password)){
                 alert("Mật khẩu sai định dạng, mời nhập lại(Mật khẩu phải có tối thiểu 6 kí tự, ít nhất một chữ in hoa, một chữ thường và một số!)");
+                return;
             }
             // Kiểm tra mật khẩu nhập lại
             if (password !== passwordRe) {
                 alert("Mật khẩu không khớp. Vui lòng nhập lại.");
+                return;
             }
+            alert("Đăng ký thành công!");
         }
     </script>
     <div class="footer1">
