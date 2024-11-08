@@ -1,9 +1,21 @@
 /*container*/
 .container{
     display: flex;
+    gap: 20px;
+    align-items: flex-start;
+    justify-content: space-between;
 }
 .container1{
     width: 42%;
+    
+}
+@media (max-width: 1000px) {
+    .container {
+        flex-direction: column;
+    }
+    .container1, .container2 {
+        width: 100%; 
+    }
 }
 .container1_title{
     font-weight: bold;
