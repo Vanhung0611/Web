@@ -9,7 +9,7 @@
     width: 42%;
     
 }
-@media (max-width: 1000px) {
+@media (max-width: 900px) {
     .container {
         flex-direction: column;
     }
