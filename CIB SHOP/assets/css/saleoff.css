@@ -157,11 +157,11 @@ h3 {
 @media (max-width: 770px) {
     .picture_line {
         justify-content: center;
-        gap: 10rem; /* Căn giữa các ảnh khi màn hình nhỏ hơn 900px */
+        gap: 10rem; 
     }
 
     .picture_box {
-        width: 35%; /* Hiển thị 2 ảnh trên mỗi hàng */
+        width: 35%; 
     }
 }
 
