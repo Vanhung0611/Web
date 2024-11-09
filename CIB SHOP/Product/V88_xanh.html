@@ -21,6 +21,7 @@
 
 </head>
 <body>
+    
     <header class="header">   <!-- Hoàn thành-->
         <div class="grid">
             <div class="header_navbar">
@@ -67,10 +68,23 @@
                                 
                             <div class="choose_cart">
                                 <i class="fa-solid fa-cart-arrow-down choose_icon"></i>
-                                <div>GIỎ HÀNG
-                                    <div class="cart_noti">
-                                        <img class="cart_picture" src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
+                                <span class="cart-count" id="cartCount">0</span>
+                                <div>GIỎ HÀNG</div>
+                                
+                                <div class="cart_noti" id="cartItems">
+                                    <!-- Khi giỏ hàng trống -->
+                                    <div id="No_pro">
+                                        <img class="cart_picture"  src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
                                         <p class="cart_text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                                    </div>
+                                    <!-- Khi có hàng -->
+                                    <div id="giohang">GIỎ HÀNG</div>
+                                    <div id="yes_pro">
+                                        <div id="yes_pro_item"></div>    
+                                    </div>
+                                    <div id="cost_all">
+                                        <p>Tổng tiền: </p>
+                                        <p id="cost">0</p>
                                     </div>
                                 </div>
                             </div>
@@ -438,12 +452,11 @@
                 <img class="procuct_img" src="/CIB SHOP/Product/img/V88 xanh.png" alt="">
                 <div class="pro_center">
                     <div style="border-bottom: 2px solid #F5F5F5;">
-                        <h1 style="font-size: 27px; font-weight: 400; color: var(--text-color)">Vợt Cầu Lông VNB V88 xanh chính hãng</h1>
+                        <h1 id="name">Vợt Cầu Lông VNB V88 xanh chính hãng</h1>
                         <span>Mã: </span> <span class="text_main">VNB012008</span> <br> <br>
                         <span>Thương hiệu: </span> <span class="text_main">VNB</span> &ensp;<span>|</span>&ensp;  <span>Tình trạng: </span> <span class="text_main">Còn hàng</span>  <br>
                         <p style="padding: 10px 0;">
-                            <span class="pro_cost">638.000</span> <span class="pro_cost">₫</span>&ensp; <span class="pro_cost_listed">Giá niêm yết: </span><span style="text-decoration:line-through;" class="pro_cost_listed">765.000đ</span>
-                        
+                            <span class="pro_cost" id="idcost">638.000</span> <span class="pro_cost">₫</span>&ensp; <span class="pro_cost_listed">Giá niêm yết: </span><span style="text-decoration:line-through;" class="pro_cost_listed">765.000đ</span>
                         </p>
 
                     </div>
@@ -459,8 +472,8 @@
                         <br>
                         <div class="premium-header">🎁 Ưu đãi thêm khi mua sản phẩm tại <span style="color: var(--main-color);">VNB Premium</span></div> 
                         <ul class="premium-list">
-                            <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk">Sơn logo mặt vợt</span> Sơn logo mặt vợt miễn phí</li>
-                            <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk">Bảo hành lưới đan </span> trong 72 giờ</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk"> Sơn logo mặt vợt</span> Sơn logo mặt vợt miễn phí</li>
+                            <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk"> Bảo hành lưới đan </span> trong 72 giờ</li>
                             <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk"> Thay gen vợt</span>miễn phí trọn đời</li>
                             <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk"> Tích lũy điểm thành viên</span> Premium</li>
                             <li><i class="fa-solid fa-square-check" style="color: #00D26A"></i><span class="text_linkk"> Voucher giảm giá</span> cho lần mua hàng tiếp theo</li>
@@ -475,7 +488,7 @@
 
                     <div style="display: flex; margin: 20px 0;">
                         <button class="btn_pro gold" style="width: 170px; background-color: #FFB916;">MUA NGAY</button>
-                        <button class="btn_pro" style="background-color: #E95221;">THÊM VÀO GIỎ HÀNG</button>
+                        <button class="btn_pro" id="addToCart" style="background-color: #E95221;">THÊM VÀO GIỎ HÀNG</button>
                     </div>
                     <div class="btn_Nochange" style="background-color: #E90707;">
                         <p style="margin: 5px; line-height: 25px;">THANH TOÁN THẺ</p>
@@ -528,8 +541,6 @@
                     <li>VNB PREMIUM Quận 1</li>
                     <li>VNB PREMIUM Quận 1</li>
                     <li>VNB PREMIUM Quận 1</li>
-
-                    
                 </ul>
                 
             </fieldset>
@@ -609,6 +620,7 @@
       </div>
 
       <script>
+        
         function increment() {
             let quantity = document.getElementById('quantity');
             quantity.value = parseInt(quantity.value) + 1;
@@ -620,6 +632,53 @@
                 quantity.value = parseInt(quantity.value) - 1;
             }
         }
+
+        document.getElementById("addToCart").addEventListener
+        ("click",function()
+            {
+                let quantityInput = document.getElementById("quantity"); // Lấy giá trị từ ô input
+                let cartCount = document.getElementById("cartCount");   //Lấy giá phần tử hiển thị số lượng là CartCount (class cart-count)
+                let cartItems = document.getElementById("cartItems"); // Lấy phần tủ div có id là cartItems (class là cart-noti)
+                let quantity = parseInt(quantityInput.value);
+                let number = parseInt(cartCount.textContent);
+                let noPro = document.getElementById("No_pro");
+                let Cost_all = document.getElementById("cost_all");
+                yes_pro_item = document.getElementById("yes_pro_item");
+                cartCount.textContent = number + quantity;
+                // if (number != 0) cartItems.innerHTML ="";
+                if (number + quantity > 0) 
+                { 
+                    noPro.style.display = "none";  
+                    document.getElementById("yes_pro").style.display = "block"; 
+                    document.getElementById("giohang").style.display = "block";
+                    document.getElementById("cost_all").style.display = "block";
+                }
+                let img = '/CIB SHOP/Product/img/V88 xanh.png';
+                let name = document.getElementById("name").textContent;
+                let cost_item = document.getElementById("idcost").textContent;
+                yes_pro_item.innerHTML += `<div class="add_cart">
+                                        <img class="add_cart_picture" src="${img}" alt="">
+                                        <div class="pro_title">
+                                            <div style= "display: flex; justify-content: space-between;">
+                                            <span class="text_title">${name}</span> <i class="fa-regular fa-circle-xmark" style="font-size: 14px; padding-left: 10px"></i>
+                                            </div>
+                                            <div style="display: flex; justify-content: space-between">
+                                                <p class="qua">Số lượng: ${quantity}</p>
+                                                <p class="cost_item">${cost_item} ₫</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        `;
+                var cost =  document.getElementById("cost");
+                
+                var cost_format = quantity*cost_item*1000 + parseInt(cost.textContent);
+                cost.textContent = "";
+                                        
+                cost.textContent += cost_format;
+
+            }
+
+        );
     </script>
 </body>
 </html>
