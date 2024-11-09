@@ -27,7 +27,29 @@ span{
     font-size: 15px;
     color: var(--text-color);
 }
-
+.expand_sdt{
+    font-size: 14px;
+    color: black;    
+}
+.text{
+    padding: 0.5rem;
+}
+.expand{
+    cursor: pointer;
+}
+.expand_link{
+    text-decoration: none;
+    font-size: 14px;
+    color: black;
+    line-height: 2rem;
+}
+.expand_link:hover{
+    color: var(--main-color);
+}
+.icon{
+    color: var(--main-color);
+    padding: 3px;
+}
 .text_main{
     color: var(--main-color);
 }
