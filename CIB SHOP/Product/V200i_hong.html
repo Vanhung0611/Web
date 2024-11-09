@@ -3,6 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="product.js"></script>
     <!-- reset các thẻ-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
     <!-- link lấy font chữ Roboto từ google-->
@@ -453,14 +455,17 @@
    
         <div class="container_product grid">
             <div class="row">
+                <div class="row1">
                 <img class="procuct_img" src="/CIB SHOP/Product/img/VNB V200i Hong.png" alt="">
                 <div class="pro_center">
                     <div style="border-bottom: 2px solid #F5F5F5;">
-                        <h1 id="name">Vợt Cầu Lông Yonex 219BT004U chính hãng</h1>
+                        <h1 id="name">Túi cầu lông Yonex 219BT004U</h1>
                         <span>Mã: </span> <span class="text_main">VNB012008</span> <br> <br>
                         <span>Thương hiệu: </span> <span class="text_main">VNB</span> &ensp;<span>|</span>&ensp;  <span>Tình trạng: </span> <span class="text_main">Còn hàng</span>  <br>
                         <p style="padding: 10px 0;">
-                            <span class="pro_cost" id="idcost">525.000</span> <span class="pro_cost">₫</span>&ensp; <span class="pro_cost_listed">Giá niêm yết: </span><span style="text-decoration:line-through;" class="pro_cost_listed">1050.000đ</span>
+                            <span class="pro_cost" id="idcost">525.000</span> <span class="pro_cost">₫</span>&ensp;
+                            <span class="pro_cost_listed">Giá niêm yết: </span>
+                            <span style="text-decoration:line-through;" class="pro_cost_listed">1050.000đ</span>
                         </p>
 
                     </div>
@@ -499,9 +504,74 @@
                         <p style="margin: 5px; font-size: 13px; line-height: 10px;">(Visa, MasterCard, JCB)</p>
                     </div>
                     <br>
-                    <div class="btn_Nochange" style="background-color: #F1EB1F; line-height: 50px;">MUA TRẢ GÓP</div>
+                    <div class="btn_Nochange" style="background-color: #F1EB1F; line-height: 20px; color: #235D97; font-size: 14px; padding-top: 5px;">MUA TRẢ GÓP 
+                        <div style="display: flex; justify-content: center;">
+                            <img class="btn_picture" src="/CIB SHOP/Product/img/home-paylater-ngang-small.svg" alt=""> 
+                            <img class="btn_picture" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="pay">
+                        <div class="parent_title">
+                            <div style="display: flex; justify-content: center;">
+                                <h1 class="pay_title">ƯU ĐÃI KHI THANH TOÁN</h1>
+                                <img class="btn_picture" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="" class="pay_picture">
+                            </div>
+                            <h2>(SỬ DỤNG KHI XÁC NHẬN KHOẢN VAY TRÊN TRANG CỦA TỔ CHỨC TÀI CHÍNH)</h2>
+                        </div>
+                        <div style="padding: 6px;">
+                            <div style="display: flex;">
+                                <img class="img_icon" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="">
+                                <h2 class="pay_text">Hạn mức Trả góp lên tới 30.000.000 VNĐ với phí chỉ từ 2,5%.</h2>
+                            </div>
+                            <div  style="display: flex;">
+                                <img class="img_icon" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="">
+                                <h2 class="pay_text">Miễn phí lãi suất trọn đời.</h2>
+                            </div>
+                            <div  style="display: flex; justify-content: end;">
+                                <p style="padding-right: 10px;">Powered by</p>
+                                <img class="img_icon" src="/CIB SHOP/Product/img/bk-logo-promotion.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
-                
+                </div>
+                <span class="row2">
+                    <div class="text_TS">
+                        <div class="text_title">Vợt Cầu Lông VNB V88 Xanh - Phiên Bản Mới Của Năm 2022</div>
+                        <div class="text">
+                            <h3>1. Giới thiệu vợt cầu lông VNB Pro V88 Xanh</h3>
+                            <p>- Pro V88 Xanh nổi trội là phiên bản mới vừa được ra VNB cho ra mắt vào tháng 7 năm 2022 hướng đến người chơi yêu thích lối đánh tấn công, chuyên dùng những quả đập cầu để ghi điểm, áp đảo đối thủ sân bạn.</p>
+                            <p>- Vợt cầu lông VNB V88 Xanh có điểm cân bằng nằm ở mức nặng đầu và có đũa cứng 8.5 giúp V88 hỗ trợ đập cầu đi cắm hơn, nhanh và mạnh hơn. Còn đối với người thích đánh thiên công thì vợt càng tăng thêm sức mạnh cho những pha đập cầu. Sợi carbon chắc chắc và bền giúp vợt nhanh chóng quay lại trạng thái ổn định để chuẩn bị tốt nhất cho pha cầu tiếp theo.</p>
+                            <p>- Về màu sắc, nếu V88 Cam hướng đến sự mạnh mẽ, nhiệt huyết, năng nổ thì phiên bản mới - Vợt cầu lông VNB Pro V88 Xanh Dương làm bật lên vẻ hiện đại, đẳng cấp, sang trọng cho người chơi. Không những vậy, tổng thể vợt cùng được phủ nước Sơn Nhám vô cùng cứng cáp đảm bảo lỡ khi các lông thủ sử dụng trên sân đấu có những pha cạch cầu hoặc cạch vợt nhẹ thì đảm bảo cây vợt cũng chả hề hấn gì đâu nhé!</p>
+                            <p>- Chính vì vậy với 3 tiêu chí chất lượng tốt, ngoại hình ấn tượng, hợp lí về giá cả, V88 đã đáp ứng khá đầy đủ nhu cầu của người chơi về một cây vợt giá rẻ dành cho người chơi có kinh nghiệm, cho người theo lối chơi thiên công thích đập cầu ấp đảo hay người muốn tập nhiều hơn về lực cổ tay.</p>
+                            <h3>2. Thông số vợt cầu lông VNB V88 Xanh</h3>
+                            <p>- Độ cứng:  Cứng trung bình</p>
+                            <p>- Khung vợt: Carbon High Modulus Graphite Carbon</p>
+                            <p>- Thân vợt: Carbon High Modulus Graphite Carbon</p>
+                            <p>- Trọng lượng: 4U (82+-2gr).</p>
+                            <p>- Điểm cân bằng: 300+-3mm</p>
+                            <p>- Chiều dài tổng thể: 675 mm</p>
+                            <p>- Điểm swing weight: 84,4 kg/cm2 </p>
+                            <p>- Chu vi cán vợt: G5</p>
+                            <p>- Sức căng tối đa: 30 (13.6) LBS</p>
+                            <p>- Màu sắc: Đen phối Xanh Dương</p>
+                            <p>- Vợt cầu lông VNB V88 Xanh Dương được sản xuất ở Trung Quốc.</p>
+                            <img class="imgv" src="img/V88 xanh.webp ">
+                            <img class="imgv" src="/CIB SHOP//assets/img/v882.jpg">
+                            <img class="imgv" src="/CIB SHOP/assets/img/v884webp.webp">
+                            <img class="imgv" src="/CIB SHOP/assets/img/v885.webp">
+                            <h3>3. Công nghệ tích hợp trên vợt VNB Pro V88 Xanh</h3>
+                            <p>- Carbon High Modulus Graphite: Cả mặt vợt và thân vợt được nén Cacbon High Modulus Graphite, tỉ lệ nén cacbon cao, bền, cứng, chịu lực tốt cho sức căng tối đa trên vợt cầu lông VNB V88 Xanh lên tới 30lbs ( gần 14 kg ).</p>
+                            <p>- Thiết kế mặt khung của vợt VNB Pro V88 Xanh Dương  lớn làm theo công nghệ Isometric của Yonex giúp việc tiếp xúc cầu của người chơi tốt hơn.</p>
+                            <h3>4. Đối tượng phù hợp</h3>
+                            <p>- Vợt VNB V88 Xanh dương phù hợp với người có lối đánh thiên công, thích đập cầu.</p>
+                            <p>- Phù hợp dành cho người chơi ở trình độ trung bình trở lên, đánh cầu trên 2 năm là có thể hoàn hảo sủ dụng được v</p>
+                            <p>- Phù hợp cho người chơi có lực cổ tay trung bình, người chơi phổ thông, học sinh sinh viên đang tìm kiếm cho mình một cây vợt cầu lông giá rẻ, chính hãng, chất lượng tốt.</p>
+                        </div>
+                    </div>
+                </span>    
             </div>
             <fieldset class="side_bar">
                 <legend class="side_bar-le">ĐANG CÓ TẠI HÀNG</legend>
@@ -519,39 +589,252 @@
                         <option value="vnb-quan10">VNB Quận 10</option>
                         </select>
                     </li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
-                    <li>VNB PREMIUM Quận 1</li>
+                    <li id="expand1" class="expand">VNB PREMIUM Quận 1</li>
+                    <div style="display: none;" id="tex1" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">20 Cao Bá Nhạ, Phường Nguyễn Cư Trinh, Quận 1, TPHCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0931823614</span></span></div>
+                    <li id="expand2" class="expand">VNB PREMIUM Quận 11</li>
+                        <div style="display: none;" id="tex2" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">209 Âu Cơ, Phường 5, quận 11, Tp.HCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0828333323</span></span></div>
+                    <li id="expand3" class="expand">VNB PREMIUM Bình Thạnh</li>
+                        <div style="display: none;" id="tex3" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">284 Xô Viết Nghệ Tĩnh, P21, Quận Bình Thạnh, Tp.HCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0862527179</span></span></div>
+                    <li id="expand4" class="expand">VNB PREMIUM Ninh Kiều Cần Thơ</li>
+                        <div style="display: none;" id="tex4" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">33B Đ. Mậu Thân, Phường An Hòa, Ninh Kiều, Cần Thơ</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0373344599</span></span></div>
+                    <li id="expand5" class="expand">VNB Quận 1</li>
+                        <div style="display: none;" id="tex5" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">Số 6 Nguyễn Hữu Cầu Phường Tân Định Quận 1</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0798684568</span></span></div>
+                    <li id="expand6" class="expand">VNB Quận 3</li>
+                    <div style="display: none;" id="tex6" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">218 Lý Thái Tổ Phường 1, Quận 3 </a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0936914920</span></span></div>
+                    <li id="expand7" class="expand">VNB Quận 4</li>
+                    <div style="display: none;" id="tex7" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link"> Số 400 Đường Hoàng Diệu, Phường 2, Quận 4, Thành phố Hồ Chí Minh</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">070 770 7886</span></span></div>
+                    <li id="expand8" class="expand">VNB Quận 6</li>
+                    <div style="display: none;" id="tex8" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">129 Kinh Dương Vương Phường 12 Quận 6</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt"> 0935267926</span></span></div>
+                    <li id="expand9" class="expand">VNB Quận 7</li>
+                    <div style="display: none;" id="tex9" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">39 đường 65, Phường Tân Phong, Quận 7, TP. HCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0899793965</span></span></div>
+                    <li id="expand10" class="expand">VNB Quận 8</li>
+                    <div style="display: none;" id="tex10" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link"> 888 Tạ Quang Bửu, Phường 5, Quận 8, TP. HCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0925888895</span></span></div>
+                    <li id="expand11" class="expand">VNB Quận 10</li>
+                    <div style="display: none;" id="tex11" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">198 Hòa Hưng, Phường 13, Quận 10, TP. HCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0932 610 008</span></span></div>
+                    <li id="expand12" class="expand">VNB Quận 11</li>
+                    <div style="display: none;" id="tex12" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">364 Lạc Long Quân, Phường 5, Quận 11, Hồ Chí minh</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0888554268</span></span></div>
+                    <li id="expand13" class="expand">VNB Quận 12</li>
+                    <div style="display: none;" id="tex13" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">171 Dương Thị Mười, P. Tân Chánh Hiệp, Quận 12</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0816201094</span></span></div>
+                    <li id="expand14" class="expand">VNB Quận 12 - CN2</li>
+                    <div style="display: none;" id="tex14" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">288 Nguyễn Văn Quá, Đông Hưng Thuận, Quận 12</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0703 372 045</span></span></div>
+                    <li id="expand15" class="expand">VNB Bình Thạnh</li>
+                    <div style="display: none;" id="tex15" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">289 Nguyễn Văn Đậu, P.11, Q. Bình Thạnh, TPHCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0908 159 225</span></span></div>
+                    <li id="expand16" class="expand">VNB TP Thủ Đức - CN2</li>
+                        <div style="display: none;" id="tex16" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">  254 Nguyễn Hoàng, phường An Phú, quận 2, TP Hồ Chí Minh</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0937441822</span></span></div>
+                    <li id="expand17" class="expand">VNB TP Thủ Đức - CN3</li>
+                    <div style="display: none;" id="tex17" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">20A Trần Hưng Đạo, P. Hiệp Phú, Quận 9, TPHCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0961684568</span></span></div>
+                    <li id="expand18" class="expand">VNB TP Thủ Đức - CN4</li>
+                    <div style="display: none;" id="tex18" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">7 Đường Số 5, Phước Bình, Quận 9, TP Thủ Đức</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0853684568</span></span></div>   
+                    <li id="expand19" class="expand">VNB Gò Vấp</li>
+                    <div style="display: none;" id="tex19" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">1361 Phan Văn Trị, Phường 10, Quận Gò Vấp, TPHCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">077 419 0586</span></span></div>
+                    <li id="expand20" class="expand">VNB Tân Bình</li>
+                    <div style="display: none;" id="tex20" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">344 Nguyễn Trọng Tuyển, P.2, Q.Tân Bình, TPHCM</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0908012059</span></span></div>
+                    <li id="expand21" class="expand">VNB Tân Phú</li>
+                    <div style="display: none;" id="tex21" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">171B Nguyễn Súy, phường Tân Quý, quận Tân Phú</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0326824047</span></span></div>
+                    <li id="expand22" class="expand">VNB Củ Chi</li>
+                    <div style="display: none;" id="tex22" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">147 Đường Nguyễn Văn Khạ, KP1, TT Củ Chi, Tp. Hồ Chí Minh</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0898908386</span></span></div>
+                    <li id="expand23" class="expand">Tổng Kho VNB</li>
+                    <div style="display: none;" id="tex23" class="text">
+                        <span></i><a href="" class="expand_link"></a></span><br>
+                        <span></i><span class="expand_sdt"></span></span></div>
+                    <li id="expand24" class="expand">VNB Ba Đình</li>
+                    <div style="display: none;" id="tex24" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">Số 33 Đốc Ngữ, Phường Liễu Giai, Quận Ba Đình, Hà Nội</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0967526025</span></span></div>
+                    <li id="expand25" class="expand">VNB Đống Đa</li>
+                    <div style="display: none;" id="tex25" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand26" class="expand">VNB Nam Từ Liêm</li>
+                    <div style="display: none;" id="tex26" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand27" class="expand">VNB Bắc Từ Liêm</li>
+                    <div style="display: none;" id="tex27" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand28" class="expand">VNB Hà Đông</li>
+                    <div style="display: none;" id="tex28" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand29" class="expand">VNB Hoàng Mai</li>
+                    <div style="display: none;" id="tex29" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand30" class="expand">VNB Hải Châu Đà Nẵng</li>
+                        <div style="display: none;" id="tex30" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand31" class="expand">VNB Thanh Khê Đà Nẵng</li>
+                    <div style="display: none;" id="tex31" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand34" class="expand">VNB Buôn Mê Thuột</li>
+                    <div style="display: none;" id="tex34" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand35" class="expand">VNB Vũng Tàu</li>
+                    <div style="display: none;" id="tex35" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand36" class="expand">VNB TX Phú Mỹ</li>
+                    <div style="display: none;" id="tex36" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand37" class="expand">VNB Cái Răng Cần Thơ</li>
+                    <div style="display: none;" id="tex37" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand38" class="expand">VNB Thủ Dầu Một</li>
+                    <div style="display: none;" id="tex38" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand39" class="expand">VNB Thủ Dầu Một - CN 2</li>
+                    <div style="display: none;" id="tex39" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand40" class="expand">VNB Thuận An</li>
+                    <div style="display: none;" id="tex40" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand41" class="expand">VNB Dĩ An</li>
+                    <div style="display: none;" id="tex41" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand42" class="expand">VNB Dĩ An - CN2</li>
+                    <div style="display: none;" id="tex42" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand43" class="expand">VNB TP Bến Cát</li>
+                    <div style="display: none;" id="tex43" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand44" class="expand">VNB Bình Phước</li>
+                    <div style="display: none;" id="tex44" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand45" class="expand">VNB Biên Hòa - CN2</li>
+                    <div style="display: none;" id="tex45" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand46" class="expand">VNB Biên Hoà</li>
+                    <div style="display: none;" id="tex46" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand47" class="expand">VNB Long Thành</li>
+                    <div style="display: none;" id="tex47" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand48" class="expand">VNB Gia Lai</li>
+                    <div style="display: none;" id="tex48" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand49" class="expand">VNB Nha Trang</li>
+                    <div style="display: none;" id="tex49" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand50" class="expand">VNB Đà Lạt</li>
+                    <div style="display: none;" id="tex50" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand51" class="expand">VNB Bảo Lộc</li>
+                    <div style="display: none;" id="tex51" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand52" class="expand">VNB Đức Trọng</li>
+                    <div style="display: none;" id="tex52" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand53" class="expand">VNB Quy Nhơn</li>
+                    <div style="display: none;" id="tex53" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand54" class="expand">VNB Phan Thiết</li>
+                    <div style="display: none;" id="tex54" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand55" class="expand">VNB TP Quảng Ngãi</li>
+                    <div style="display: none;" id="tex55" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand56" class="expand">VNB TP Huế</li>
+                    <div style="display: none;" id="tex56" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand57" class="expand">VNB Mỹ Tho</li>
+                    <div style="display: none;" id="tex57" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand58" class="expand">VNB Long Xuyên</li>
+                    <div style="display: none;" id="tex58" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand59" class="expand">VNB Tây Ninh</li>
+                    <div style="display: none;" id="tex59" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand60" class="expand">VNB TP Bắc Giang</li>
+                    <div style="display: none;" id="tex60" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand61" class="expand">VNB TP Phú Quốc</li>
+                    <div style="display: none;" id="tex61" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
+                    <li id="expand62" class="expand">VNB TP Vinh</li>
+                    <div style="display: none;" id="tex62" class="text">
+                        <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
+                        <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
                 </ul>
-                
             </fieldset>
         </div>
         
     <div class="clear"></div>
-
+       
 
     <div class="footer1">
         <div class="grid">
@@ -616,7 +899,7 @@
         </div>
         <div align="right" class="icon-bar-right">
           <a href="#" style="border: node; width: 4rem; border-radius: 0.7rem;"><img style="width: 4.2rem; height: 4rem;" src="/CIB SHOP/assets/img/up arrow.png"> </a>
-          <a href="/CIB SHOP/zalo.html"  style="border: node; width: 5rem; height: 5rem; background-color: aliceblue; border-radius: 0.7rem;"><img style="width: 5rem; height: 5rem;" src="assets/img/zalo-tach-nen.png"></a>
+          <a href="/CIB SHOP/zalo.html"  style="border: node; width: 5rem; height: 5rem; background-color: aliceblue; border-radius: 0.7rem;"><img style="width: 5rem; height: 5rem;" src="/CIB SHOP/assets/img/zalo-tach-nen.png"></a>
           <a href="#" ><img style="width: 20rem; height: 4.6rem;" src="/CIB SHOP/assets/img/hethongcuahang.png"></a>
         </div>
       <div class="icon-bar-left">
@@ -678,6 +961,8 @@ document.getElementById("addToCart").addEventListener
         cost.textContent += cost_format + " ₫";
     }
 );
+
+
         document.addEventListener('click', function(e) 
         { if (e.target && e.target.classList.contains('remove-pro')) 
         { 
@@ -698,5 +983,66 @@ document.getElementById("addToCart").addEventListener
         });
 </script>
 
+      <script>
+       
+        function increment() {
+            let quantity = document.getElementById('quantity');
+            quantity.value = parseInt(quantity.value) + 1;
+        }
+
+        function decrement() {
+            let quantity = document.getElementById('quantity');
+            if (quantity.value > 1) {
+                quantity.value = parseInt(quantity.value) - 1;
+            }
+        }
+
+        document.getElementById("addToCart").addEventListener
+        ("click",function()
+            {
+                let quantityInput = document.getElementById("quantity"); // Lấy giá trị từ ô input
+                let cartCount = document.getElementById("cartCount");   //Lấy giá phần tử hiển thị số lượng là CartCount (class cart-count)
+                let cartItems = document.getElementById("cartItems"); // Lấy phần tủ div có id là cartItems (class là cart-noti)
+                let quantity = parseInt(quantityInput.value);
+                let number = parseInt(cartCount.textContent);
+                let noPro = document.getElementById("No_pro");
+                let Cost_all = document.getElementById("cost_all");
+                yes_pro_item = document.getElementById("yes_pro_item");
+                cartCount.textContent = number + quantity;
+                // if (number != 0) cartItems.innerHTML ="";
+                if (number + quantity > 0) 
+                { 
+                    noPro.style.display = "none";  
+                    document.getElementById("yes_pro").style.display = "block"; 
+                    document.getElementById("giohang").style.display = "block";
+                    document.getElementById("cost_all").style.display = "block";
+                }
+                let img = '/CIB SHOP/Product/img/V88 xanh.png';
+                let name = document.getElementById("name").textContent;
+                let cost_item = document.getElementById("idcost").textContent;
+                yes_pro_item.innerHTML += `<div class="add_cart">
+                                        <img class="add_cart_picture" src="${img}" alt="">
+                                        <div class="pro_title">
+                                            <div style= "display: flex; justify-content: space-between;">
+                                            <span class="text_title">${name}</span> <i class="fa-regular fa-circle-xmark" style="font-size: 14px; padding-left: 10px"></i>
+                                            </div>
+                                            <div style="display: flex; justify-content: space-between">
+                                                <p class="qua">Số lượng: ${quantity}</p>
+                                                <p class="cost_item">${cost_item} ₫</p>
+                                            </div>
+                                        </div>
+                                        </div>
+                                        `;
+                var cost =  document.getElementById("cost");
+                
+                var cost_format = quantity*cost_item*1000 + parseInt(cost.textContent);
+                cost.textContent = "";
+                                        
+                cost.textContent += cost_format;
+
+            }
+
+        );
+    </script>
 </body>
 </html>
