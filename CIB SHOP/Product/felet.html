@@ -453,14 +453,14 @@
    
         <div class="container_product grid">
             <div class="row">
-                <img class="procuct_img" src="/CIB SHOP/Product/img/VNB V200i Hong.png" alt="">
+                <img class="procuct_img" src="/CIB SHOP/Product/img/V88 xanh.png" alt="">
                 <div class="pro_center">
                     <div style="border-bottom: 2px solid #F5F5F5;">
-                        <h1 id="name">Vợt Cầu Lông Yonex 219BT004U chính hãng</h1>
+                        <h1 id="name">Vợt Cầu Lông VNB V88 xanh chính hãng</h1>
                         <span>Mã: </span> <span class="text_main">VNB012008</span> <br> <br>
                         <span>Thương hiệu: </span> <span class="text_main">VNB</span> &ensp;<span>|</span>&ensp;  <span>Tình trạng: </span> <span class="text_main">Còn hàng</span>  <br>
                         <p style="padding: 10px 0;">
-                            <span class="pro_cost" id="idcost">525.000</span> <span class="pro_cost">₫</span>&ensp; <span class="pro_cost_listed">Giá niêm yết: </span><span style="text-decoration:line-through;" class="pro_cost_listed">1050.000đ</span>
+                            <span class="pro_cost" id="idcost">638.000</span> <span class="pro_cost">₫</span>&ensp; <span class="pro_cost_listed">Giá niêm yết: </span><span style="text-decoration:line-through;" class="pro_cost_listed">765.000đ</span>
                         </p>
 
                     </div>
@@ -622,81 +622,7 @@
       <div class="icon-bar-left">
         <a href="#" style="border: node; width: 4rem;"><img style="width: 20rem; height: 5.2rem;" src="/CIB SHOP/assets/img/xemgiohang.png"> </a>
       </div>
-<script>
-    function increment() {
-    let quantity = document.getElementById('quantity');
-    quantity.value = parseInt(quantity.value) + 1;
-}
 
-function decrement() {
-    let quantity = document.getElementById('quantity');
-    if (quantity.value > 1) {
-        quantity.value = parseInt(quantity.value) - 1;
-    }
-}
-
-document.getElementById("addToCart").addEventListener
-("click",function()
-    {
-        let quantityInput = document.getElementById("quantity"); // Lấy giá trị từ ô input
-        let cartCount = document.getElementById("cartCount");   //Lấy giá phần tử hiển thị số lượng là CartCount (class cart-count)
-        let cartItems = document.getElementById("cartItems"); // Lấy phần tủ div có id là cartItems (class là cart-noti)
-        let quantity = parseInt(quantityInput.value);
-        let number = parseInt(cartCount.textContent);
-        let noPro = document.getElementById("No_pro");
-        let Cost_all = document.getElementById("cost_all");
-        yes_pro_item = document.getElementById("yes_pro_item");
-        cartCount.textContent = number + quantity;
-        // if (number != 0) cartItems.innerHTML ="";
-        if (number + quantity > 0) 
-        { 
-            noPro.style.display = "none";  
-            document.getElementById("yes_pro").style.display = "block"; 
-            document.getElementById("giohang").style.display = "block";
-            document.getElementById("cost_all").style.display = "block";
-        }
-        let img = '/CIB SHOP/Product/img/VNB V200i Hong.png';
-        let name = document.getElementById("name").textContent;
-        let cost_item = document.getElementById("idcost").textContent;
-        yes_pro_item.innerHTML += `<div class="add_cart">
-                                <img class="add_cart_picture" src="${img}" alt="">
-                                <div class="pro_title">
-                                    <div style= "display: flex; justify-content: space-between;">
-                                    <span class="text_title">${name}</span> <i class="fa-regular fa-circle-xmark remove-pro" style="font-size: 14px; padding-left: 10px"></i>
-                                    </div>
-                                    <div style="display: flex; justify-content: space-between">
-                                        <p class="qua">Số lượng: ${quantity}</p>
-                                        <p class="cost_item">${cost_item} ₫</p>
-                                    </div>
-                                </div>
-                                </div>
-                                `;
-        var cost =  document.getElementById("cost");
-        
-        var cost_format = quantity*cost_item*1000 + parseInt(cost.textContent);
-        cost.textContent = "";                
-        cost.textContent += cost_format + " ₫";
-    }
-);
-        document.addEventListener('click', function(e) 
-        { if (e.target && e.target.classList.contains('remove-pro')) 
-        { 
-            let productDiv = e.target.closest('.add_cart'); 
-            let costItemElement = productDiv.querySelector('.cost_item'); 
-            let costItemText = costItemElement.textContent; 
-            let costItem = parseInt(costItemText.replace(/\D/g, '')); 
-            let quaElement = productDiv.querySelector('.qua'); 
-            let quaText = quaElement.textContent; let quantity = parseInt(quaText.replace(/\D/g, '')); 
-
-            let cost = document.getElementById("cost");
-            cost_format = parseInt(cost.textContent) - costItem*quantity;
-            cost.textContent = "";                
-            cost.textContent += cost_format + " ₫"; 
-            productDiv.remove();
-            cartCount.textContent -= quantity;
-        }
-        });
-</script>
-
+      <script src="/CIB SHOP/Product/product.js"></script>
 </body>
 </html>
