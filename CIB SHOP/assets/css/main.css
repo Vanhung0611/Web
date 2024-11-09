@@ -509,13 +509,10 @@
 
 
 
-
-.footer_column{
-    width: 30rem;
-}
-
 .footer1-item{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     
 }
 

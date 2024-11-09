@@ -2,19 +2,39 @@
 .footer1{
     display: flex;
     border: 0rem solid;
-    height: 40rem;
     background-color: #222222;
     flex-direction: row;
     padding: 30px 0 30px 0;
+    height: 40rem;
 }
 
 .footer_column{
-    width: 30rem;
+    flex: 1 1 calc(25% - 20px);
+    color: white;
+    padding: 10px;
 }
 
 .footer1-item{
     display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
     
+}
+@media (max-width: 900px) {
+    .footer_column {
+        flex: 1 1 calc(50% - 20px);
+    }
+    .footer1{
+        height: 80rem;
+    }
+}
+@media (max-width: 550px) {
+    .footer_column {
+        flex: 1 1 100%;
+    }
+    .footer1{
+        height: 120rem;
+    }
 }
 
 .footer_title{
