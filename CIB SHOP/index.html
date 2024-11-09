@@ -23,7 +23,7 @@
 
 <body>
     <div class="app">
-        <header class="header">   <!-- Hoàn thành-->
+         <header class="header">   
             <div class="grid">
                 <div class="header_navbar">
                     <div class="navbar_item">
@@ -69,10 +69,26 @@
                                     
                                 <div class="choose_cart">
                                     <i class="fa-solid fa-cart-arrow-down choose_icon"></i>
-                                    <div>GIỎ HÀNG
-                                        <div class="cart_noti">
-                                            <img class="cart_picture" src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
+                                    <span class="cart-count" id="cartCount">0</span>
+                                    <div>GIỎ HÀNG</div>
+                                    
+                                    <div class="cart_noti" id="cartItems">
+                                         
+                                        <div id="No_pro">
+                                            <img class="cart_picture"  src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
                                             <p class="cart_text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                                        </div>
+                                        
+                                        <div id="giohang">GIỎ HÀNG</div>
+                                        <div id="yes_pro">
+                                            <div id="yes_pro_item"></div>    
+                                        </div>
+                                        <div id="cost_all">
+                                            <div class="cost_all">
+                                                <span>Tổng tiền: </span>
+                                                <span id="cost">0</span>
+                                            </div>
+    
                                         </div>
                                     </div>
                                 </div>
@@ -85,7 +101,7 @@
         <div class="home">
             <a href="/CIB SHOP/index.html" class="home_tittle">TRANG CHỦ</a>
             <div class="home_tittle">
-                <div class="home_product Reverser_otation"> <!-- Hoàn thành-->
+                <div class="home_product Reverser_otation">
                     SẢN PHẨM
                     <i class="fa-solid fa-chevron-down home_icon"></i>
                     <div class="home_product-box">
@@ -407,15 +423,6 @@
                             <li class="home_product-box-title-text">Túi Pickleball Spikopoll</li>
                         </ul>
 
-
-
-
-
-
-
-
-
-
                 
                     </div>    
 
@@ -474,7 +481,7 @@
                 <li></li>
                 <li></li>
             </ul>
-        </div>
+        </div> 
 
 
         <div class="container">
@@ -891,6 +898,7 @@
         </div>
 
         <script src="/CIB SHOP/assets/javacript/main.js"></script>
+        <script src="/CIB SHOP/Product/product.js"></script>
     </div>
  
 
@@ -963,6 +971,5 @@
       <div class="icon-bar-left">
         <a href="#" class="icon-left"><div style="padding: 1.5rem;">Xem giỏ hàng (0)</div></a>
       </div>
-    
 </body>
 </html>
