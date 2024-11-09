@@ -113,5 +113,6 @@ function resetBlur()
     prevNew.style.opacity = 1;
 }
 
+
  
 
