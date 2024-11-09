@@ -30,7 +30,7 @@
     padding: 0px 10px;
 
 }
-.text_title{
+.text_title1{
     font-size: 24px;
     text-align: center;
     font-weight: bold;
@@ -154,7 +154,7 @@ span{
     padding: 20px 10px;
     position: sticky; 
     width: 75%;
-    max-height: 2230px;
+    max-height: 2280px;
     top: 0;
     border: 1px dashed var(--main-color);
     border-radius: 4px;
