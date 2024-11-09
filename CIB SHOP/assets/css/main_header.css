@@ -216,6 +216,8 @@
     padding: 0.9rem; 
     margin-bottom: 0.5rem;
 }
+
+
 .cart_noti{
     position: absolute;
     background-color: #ffffff;
@@ -228,7 +230,7 @@
     padding: 0;
     margin: 0;
     border-radius: 4px;
-    box-shadow: 1px 4px 2px #e3e3e3;
+    box-shadow: 1px 2px 2px #e3e3e3;
     z-index: 1;
     
     display: none;
@@ -236,9 +238,22 @@
 #yes_pro{
     display: none;
     overflow-y:  scroll;
-    max-height: 300px;
+    max-height: 400px;
 }
-#yes_pro::-webkit-scrollbar { display: none;}
+#yes_pro::-webkit-scrollbar {
+    width: 5px; /* Giảm độ rộng của thanh cuộn */
+}
+
+/* Nền của thanh cuộn */
+#yes_pro::-webkit-scrollbar-track {
+    background: #DDDDDD;
+}
+
+/* Thanh cuộn */
+#yes_pro::-webkit-scrollbar-thumb {
+    background: var(--main-color);
+    border-radius: 8px;
+}
 #cost_all, #giohang{
     display: none;
 }
@@ -278,7 +293,6 @@
 
 .cost_item{
     color: var(--main-color);
-    /* text-align: end; */
     margin-top: 20px;
     font-size: 15px;
     margin-bottom: 0;
@@ -287,16 +301,18 @@
     font-size: 15px;
     margin: 20px;
 }
-#cost_all{
-    padding: 10px;
+.cost_all{
+    padding: 20px 10px;
+    border-top: 1px solid var(--border-color);
     display: flex;
     justify-content: space-between;
 }
-#cost_all p{
+.cost_all span{
     color: var(--text-color);
-    font-size: 16px;
+    font-size: 15px;
+    font-weight: 500;
 }
-#cost_all span{
+#cost {
     color: #EB254B;
     font-size: 16px;
 }
@@ -319,7 +335,7 @@
 .cart_noti::before{
     content: "";
     position: absolute;
-    top: -15%;
+    top: -4%;
     right: -0.5%;
     width: 5rem;
     height: 2rem;

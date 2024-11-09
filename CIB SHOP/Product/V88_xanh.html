@@ -83,8 +83,11 @@
                                         <div id="yes_pro_item"></div>    
                                     </div>
                                     <div id="cost_all">
-                                        <p>Tổng tiền: </p>
-                                        <p id="cost">0</p>
+                                        <div class="cost_all">
+                                            <span>Tổng tiền: </span>
+                                            <span id="cost">0</span>
+                                        </div>
+
                                     </div>
                                 </div>
                             </div>
@@ -660,7 +663,7 @@
                                         <img class="add_cart_picture" src="${img}" alt="">
                                         <div class="pro_title">
                                             <div style= "display: flex; justify-content: space-between;">
-                                            <span class="text_title">${name}</span> <i class="fa-regular fa-circle-xmark" style="font-size: 14px; padding-left: 10px"></i>
+                                            <span class="text_title">${name}</span> <i class="fa-regular fa-circle-xmark remove-pro" style="font-size: 14px; padding-left: 10px"></i>
                                             </div>
                                             <div style="display: flex; justify-content: space-between">
                                                 <p class="qua">Số lượng: ${quantity}</p>
@@ -672,13 +675,30 @@
                 var cost =  document.getElementById("cost");
                 
                 var cost_format = quantity*cost_item*1000 + parseInt(cost.textContent);
-                cost.textContent = "";
-                                        
-                cost.textContent += cost_format;
-
+                cost.textContent = "";                
+                cost.textContent += cost_format + " ₫";
             }
-
         );
+
+       
+        document.addEventListener('click', function(e) 
+        { if (e.target && e.target.classList.contains('remove-pro')) 
+        { 
+            let productDiv = e.target.closest('.add_cart'); 
+            let costItemElement = productDiv.querySelector('.cost_item'); 
+            let costItemText = costItemElement.textContent; 
+            let costItem = parseInt(costItemText.replace(/\D/g, '')); 
+            let quaElement = productDiv.querySelector('.qua'); 
+            let quaText = quaElement.textContent; let quantity = parseInt(quaText.replace(/\D/g, '')); 
+        
+            let cost = document.getElementById("cost");
+            cost_format = parseInt(cost.textContent) - costItem*quantity;
+            cost.textContent = "";                
+            cost.textContent += cost_format + " ₫"; 
+            productDiv.remove();
+            cartCount.textContent -= quantity;
+         }
+         });
     </script>
 </body>
 </html>
