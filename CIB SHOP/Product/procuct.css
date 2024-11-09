@@ -153,7 +153,7 @@ span{
 .side_bar{
     padding: 20px 10px;
     position: sticky; 
-    width: 70%;
+    width: 75%;
     max-height: 2230px;
     top: 0;
     border: 1px dashed var(--main-color);
