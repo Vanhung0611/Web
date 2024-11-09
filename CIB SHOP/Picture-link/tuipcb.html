@@ -1,0 +1,524 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
+     <!-- link lấy font chữ Roboto từ google-->
+     <link rel="preconnect" href="https://fonts.googleapis.com"> 
+     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/base.css">
+    <link rel="stylesheet" href="/CIB SHOP/Picture-link/piture-link.css/all_product.css">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/main_footer.css">
+    <link rel="stylesheet" href="/CIB SHOP/assets/css/main_header.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css">
+    <link rel="shortcut icon" href="/CIB SHOP/assets/img/Logo Cầu Lông.png" type="image/x-icon">
+    <title>Thanh lý các sản phẩm cầu lông</title>
+</head>
+<body>
+    <header class="header">   <!-- Hoàn thành-->
+        <div class="grid">
+            <div class="header_navbar">
+          <div class="navbar_item">
+                        <img class="item_logo" src="/CIB SHOP/assets/img/logo cầu lông.jpg" alt="LOGO">
+                </div>
+    
+                <div class="navbar_item navbar_item_border">
+                        <div class="item_hotline">  
+                            <i class="fa-solid fa-headphones header_icon"></i>  
+                            <div class="hotline-text">HOTLINE:</div>
+                            <a href="" class="hotline-number">0818214849 | 0797579132</a>
+                        </div>
+                        <div class="item_store_system">
+                            <i class="fa-solid fa-map-location-dot header_icon"></i>
+                            <div class="item_store">HỆ THỐNG CỬA HÀNG</div>
+                        </div>
+                        <div>
+                            <i class="fa-solid fa-magnifying-glass header_icon item_icon_search"></i>
+                            <input class="item_search" type="text" placeholder="Tìm sản phẩm...">
+                        </div>
+                </div>
+    
+                <div class="navbar_item">
+                        <div class="item_choose">
+                            <div class="choose_lookup">
+                                <i class="fa-solid fa-binoculars choose_icon"></i>
+                                <div>TRA CỨU
+                                    <ul class="lookup_check">
+                                        <li class="check_text">Kiểm tra đơn hàng</li>
+                                        <li class="check_text">Kiểm tra bảo hành</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="choose_account">
+                                <i class="fa-solid fa-user choose_icon"></i>
+                                <div>TÀI KHOẢN
+                                    <ul class="account_list">
+                                        <li class="account_item"><span><i class="fa-solid fa-arrow-right-to-bracket account_item_icon"></i></span><a href="/CIB SHOP/sign_in.html" style="color: black; text-decoration: none;" >Đăng nhập</a></li>
+                                        <li class="account_item"><span><i class="fa-solid fa-user-plus account_item_icon"></i></span><a href="/CIB SHOP/sign_up.html" style="color: black; text-decoration: none;" >Đăng ký</a></li>
+                                    </ul>
+                                </div>
+                            </div>
+                                
+                            <div class="choose_cart">
+                                <i class="fa-solid fa-cart-arrow-down choose_icon"></i>
+                                <div>GIỎ HÀNG
+                                    <div class="cart_noti">
+                                        <img class="cart_picture" src="/CIB SHOP/assets/img/no products.png" alt="Ảnh không có sản phẩm">
+                                        <p class="cart_text">Không có sản phẩm nào trong giỏ hàng của bạn</p>
+                                    </div>
+                                </div>
+                            </div>
+                       </div>
+                </div>
+            </div> 
+        </div>
+    </header>
+    <div class="home">
+        <a href="/CIB SHOP/index.html" class="home_tittle">TRANG CHỦ</a>
+        <a href="/CIB SHOP/saleoff.html" class="home_tittle">SALE OFF</a>
+            <a href="/CIB SHOP/TinTuc.html" class="home_tittle">TIN TỨC</a>
+            <a href="/CIB SHOP/CSNQ.html" class="home_tittle">CHÍNH SÁCH NHƯỢNG QUYỀN</a>
+            <div class="home_tittle">
+                <div class="home_tittle-instruct Reverser_otation">
+                    HƯỚNG DẪN
+                    <i class="fa-solid fa-chevron-down home_icon"></i>
+                    <ul class="instruct_list">
+                        <li class="instruct_list-text">Hướng dẫn thanh toán</li>
+                        <li class="instruct_list-text">Hướng dẫn mua hàng</li>
+                        <li class="instruct_list-text">Hướng dẫn chọn vợt cầu lông</li>
+                        <li class="instruct_list-text">Công nghệ sản phẩm</li>
+                    </ul>
+                </div>
+            </div>
+            <a href="/CIB SHOP/gioithieu.html" class="home_tittle">GIỚI THIỆU</a>
+            <a href="/CIB SHOP/lienhe.html" class="home_tittle">LIÊN HỆ</a>
+        </div>
+
+
+    <div class="container grid">
+        <div class="column popup-column ">
+            <div class="mini_container">
+                <div class="box" >
+                    <h2>CHỌN MỨC GIÁ</h2>
+        <input type="checkbox"><label class="text"> Giá dưới 500.000đ</label><br><br>
+      <input type="checkbox"><label class="text"> 500.000đ - 1 triệu</label><br><br>
+      <input type="checkbox"><label class="text"> 1 - 2 triệu</label><br><br>
+      <input type="checkbox"><label class="text"> 2 - 3 triệu</label><br><br>
+      <input type="checkbox"><label class="text"> Giá trên 3 triệu</label><br><br>
+                </div >
+            <div class="box ">
+                <h2>THƯƠNG HIỆU</h2>  
+                <div class="demand_scroll"> 
+  <input type="checkbox" ><label  class="text"> VNB  </label><br><br>
+  <input type="checkbox" ><label  class="text">  Yonex </label><br><br>
+  <input type="checkbox" ><label  class="text">  Lining </label><br><br>
+  <input type="checkbox" ><label  class="text">  Victor </label><br><br>
+  <input type="checkbox" ><label  class="text">  Forza </label><br><br>
+  <input type="checkbox" ><label  class="text"> Protech  </label><br><br>
+  <input type="checkbox" ><label  class="text">  Kumpoo </label><br><br>
+  <input type="checkbox" ><label  class="text">  Kawasaki </label><br><br>
+  <input type="checkbox" ><label  class="text">  Apacs </label><br><br>
+  <input type="checkbox" ><label  class="text"> Adonex</label><br><br>
+  <input type="checkbox" ><label  class="text"> Babolat  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Pebble Beach  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Proace  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Adidas  </label><br><br>
+  <input type="checkbox" ><label  class="text">VS</label><br><br>
+  <input type="checkbox" ><label  class="text"> DonexPro  </label><br><br>
+  <input type="checkbox" ><label  class="text">  Hãng khác </label><br><br>
+  <input type="checkbox" ><label  class="text"> Joto  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Iron Man      </label><br><br>
+  <input type="checkbox" ><label  class="text">  Ashaway </label><br><br>
+  <input type="checkbox" ><label  class="text">  Mizuno </label><br><br>
+  <input type="checkbox" ><label  class="text"> Sunbatta </label><br><br>
+  <input type="checkbox" ><label  class="text"> FlyPower  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Paramount  </label><br><br>
+  <input type="checkbox" ><label  class="text"> Tenway  </label><br><br>
+  <input type="checkbox" ><label  class="text">  FYKYMI </label><br><br>
+  <input type="checkbox" ><label  class="text">  FUKYMI </label><br><br>
+  <input type="checkbox" ><label  class="text">  Fleet </label><br><br>
+  <input type="checkbox" ><label  class="text">  Maxta </label><br><br>
+  <input type="checkbox" ><label  class="text">  Felet </label><br><br>
+  <input type="checkbox" ><label  class="text">  Yuko </label><br><br>
+  <input type="checkbox" ><label  class="text">  Kolt</label><br><br>
+            </div>
+            </div>
+            <div class="box">
+            <h2>CHI NHÁNH</h2>
+            <div class="demand_scroll">
+            <input type="checkbox" ><label class="text"> VNB PREMIUM Quận 1</label><br><br>
+           <input type="checkbox"><label class="text"> VNB PREMIUM Quận 11</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB PREMIUM Bình Thạnh</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB PREMIUM TP Thủ Đức</label><br><br>
+           <input type="checkbox"><label class="text"> VNB PREMIUM Ninh Kiều Cần Thơ</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 1</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 3</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Quận 4</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 5</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Quận 6</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Quận 7</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 8</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 10</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 11</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Quận 12</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Quận 12 - CN2</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Bình Thạnh</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB TP Thủ Đức - CN1</label><br><br>
+           <input type="checkbox"><label class="text"> VNB TP Thủ Đức - CN2</label><br><br>
+           <input type="checkbox"><label class="text"> VNB TP Thủ Đức - CN3  </label><br><br>
+           <input type="checkbox"><label class="text"> VNB TP Thủ Đức - CN4</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Gò Vấp</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Phú Nhuận</label><br><br>
+           <input type="checkbox" ><label class="text"> VNB Tân Bình</label><br><br>
+           <input type="checkbox" ><label class="text">VNB Tân Phú</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Bình Tân</label><br><br>
+           <input type="checkbox"><label class="text"> VNB Củ Chi</label><br><br>
+           <input type="checkbox"><label class="text">VNB Tây Hồ</label><br><br>
+        </div>
+            </div>
+            <div class="box" >
+                <h2>CHIỀU DÀI VỢT</h2>
+    <input type="checkbox"><label class="text"> 665 mm</label><br><br>
+  <input type="checkbox"><label class="text"> 670 mm</label><br><br>
+  <input type="checkbox"><label class="text"> 675 mm</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>CHIỀU DÀI CÁN VỢT</h2>
+    <input type="checkbox"><label class="text">200 mm </label><br><br>
+  <input type="checkbox"><label class="text">205 mm </label><br><br>
+  <input type="checkbox"><label class="text"> 210 mm</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>SWINGWEIGHT</h2>
+    <input type="checkbox"><label class="text">Dưới 82 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text"> 82-84 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text"> 84-86 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text">86-88 kg/cm2</label><br><br>
+  <input type="checkbox"><label class="text"> Trên 88 kg/cm2</label><br><br>
+            </div >
+            <div class="box ">
+                <h2>TRỌNG LƯỢNG</h2>  
+                <div class="demand_scroll"> 
+  <input type="checkbox" ><label  class="text">3U: 85 - 89g</label><br><br>
+  <input type="checkbox"><label  class="text">4U: 80 - 84g  </label><br><br>
+  <input type="checkbox" ><label  class="text"> 4U: 80 - 84g</label><br><br>
+  <input type="checkbox" ><label class="text"> 5U: 75 - 79g</label><br><br>
+  <input type="checkbox"><label class="text">F: 70 - 74g</label><br><br>
+  <input type="checkbox"><label class="text"> 2F: 65 - 69g</label><br><br>
+            </div>
+            </div>
+            <div class="box" >
+                <h2>ĐIỂM CÂN BẰNG</h2>
+    <input type="checkbox"><label class="text"> Nhẹ Đầu</label><br><br>
+  <input type="checkbox"><label class="text"> Cân Bằng</label><br><br>
+  <input type="checkbox"><label class="text"> Hơi Nặng Đầu</label><br><br>
+  <input type="checkbox"><label class="text"> Nặng Đầu</label><br><br>
+  <input type="checkbox"><label class="text"> Siêu Nặng Đầu</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>ĐỘ CỨNG ĐŨA</h2>
+    <input type="checkbox"><label class="text"> Dẻo </label><br><br>
+  <input type="checkbox"><label class="text"> Trung Bình</label><br><br>
+  <input type="checkbox"><label class="text">Cứng</label><br><br>
+  <input type="checkbox"><label class="text"> Siêu Cứng</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>PHONG CÁCH CHƠI</h2>
+    <input type="checkbox"><label class="text"> Tấn Công</label><br><br>
+  <input type="checkbox"><label class="text"> Công Thủ Toàn Diện</label><br><br>
+  <input type="checkbox"><label class="text"> Phản Tạt, Phòng Thủ</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>NỘI DUNG CHƠI</h2>
+    <input type="checkbox"><label class="text">Đánh Đơn</label><br><br>
+  <input type="checkbox"><label class="text"> Đánh Đôi</label><br><br>
+  <input type="checkbox"><label class="text"> Cả Đơn và Đôi</label><br><br>
+            </div >
+            <div class="box" >
+                <h2>TRÌNH ĐỘ CHƠI</h2>
+    <input type="checkbox"><label class="text"> Mới Chơi</label><br><br>
+  <input type="checkbox"><label class="text"> Trung Bình</label><br><br>
+  <input type="checkbox"><label class="text"> Khá Tốt</label><br><br>
+            </div >
+            </div>
+            <div class="box_oversize">
+                <h2>DANH MỤC SẢN PHẨM</h2>
+                <p style="color: var(--main-color);">Tất cả danh mục</p>
+                <a href="#" class="text">Vợt cầu lông Yonex</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Victor</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Lining</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Mizuno</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Apacs</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông VNB</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Proace</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Forza</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông FlyPower</a><br><br>   
+                <a href="#" class="text">Vợt Cầu Lông Tenway</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Pro Kennex</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Babolat</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Kawasaki</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Protech   </a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Adonex</a><br><br>
+                <a href="#" class="text">Vợt cầu lông Adidas</a><br><br>
+                <a href="#" class="text">Vợt cầu lông PJB (Hàn Quốc)</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Ashaway</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Paramount</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông FUKYMI</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Fleet</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Maxta</a><br><br>
+                <a href="#" class="text">Vợt Cầu lông Lotus</a><br><br>
+                <a href="#" class="text">Vợt Cầu Lông Sunbatta</a><br><br>
+                <a href="#" class="text">    Vợt Cầu Lông VS   </a><br><br>
+                <a href="#" class="text">   Vợt Phôi Cầu Lông    </a><br><br>
+                <a href="#" class="text">      Vợt Cầu Lông Giá Rẻ </a><br><br>
+                <a href="#" class="text">    Combo vợt cầu lông   </a><br><br>
+                <a href="#" class="text">    Vợt Cầu Lông Kamito   </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông Kumpoo    </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông The 3rd Game    </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông Kolt    </a><br><br>
+                <a href="#" class="text"> Vợt cầu lông Felet      </a><br><br>
+                <a href="#" class="text">    Vợt cầu lông Vicleo   </a><br><br>
+                <a href="#" class="text">   Vợt cầu lông Taro    </a><br><br>
+                <a href="#" class="text">    Vợt cầu lông Ixe   </a><br><br>
+            </div>
+        </div>
+
+
+
+        <div class="column ">
+            <div class="title_theme"><h2>ÁO PICKLEBALL</h2></div>
+            
+            <div class="large_container">
+
+
+                <!-- line1 -->
+                <div class="picture_line">
+                    <div class="picture_box">
+                        
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp1.webp">
+                            <p>   Túi Pickleball Wilson SUPER TOUR </p><br>
+                        </a>
+                        <span class="sale_price">0  <span class="d">đ</span> </span>
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp2.webp">
+                            <p>  Túi Pickleball Joola Britto Tour Elite Bags Lavender</p>
+                            </a>
+                        <span class="sale_price">3.200.000 <span class="d">đ</span> </span>
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp3.webp">
+                            <p>  Túi Pickleball Joola Tour Elite Pro Bags Blue & Yellow</p>
+                            </a>
+                        <span class="sale_price">3.580.000 <span class="d">đ</span> </span>
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp4.webp">
+                            <p> Túi Pickleball Joola Tour Elite Pro Bags Hot Pink & Blue </p>
+                            </a>
+                        <span class="sale_price">3.580.000 <span class="d">đ</span> </span>
+                        
+                    </div>
+
+                </div><br>
+
+
+                    <!-- line2 -->
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp5.webp">
+                            <p>  Túi Pickleball Joola Tour Elite Pro Bags Navy & Yellow  </p> 
+                        <span class="sale_price">3.580.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp6.webp">
+                            <p>   Túi Pickleball Joola Tour Elite Pro Bags Orange & Gray</p>
+                            </a> 
+                        <span class="sale_price">3.580.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp7.webp">
+                            <p>  Túi Pickleball Joola Tour Elite Pro Bags Turquoise & Teal</p>
+                            </a> 
+                        <span class="sale_price">3.580.000 <span class="d">đ</span> 
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp8.webp">
+                            <p>  Túi Pickleball Joola Fanny  </p><br>
+                             </a>  
+                        <span class="sale_price">760.000   <span class="d">đ</span> 
+                        
+                    </div>
+
+                </div><br>
+
+                <!-- line3 -->
+
+                <div class="picture_line">
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp9.webp">
+                            <p> Túi Pickleball Joola Vision Duo </p><br>
+                        </a>  
+                        <span class="sale_price">800.000 <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp10.webp">
+                            <p>Túi Pickleball Joola Vision II Bag (Black) </p>
+                            </a>
+                        <span class="sale_price">1.649.000  <span class="d">đ</span> 
+                        
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp11.webp">
+                            <p> Túi Pickleball Joola Vision II Bag (Blue) </p>
+                            </a>
+                        <span class="sale_price">0 <span class="d">đ</span> 
+                       
+                    </div>
+
+                    <div class="picture_box">
+                        <a class="link" href="">
+                            <img class="picture" src="/CIB SHOP/assets/img/tbp4.webp">
+                            <p> Túi Pickleball Joola Vision II Bag (Blue) </p>
+                            </a>
+                        <span class="sale_price">890.000 <span class="d">đ</span> 
+                       
+                    </div>
+
+                </div><br>
+
+                <div class="right_column"><div >Để có thể di chuyển từ nơi làm việc hay từ nhà đến sân Pickleball một cách thoải mái và tiện lợi thì việc lựa chọn cho mình một chiếc túi Pickleball để phục vụ cho nhu cầu mang các dụng cụ đồ vật cá nhân cần thiết là điều không thể thiếu trong bộ môn Pickleball này. Ngoài ra các túi Pickleball còn giúp bảo vệ các dụng cụ vợt và tránh bị va chạm khi di chuyển, các mẫu túi Pickleball còn có rất nhiều màu sắc và thiết kế khác nhau giúp cho bạn có thể lựa chọn được cho mình một chiếc túi phù hợp với phong cách của bản thân.</div>
+            <h3>1. Giới thiệu về túi Pickleball</h3>
+            <p><a href="" class="text2">Túi Pickleball</a> được sử dụng để mang và bảo quản các thiết bị cần thiết khi chơi Pickleball như vợt, bóng, giày Pickleball, quần áo, khăn tắm và các phụ kiện khác. Túi Pickleball giúp cho người chơi có thể dễ dàng di chuyển và đưa các vật dụng cần thiết đến sân Pickleball một cách thuận tiện và an toàn. Ngoài ra, túi đựng vợt Pickleball cũng giúp bảo vệ và bảo quản đồ dùng của người chơi khỏi bụi bẩn, ẩm ướt, va đập và hư hỏng do tác động từ bên ngoài. Do đó, cùng với <a href="" class="text2">balo Pickleball</a> thì túi Pickleball cũng là một phụ kiện không thể thiếu đối với bất kỳ người chơi Pickleball nào.</p>
+            <p>Với sự phổ biến ngày càng rộng rãi của bộ môn Pickleball thì sự phát triển và đa dạng các loại túi Pickleball để cạnh tranh và thu hút khách hàng cũng tăng cao. Các hãng sản xuất túi Pickleball đã tập trung vào việc cải tiến chất liệu và thiết kế của túi, từ việc sử dụng chất liệu vải bền chắc, chống nước, chống sốc đến thiết kế túi với nhiều ngăn để tiện lợi cho việc đựng và bảo quản các vật dụng Pickelball. </p>
+            <p>Các hãng cũng đã thiết kế các túi Pickleball với kiểu dáng và màu sắc đa dạng, phù hợp với các nhu cầu và sở thích của người sử dụng. Ngoài các mẫu túi Pickelball truyền thống có một ngăn lớn, các hãng còn sản xuất túi với nhiều ngăn và kích thước khác nhau, phù hợp với các nhu cầu sử dụng của người chơi Pickleball.</p>
+            <h3>2. Một số thương hiệt túi đựng vợt Pickleball phổ biến </h3>
+            <h3>2.1 Túi Pickleball Joola</h3>
+            <p>Túi vợt Pickleball Joola chính hãng là một trong những sản phẩm phổ biến và được ưa chuộng trong giới Pickleball thế giới. Các túi vợt Pickleball Joola có thiết kế chuyên biệt cho người chơi Pickleball, giúp đựng và bảo vệ các vật dụng và trang thiết bị Pickleball của người chơi một cách an toàn và tiện lợi. </p>
+            <p><a href="" class="text2">Túi Pickleball Joola</a> có nhiều kích thước và kiểu dáng khác nhau để phù hợp với nhu cầu của từng người chơi. Túi có thể chứa nhiều cây vợt, với các ngăn riêng biệt để đựng giày Pickleball, quần áo, bóng và phụ kiện khác. Nếu bạn đang tìm kiếm một túi Pickleball chất lượng và đáng tin cậy, túi Pickleball Joola sẽ là sự lựa chọn tuyệt vời.</p>
+            <h3>2.2 Túi Pickleball Wilson</h3>
+            <p>Túi vợt Pickleball wilson chính hãng là một trong những sản phẩm phổ biến và được ưa chuộng trong giới Pickleball thế giới. Các túi vợt Pickleball Wilson có thiết kế chuyên biệt cho người chơi Pickleball, giúp đựng và bảo vệ các vật dụng và trang thiết bị Pickleball của người chơi một cách an toàn và tiện lợi.</p>
+            <p><a href="" class="text2">Túi Pickleball Wilson </a>có nhiều kích thước và kiểu dáng khác nhau để phù hợp với nhu cầu của từng người chơi. Túi có thể chứa nhiều cây vợt, với các ngăn riêng biệt để đựng giày Pickleball, quần áo, bóng và phụ kiện khác. Nếu bạn đang tìm kiếm một túi Pickleball chất lượng và đáng tin cậy, túi Pickleball Wilson sẽ là sự lựa chọn tuyệt vời.</p>
+            <h3>3. Các yếu tố cần xem xét khi chọn túi Pickleball</h3>
+            <p>- Số lượng cây vợt: Chọn túi với số lượng ngăn tương ứng với số lượng cây vợt bạn sở hữu.</p>
+            <p>- Kích thước: Túi đựng Pickleball lớn hơn sẽ có thể chứa nhiều đồ hơn, nhưng nó cũng sẽ nặng hơn khi bạn mang theo. Hãy chọn túi có kích thước phù hợp với nhu cầu sử dụng của bạn.p>
+            <p>- Chất liệu: Túi PIckleball được làm bằng chất liệu chống thấm nước và bền sẽ bảo vệ vợt của bạn khỏi các yếu tố môi trường bên ngoài.</p>
+            <p>- Thiết kế ngăn: Nếu bạn cần chứa thêm giày, quần áo, phụ kiện và các dụng cụ khác, hãy chọn túi với nhiều ngăn và túi phụ để đựng các món đồ này.</p>
+            <p>- Quai đeo: Quai đeo chắc chắn và êm ái sẽ giúp bạn dễ dàng mang theo túi và chuyển đổi giữa các chế độ đeo như đeo vai hay đeo chéo.</p>
+            <p>- Thương hiệu: Chọn túi từ các thương hiệu uy tín như Babolat, Wilson, Head, Joola... để đảm bảo chất lượng và độ bền của sản phẩm.</p>
+            <p>- Công nghệ bảo vệ: Nếu bạn đang sở hữu những cây vợt đắt tiền, hãy chọn túi có tính năng bảo vệ tối đa như chống sốc hoặc giữ nhiệt độ ổn định để đảm bảo vợt không bị tổn hại.</p>
+            <div>Click ngay: <a href="/CIB SHOP/index.html" class="text2">ShopVNB</a> - Hệ thống shop Pickleball hàng đầu Việt Nam với hơn 60 cửa hàng trải dài cả nước để được tư vấn cách mua hàng phù hợp nhất.</div>
+        </div>
+            </div><!-- large_container -->
+            
+            
+
+        </div>
+    </div>
+        
+        
+       
+
+
+
+    <div class="footer1">
+        <div class="grid">
+            <div class="footer1-item">
+                <div class="footer_column">
+                    <h3 class="footer_title">THÔNG TIN CHUNG</h3>
+                    <p class="footer_text"><span class="footer_text_main">VNB Sports</span> là hệ thống cửa hàng cầu lông với hơn 50 chi nhánh trên toàn quốc, cung cấp sỉ và lẻ các mặt hàng dụng cụ cầu lông từ phong trào tới chuyên nghiệp</p>
+                    <p class="footer_text_italic"><span class="footer_text_main">Với sứ mệnh:</span>"VNB cam kết mang đến những sản phẩm, dịch vụ chất lượng tốt nhất phục vụ cho người chơi thể thao để nâng cao sức khỏe của chính mình."</p>
+                    <p class="footer_text_italic"><span class="footer_text_main">Tầm nhìn:</span>"Trở thành nhà phân phối và sản xuất thể thao lớn nhất Việt Nam"</p>
+                </div>
+                <div class="footer_column">
+                    <h3 class="footer_title">THÔNG TIN LIÊN HỆ</h3>
+                    <p class="footer_text">Hệ thống cửa hàng:
+                    <span><a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main">5 shop Premium và 63 cửa hàng</a></span>
+                    <span class="footer_text">trên toàn quốc</span></p>
+                    <a href="https://shopvnb.com/he-thong-cua-hang" class="footer_text_main_bold">Xem tất cả các cửa hàng VNB</a>
+                    <p class="footer_text">Hotline: <a href="#" class="footer_text_main">0977508430 | 0792677415</a></p>
+                    <p class="footer_text">Email: <a href="#" class="footer_text_main">info@shopvnb.com</a></p>
+                    <p class="footer_text">Hợp tác kinh doanh: <a href="#" class="footer_text_main">0947342259 (Ms. Thảo)</a></p>
+                    <p class="footer_text">Hotline bán sỉ: <a href="#" class="footer_text_main">0911 105 211</a></p>
+                    <p class="footer_text">Nhượng quyền thương hiệu: <a href="#" class="footer_text_main">0334.741.141 (Mr. Hậu)</a></p>
+                    <p class="footer_text">Than phiền dịch vụ: <a href="#" class="footer_text_main">0334.741.141 (Mr. Hậu)</a></p>
+                    <div class="footer_icon_main">
+                        <a href="" class="footer_icon_main-a"><i class="fa-brands fa-facebook-f footer_icon"></i></a>
+                        <a href="" class="footer_icon_main-a"><i class="fa-brands fa-youtube footer_icon"></i></a>
+                    </div>
+                    
+                </div>
+                <div class="footer_column">
+                    <h3 class="footer_title">CHÍNH SÁCH</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách đổi trả, hoàn tiền</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo hành</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách xử lý khiếu nại</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách vận chuyển</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Chính sách bảo mật thông tin</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">chính sách nhượng quyền</a></li>
+                    </ul>
+                </div>
+                <div class="footer_column">
+                    <h3 class="footer_title">HƯỚNG DẪN</h3>
+                    <ul class="footer_list">
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Điều khoản sử dụng</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Tìm hiểu công việc tập huấn tennis trước khi tổ chức giải đấu</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Bảng size Lining - Cách chọn size quần áo lining, giày cầu lông Lining</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách tập tennis cho người mới chơi</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn cách chọn vợt cầu lông cho người mới chơi</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Hướng dẫn thanh toán</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Kiếm tra bả hành</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">Kiếm tra đơn hàng</a></li>
+                        <li class="footer_item_list"><a href="#" class="footer_list_link">HƯỚNG DẪN MUA HÀNG</a></li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="footer2">
+        <p><i class="fa-solid fa-copyright"></i>CÔNG TY TNHH VNB SPORTS</p>
+        <p>GPDK số 0314496879 do Sở KH vs ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
+        <p>GĐ/Sở hữu website: Phan Lê Chi</p>
+       <a href="http://online.gov.vn/Home/WebDetails/61951"><img style="width: 22rem; height: 8rem;" src="/CIB SHOP/assets/img/logo_bo_cong_thuong.png"></a>
+        </div>
+        <div align="right" class="icon-bar-right">
+          <a href="#" style="border: node; width: 4rem; border-radius: 0.7rem;"><img style="width: 4.2rem; height: 4rem;" src="/CIB SHOP/assets/img/up arrow.png"> </a>
+          <a href="/CIB SHOP/zalo.html"  style="border: node; width: 5rem; height: 5rem; background-color: aliceblue; border-radius: 0.7rem;"><img style="width: 5rem; height: 5rem;" src="assets/img/zalo-tach-nen.png"></a>
+          <a href="https://shopvnb.com/" ><img style="width: 20rem; height: 4.6rem;" src="/CIB SHOP/assets/img/hethongcuahang.png"></a>
+        </div>
+      <div class="icon-bar-left">
+        <a href="#" class="icon-left"><div style="padding: 1.5rem;">Xem giỏ hàng (0)</div></a>
+      </div>
+</body>
+</html>
