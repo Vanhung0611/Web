@@ -501,7 +501,37 @@
                         <p style="margin: 5px; font-size: 13px; line-height: 10px;">(Visa, MasterCard, JCB)</p>
                     </div>
                     <br>
-                    <div class="btn_Nochange" style="background-color: #F1EB1F; line-height: 50px;">MUA TRẢ GÓP</div>
+                    <div class="btn_Nochange" style="background-color: #F1EB1F; line-height: 20px; color: #235D97; font-size: 14px; padding-top: 5px;">MUA TRẢ GÓP 
+                        <div style="display: flex; justify-content: center;">
+                            <img class="btn_picture" src="/CIB SHOP/Product/img/home-paylater-ngang-small.svg" alt=""> 
+                            <img class="btn_picture" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="">
+                        </div>
+                    </div>
+                    <br>
+                    <div class="pay">
+                        <div class="parent_title">
+                            <div style="display: flex; justify-content: center;">
+                                <h1 class="pay_title">ƯU ĐÃI KHI THANH TOÁN</h1>
+                                <img class="btn_picture" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="" class="pay_picture">
+                            </div>
+                            <h2>(SỬ DỤNG KHI XÁC NHẬN KHOẢN VAY TRÊN TRANG CỦA TỔ CHỨC TÀI CHÍNH)</h2>
+                        </div>
+                        <div style="padding: 6px;">
+                            <div style="display: flex;">
+                                <img class="img_icon" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="">
+                                <h2 class="pay_text">Hạn mức Trả góp lên tới 30.000.000 VNĐ với phí chỉ từ 2,5%.</h2>
+                            </div>
+                            <div  style="display: flex;">
+                                <img class="img_icon" src="/CIB SHOP/Product/img/icon-muadee.svg" alt="">
+                                <h2 class="pay_text">Miễn phí lãi suất trọn đời.</h2>
+                            </div>
+                            <div  style="display: flex; justify-content: end;">
+                                <p style="padding-right: 10px;">Powered by</p>
+                                <img class="img_icon" src="/CIB SHOP/Product/img/bk-logo-promotion.svg" alt="">
+                            </div>
+                        </div>
+                    </div>
+
                 </div>
                 
             </div>
@@ -762,7 +792,6 @@
                         <span><i class="fa-solid fa-location-dot icon"></i><a href="" class="expand_link">350 Khâm Thiên, P. Thổ Quan, Đống Đa</a></span><br>
                         <span><i class="fa-solid fa-phone icon"></i><span class="expand_sdt">0904507752</span></span></div>
                 </ul>
-                
             </fieldset>
         </div>
         
@@ -838,7 +867,85 @@
       <div class="icon-bar-left">
         <a href="#" style="border: node; width: 4rem;"><img style="width: 20rem; height: 5.2rem;" src="/CIB SHOP/assets/img/xemgiohang.png"> </a>
       </div>
+<script>
+    function increment() {
+    let quantity = document.getElementById('quantity');
+    quantity.value = parseInt(quantity.value) + 1;
+}
 
+function decrement() {
+    let quantity = document.getElementById('quantity');
+    if (quantity.value > 1) {
+        quantity.value = parseInt(quantity.value) - 1;
+    }
+}
+
+document.getElementById("addToCart").addEventListener
+("click",function()
+    {
+        let quantityInput = document.getElementById("quantity"); // Lấy giá trị từ ô input
+        let cartCount = document.getElementById("cartCount");   //Lấy giá phần tử hiển thị số lượng là CartCount (class cart-count)
+        let cartItems = document.getElementById("cartItems"); // Lấy phần tủ div có id là cartItems (class là cart-noti)
+        let quantity = parseInt(quantityInput.value);
+        let number = parseInt(cartCount.textContent);
+        let noPro = document.getElementById("No_pro");
+        let Cost_all = document.getElementById("cost_all");
+        yes_pro_item = document.getElementById("yes_pro_item");
+        cartCount.textContent = number + quantity;
+        // if (number != 0) cartItems.innerHTML ="";
+        if (number + quantity > 0) 
+        { 
+            noPro.style.display = "none";  
+            document.getElementById("yes_pro").style.display = "block"; 
+            document.getElementById("giohang").style.display = "block";
+            document.getElementById("cost_all").style.display = "block";
+        }
+        let img = '/CIB SHOP/Product/img/V88 xanh.png';
+        let name = document.getElementById("name").textContent;
+        let cost_item = document.getElementById("idcost").textContent;
+        yes_pro_item.innerHTML += `<div class="add_cart">
+                                <img class="add_cart_picture" src="${img}" alt="">
+                                <div class="pro_title">
+                                    <div style= "display: flex; justify-content: space-between;">
+                                    <span class="text_title">${name}</span> <i class="fa-regular fa-circle-xmark remove-pro" style="font-size: 14px; padding-left: 10px"></i>
+                                    </div>
+                                    <div style="display: flex; justify-content: space-between">
+                                        <p class="qua">Số lượng: ${quantity}</p>
+                                        <p class="cost_item">${cost_item} ₫</p>
+                                    </div>
+                                </div>
+                                </div>
+                                `;
+        var cost =  document.getElementById("cost");
+        
+        var cost_format = quantity*cost_item*1000 + parseInt(cost.textContent);
+        cost.textContent = "";                
+        cost.textContent += cost_format + " ₫";
+    }
+);
+
+
+        document.addEventListener('click', function(e) 
+        { if (e.target && e.target.classList.contains('remove-pro')) 
+        { 
+            let productDiv = e.target.closest('.add_cart'); 
+            let costItemElement = productDiv.querySelector('.cost_item'); 
+            let costItemText = costItemElement.textContent; 
+            let costItem = parseInt(costItemText.replace(/\D/g, '')); 
+            let quaElement = productDiv.querySelector('.qua'); 
+            let quaText = quaElement.textContent; let quantity = parseInt(quaText.replace(/\D/g, '')); 
+
+            let cost = document.getElementById("cost");
+            cost_format = parseInt(cost.textContent) - costItem*quantity;
+            cost.textContent = "";                
+            cost.textContent += cost_format + " ₫"; 
+            productDiv.remove();
+            cartCount.textContent -= quantity;
+        }
+        });
+</script>
+
+<<<<<<< Updated upstream
       <script>
        
         function increment() {
@@ -900,5 +1007,7 @@
 
         );
     </script>
+=======
+>>>>>>> Stashed changes
 </body>
 </html>
