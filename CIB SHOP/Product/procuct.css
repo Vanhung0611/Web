@@ -17,6 +17,9 @@
     
 
 .clear { clear: both; /* Hoặc clear: right; nếu chỉ muốn tắt float phải */ }
+.imgv{
+    width: 800px;
+}
 .row{
     flex-direction: row;
 }
@@ -27,8 +30,7 @@
 
 }
 .row2{
-    margin-left: -100px;
-    text-align: left;
+    margin-left: 20px;
 }
 
 span{
@@ -139,8 +141,8 @@ span{
 .side_bar{
     padding: 20px 10px;
     position: sticky; 
-    width: 40%;
-    
+    width: 70%;
+    max-height: 2128px;
     top: 0;
     border: 1px dashed var(--main-color);
     border-radius: 4px;
