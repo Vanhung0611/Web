@@ -20,13 +20,17 @@ body {
     display: flex;
 }
 .column1 {
-    flex-basis: 22%;
+    width: 23%;
     margin-left: 0.5rem;
     padding: 2rem;
 }
 
+.picture_line .picture_box a p{
+    overflow: hidden;
+}
+
 .column2 {
-    flex-basis: 72%;
+    width: 45%;
     flex-grow: 1;
     margin-left: 0.5rem;
     padding: 2rem;
@@ -39,6 +43,7 @@ body {
         display: block;
     }
 }
+
 .box2{
     height : 22rem;
     padding-left: 2rem;
@@ -89,7 +94,6 @@ body {
     font-size: 1.7rem;
     padding-left: 2rem;
     text-wrap: wrap;
-    width: 95rem;
     line-height: 3rem;
 }
 
@@ -110,9 +114,9 @@ h3{
 
 .title_theme{
     border: 1px solid white;
-    width: 95rem;
     border-radius: 10px ;
     background: rgb(241, 244, 247);
+    padding-left: 2rem;
 }
 
 /*Phần container chứa hình ảnh*/
@@ -122,12 +126,14 @@ h3{
 
 .picture_line{
     display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    width: 100%;
 }
 
 .picture_box{
     font-size: 1.4rem;
-    width: 23rem;
-    margin: 1rem;
+    width: 23%;
     text-align: start;
     position: relative;
 }
@@ -136,6 +142,18 @@ h3{
     height: 20rem;
     width: 22rem;
     display: block;
+}
+/* Responsive cho hình ảnh */
+@media (max-width: 800px) {
+    .picture_line {
+        justify-content: center;
+        gap: 5rem; 
+        width: 100%;
+    }
+
+    .picture_box {
+        width: 35%; 
+    }
 }
 
 .sale_price{
