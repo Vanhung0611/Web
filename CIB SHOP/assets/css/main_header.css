@@ -200,6 +200,7 @@
     color: #fff;
     animation: fadeIn linear .2s;   
 }
+
 .choose_account:hover .account_list{
     display: block;
     animation: fadeIn linear .2s;
