@@ -41,10 +41,13 @@
         width: 100%;
     }
 }
-@media (max-width: 800px)
+@media (max-width: 900px)
 {
     .text img{
         width: 100%;
+    }
+    .procuct_img{
+        width: 350px;
     }
 }
 .text_title1{
