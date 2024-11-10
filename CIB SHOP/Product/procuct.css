@@ -270,3 +270,38 @@ span{
     font-size: 11px;
     font-weight: 400;
 }
+@media (min-width: 1000px) {
+    .container_product {
+        display: flex;
+        flex-wrap: nowrap;
+    }
+}
+
+/* Khi cửa sổ nhỏ hơn 1000px */
+@media (max-width: 1100px) {
+    .container_product {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .side_bar{
+        width: 100%;
+    }
+}
+/* Khi cửa sổ nhỏ hơn 1000px */
+@media (max-width: 800px) {
+    .row1 {
+        display: flex;
+        flex-wrap: wrap;
+    }
+    .row2{
+        margin: 0;
+        flex-basis: 1;
+        width: 100%;
+    }
+    .container_product .row .row2 img{
+        width: 100%;
+    }
+    .text_title1{
+        line-height: 3rem;
+    }
+}
