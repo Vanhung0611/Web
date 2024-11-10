@@ -104,7 +104,9 @@
     .news{
         height: 800px;
     }
+    
 }
+
 @media (max-width: 604px) {
     .news_item{
         width: 100%;
