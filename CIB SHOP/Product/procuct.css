@@ -15,7 +15,6 @@
     margin-left: 20px;
 }
     
-
 .clear { clear: both; /* Hoặc clear: right; nếu chỉ muốn tắt float phải */ }
 .imgv{
     width: 800px;
@@ -28,7 +27,25 @@
     display: flex;
     width: 100%;
     padding: 0px 10px;
+}
 
+@media (max-width: 1200px)
+{
+    .row1{
+        flex-wrap: wrap;
+    }
+    .container_product {
+        flex-wrap: wrap;
+    }
+    .row span{
+        width: 100%;
+    }
+}
+@media (max-width: 800px)
+{
+    .text img{
+        width: 100%;
+    }
 }
 .text_title1{
     font-size: 24px;

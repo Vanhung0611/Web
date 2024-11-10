@@ -9,8 +9,32 @@
     justify-content: space-between;
     margin: 1.4rem 0;
 } 
-@media (max-width: 700px) {
+@media (max-width: 1000px) {
     .item_hotline{
+        display: none;
+    }
+   .item_search{
+        display: none;
+    }
+    .choose_icon{
+        border: 1px solid #fff;
+    }
+    .choose_lookup div, .choose_account div, .choose_cart div{
+        display: none;
+    }
+    .navbar_item{
+        width: 10rem;
+    }
+    .choose_lookup i, .choose_account i, .choose_cart i{
+        border: none;
+    }
+}
+
+@media (max-width: 600px) {
+    .hotline-number{
+        display: none;
+    }
+    .item_store{
         display: none;
     }
 }
@@ -283,7 +307,6 @@
     height: 60px;
 }
 .pro_title{
-
 }
 #name{
     font-size: 27px; 
@@ -321,7 +344,6 @@
    padding: 0px 5px;
 }
 
-
 .cart_picture{
     width: 33.5rem;
 }
@@ -353,7 +375,16 @@
         align-items: center;
         padding: 0 6.5% 0 6.5% ;
 }
-    
+@media (max-width: 700px) {
+    .home a, .home div{
+        font-size: 0.8rem;
+        padding: 0 6px;
+    }
+    .home{
+        height: 3rem;
+        flex-wrap: wrap;
+    }
+} 
 .home_tittle{
         font-weight: 400;
         font-size: 1.4rem;
