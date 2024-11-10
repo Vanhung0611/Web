@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Đăng nhập</title>
+    <title>Quên mật khẩu</title>
     <!-- reset các thẻ-->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/8.0.1/normalize.min.css">  
     <!-- link lấy font chữ Roboto từ google-->
@@ -11,7 +11,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;400;500;700;900&display=swap" rel="stylesheet">
     <!--link css-->
-   <link rel="stylesheet" href="/CIB SHOP/assets/css/sign_up.css">
+   <link rel="stylesheet" href="/CIB SHOP/assets/css/forget.css">
    <link rel="stylesheet" href="/CIB SHOP/assets/css/base.css">
    <link rel="stylesheet" href="/CIB SHOP/assets/css/main_footer.css">
    <link rel="stylesheet" href="/CIB SHOP/assets/css/main_header.css">
@@ -435,82 +435,40 @@
         <a href="/CIB SHOP/lienhe.html" class="home_tittle">LIÊN HỆ</a>
     </div>
     <div class="container">
-        <div class="sign_up_border">
-            <div class="sign_up_title">ĐĂNG KÝ</div>
+        <div class="sign_in_border">
+            <div class="sign_in_title">QUÊN MẬT KHẨU</div>
             <div class="container_title-line" style="width: 40%; margin: 20px 0 20px 30%;" ></div>
-            <div class="sign_up_text_1"><span class="sign_up_title_text">Đã có tài khoản, đăng nhập<a href="/CIB SHOP/sign_in.html" class=sign_up_title_hl> tại đây</a></span></div><br>
             <form class="account">
                 <div>
-                    <input id="account_name1" class="account_name" type="text" placeholder="Nhập tên của bạn (*)" required>
+                    <input class="account_name" id="account_name1" type="text" placeholder="Email">
                 </div>
                 <div>
-                    <input id="account_email1"  class="account_email" type="email" placeholder="Nhập email của bạn (*)" required>
-                </div>
-                <div>
-                    <input id="account_phone1" class="account_phone" type="number" placeholder="Số điện thoại" required>
-                </div>
-                <div>
-                    <input id="account_password1" class="account_password" type="password" placeholder="Mật khẩu" required>
-                </div>
-                <div>
-                    <input id="account_password_re1" class="account_password_re" type="password" placeholder=" Nhập lại mật khẩu" required>
+                    <input class="account_pass" id="account_pass1" type="password" placeholder="Mã captcha">
                 </div>
             </form>
-            <button class="Confirm" onclick="validateForm()">ĐĂNG KÝ</button>
+            <button class="Confirm" onclick="validateForm()">Lấy lại mật khẩu</button>
+            <p class="border_footer"><span><a href="/CIB SHOP/sign_in.html" class="forget">Đăng nhập tại đây</a></span></p>
         </div>
-    </div>
+    </div><br>
     <script>
-        function validateForm() {
-            var name = document.getElementById("account_name1").value;
-            var email = document.getElementById("account_email1").value;
-            var phone = document.getElementById("account_phone1").value;
-            var password = document.getElementById("account_password1").value;
-            var passwordRe = document.getElementById("account_password_re1").value;
-            var testPhone = /^0\d{9}$/;
+        function validateForm(){
+            var account =document.getElementById("account_name1").value;
+            var pass =document.getElementById("account_pass1").value;
             var testEmail=/^[a-zA-Z0-9._%+-]+@gmail\.com$/;
-            var testPassword=/^(?=.*[a-z])(?=.*[A-Z])(?=.*\d)[a-zA-Z\d]{6,}$/;
-            // kiểm tra ô trống thông tin
-            if (!name) {
-                alert("Vui lòng nhập họ tên!");
-                return;
+            if(!account){
+                alert("Vui lòng nhập Email");
+                return false;
             }
-            else if(!email){
-                alert("Vui lòng nhập email!");
-                return;
-            }
-            // kiểm tra email đúng định dạng
-            if(!testEmail.test(email)){
+            if(!testEmail.test(account)){
                 alert("Email phải có dạng asd@gmail.com.Mời nhập lại!");
                 return;
             }
-            else if(!phone){
-                alert("Vui lòng nhập số điện thoại !");
-                return;
+            else if (!pass){
+                alert("Vui lòng nhập mã captcha");
+                return false;
             }
-            // kiểm tra số điện thoại đúng định dạng
-            if (!testPhone.test(phone)) {
-                alert("Số điện thoại không hợp lệ! Số điện thoại phải có 10 chữ số và bắt đầu bằng số 0.");
-                return;
-            }
-            else if(!password){
-                alert("Vui lòng nhập mật khẩu mà bạn chọn để đăng ký tài khoản!");
-                return;
-            }
-             // ràng buộc mật khẩu, mật khẩu tối thiểu có 6 kí tự, ít nhất 1 chữ in hoa, 1 chữ cái thường và 1 số
-             if(!testPassword.test(password)){
-                alert("Mật khẩu sai định dạng, mời nhập lại(Mật khẩu phải có tối thiểu 6 kí tự, ít nhất một chữ in hoa, một chữ thường và một số!)");
-                return;
-            }
-            else if(!passwordRe){
-                alert("Vui lòng xác nhận lại mật khẩu!");
-                return;
-            }
-            // Kiểm tra mật khẩu nhập lại
-            if (password !== passwordRe) {
-                alert("Mật khẩu không khớp. Vui lòng nhập lại.");
-                return;
-            }
-            alert("Đăng ký thành công!");
+           
+            alert("Mật khẩu mới đã được gửi về email của bạn. Vui lòng kiểm tra email!")
         }
     </script>
     <div class="footer1">
@@ -566,9 +524,6 @@
                     </ul>
                 </div>
             </div>
-        </div>
-    </div>
-         <div class="footer2">
         <p><i class="fa-solid fa-copyright"></i>CÔNG TY TNHH VNB SPORTS</p>
         <p>GPDK số 0314496879 do Sở KH vs ĐT TP Hồ Chí Minh cấp ngày 05/07/2017</p>
         <p>GĐ/Sở hữu website: Phan Lê Chi</p>
