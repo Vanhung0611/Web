@@ -442,18 +442,35 @@
                 <div>
                     <input class="account_name" id="account_name1" type="text" placeholder="Email">
                 </div>
-                <div>
-                    <input class="account_pass" id="account_pass1" type="password" placeholder="Mã captcha">
+                <div class="box">
+                    <div>
+                    <input class="account_pass" id="check" type="text" placeholder="Mã captcha"></div>
+                    <div class="capcha"><p id="captcha"></p>
                 </div>
+                </div>
+                
             </form>
             <button class="Confirm" onclick="validateForm()">Lấy lại mật khẩu</button>
             <p class="border_footer"><span><a href="/CIB SHOP/sign_in.html" class="forget">Đăng nhập tại đây</a></span></p>
         </div>
     </div><br>
     <script>
+        function generateCaptcha() {
+            let chars = 'ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789';
+            let captcha = '';
+            for (let i = 0; i < 6; i++) {
+                captcha += chars.charAt(Math.floor(Math.random() * chars.length));
+            }
+            document.getElementById("captcha").innerText = captcha;
+            return captcha;
+        }
+
+        // Lưu mã captcha vào biến
+        let captchaCode = generateCaptcha();
         function validateForm(){
+            let check = document.getElementById("check").value;
             var account =document.getElementById("account_name1").value;
-            var pass =document.getElementById("account_pass1").value;
+            var pass =document.getElementById("check").value;
             var testEmail=/^[a-zA-Z0-9._%+-]+@gmail\.com$/;
             if(!account){
                 alert("Vui lòng nhập Email");
@@ -463,8 +480,13 @@
                 alert("Email phải có dạng asd@gmail.com.Mời nhập lại!");
                 return;
             }
-            else if (!pass){
-                alert("Vui lòng nhập mã captcha");
+            else if (!check){
+                alert("Vui lòng nhập mã captcha!");
+                return false;
+            }
+            else if (check !== captchaCode) {
+                alert("Mã captcha sai!")
+                captchaCode = generateCaptcha();
                 return false;
             }
            

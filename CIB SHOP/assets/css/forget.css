@@ -65,3 +65,10 @@
 .forget:hover{
     color: var(--main-color);
 }
+.box{
+    display: flex;
+}
+.capcha{
+    margin-left: 2rem;
+    font-size: 20px;
+}
