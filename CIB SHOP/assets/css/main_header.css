@@ -127,7 +127,7 @@
     margin: 0;
     border-radius: 4px;
     box-shadow: 1px 4px 2px #e3e3e3;
-    z-index: 1;
+    z-index: 99;
     display: none;
 }
 .lookup_check::before{
@@ -178,7 +178,7 @@
     margin: 0;
     border-radius: 4px;
     box-shadow: 1px 4px 2px #e3e3e3;
-    z-index: 1;
+    z-index: 99;
     display: none;
 }
 .account_item{
@@ -256,7 +256,7 @@
     margin: 0;
     border-radius: 4px;
     box-shadow: 1px 2px 2px #e3e3e3;
-    z-index: 10;
+    z-index: 99;
     
     display: none;
 }
@@ -307,8 +307,7 @@
     width: 60px;
     height: 60px;
 }
-.pro_title{
-}
+
 #name{
     font-size: 27px; 
     font-weight: 400; 
